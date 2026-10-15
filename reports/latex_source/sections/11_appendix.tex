@@ -1,0 +1,37 @@
+\section{Repository and reproducibility}
+\label{app:repo}
+\textbf{Code:} \url{https://github.com/azert88/energymind-tunisia}\\
+\textbf{Dataset (Kaggle):} \url{\HFURL}\\
+Splits are contiguous time blocks and injection is seeded. Raw third-party recordings are not in the repository (licence and size); the data notes explain how to obtain and map them.
+
+\begin{table}[!h]
+\small\centering
+\caption{Repository map.}
+\begin{tabularx}{\textwidth}{@{}lY@{}}
+\toprule
+\hdr \textbf{Path} & \textbf{Purpose}\\
+\midrule
+\code{energymind/data_*.py}, \code{inject.py} & Canonical frames; seeded injector and splits\\
+\code{energymind/features*.py}, \code{models_*.py}, \code{evaluate.py} & Features, models, event metrics, calibration, abstention\\
+\code{energymind/explain.py}, \code{policy.py}, \code{decision_log.py} & SHAP and templates; deny-by-default routing; hash-chained log\\
+\code{energymind/feeder.py}, \code{fusion.py}, \code{sharing.py} & Feeder diagnostic, fusion, case cards\\
+\code{app/operator.py}, \code{configs/policy.yaml} & Operator interface; policy file\\
+\code{scripts/}, \code{tests/}, \code{results/}, \code{docs/}, \code{data/DATA_NOTES*.md} & Runners; unit tests; measured outputs; design and data notes\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\needspace{12\baselineskip}
+\textbf{Main commands:}
+{\small
+\begin{verbatim}
+python -m venv .venv ; .venv\Scripts\pip install -r requirements.txt
+python scripts\build_data.py             # canonical 1-minute frames
+python -m pytest tests                   # unit tests
+python scripts\run_experiments.py        # baseline models, injector v2
+python scripts\run_deep.py --seeds 3     # TCN and autoencoder
+python scripts\leakage_audit.py          # shortcut audit, legacy versus v2
+python scripts\run_improve.py            # detector v1 pipeline
+python scripts\demo_end_to_end.py        # operator demo on injected faults
+streamlit run app\operator.py            # operator interface
+\end{verbatim}}

@@ -1,0 +1,5 @@
+case,n_cards,accepted,reject_reasons,gate_tau,gated_fa,gated_window_fpr,gated_recall_correct,bypass_tau,bypass_fa,bypass_window_fpr,bypass_recall_correct
+flood_normal_signatures(enrolled key),150,150,{},,5,0.012674825174825174,0.8214285714285714,0.45,20,0.6883741258741258,1.0
+label_flip(enrolled key),83,83,{},,5,0.012674825174825174,0.8214285714285714,0.45,39,0.1555944055944056,0.8928571428571429
+forged_signature(no key),50,0,"{""signature invalid or origin not enrolled"": 50}",,5,0.012674825174825174,0.8214285714285714,,5,0.012674825174825174,0.8214285714285714
+flood+honest,233,233,{},,5,0.012674825174825174,0.8214285714285714,0.45,17,0.6918706293706294,1.0

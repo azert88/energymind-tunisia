@@ -1,0 +1,7 @@
+,p50_ms,p95_ms
+stat,0.213,0.24
+iforest,13.3,14.302
+ocsvm,0.784,1.028
+lgbm,1.286,1.785
+lgbm_no_physics,1.308,1.67
+lgbm_no_frozen_missing,1.348,1.827

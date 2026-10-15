@@ -1,0 +1,64 @@
+# Leakage audit of the IMPROVE features and recipe
+
+Reproduce: `python scripts/improve_search.py audit`. All checks use TRAIN/validation data only (seed-0 benchmark injection); the test blocks are not used here.
+
+## 1. Never-touched windows: injected frame vs raw frame
+
+A window that no incident touches can still see an earlier incident through the causal context features (60/240-min, 7-day baseline, replay lags). That is history, not label: at deployment the detector sees past faults too. The test below asks whether such windows are *separable* from the same window computed on the never-injected frame.
+
+```
+                                             n  any_new_feature_differs
+untouched (any)                       138462.0                 0.976961
+untouched, >8 days from any incident       0.0                      NaN
+```
+
+Paired classifier (new features only, 3-fold grouped CV) on 20000 never-touched windows whose new features differ between injected and raw frame: **AUC = 0.537** (0.5 = no fingerprint).
+
+## 2. Single-feature separability of the NEW features (|AUC - 0.5| + 0.5, event windows vs never-touched normal windows, TRAIN)
+
+A real label shortcut shows up as a feature that separates *benign* (labelled normal, physically a load change) or every class at ~1.0 regardless of physics. Expected high values: `rep_*` for replay (that is what the detector is for) and `ctx_*`/`day_*` for load-changing events.
+
+```
+                     AUC_benign_vs_untouched  AUC_measurement_vs_untouched  AUC_physical_vs_untouched
+ctx_p_m15_m60                          0.508                         0.505                      0.556
+ctx_p_std60                            0.572                         0.503                      0.513
+ctx_p_jumps60                          0.580                         0.503                      0.551
+ctx_p_alt60                            0.571                         0.505                      0.547
+ctx_v_m15_m60                          0.501                         0.513                      0.605
+ctx_v_std60                            0.507                         0.541                      0.578
+ctx_p_m15_m240                         0.539                         0.505                      0.607
+ctx_p_std240                           0.529                         0.503                      0.516
+ctx_p_jumps240                         0.555                         0.503                      0.516
+ctx_p_alt240                           0.550                         0.501                      0.516
+ctx_v_m15_m240                         0.505                         0.502                      0.651
+ctx_v_std240                           0.506                         0.541                      0.634
+ctx_p_chg60                            0.514                         0.502                      0.571
+ctx_p_chg120                           0.539                         0.500                      0.604
+day_p_z                                0.560                         0.503                      0.608
+day_p_logr                             0.561                         0.505                      0.615
+rep_p                                  0.505                         0.558                      0.505
+rep_v                                  0.500                         0.525                      0.500
+rep_i                                  0.511                         0.520                      0.509
+rat_pf_dev                             0.513                         0.512                      0.511
+rat_phase_share_dev                    0.515                         0.509                      0.516
+tod_sin                                0.504                         0.505                      0.511
+tod_cos                                0.526                         0.516                      0.504
+```
+
+`rep_p > 0.5` rate by window subtype (should be ~0 except replay):
+
+```
+sub           bias  delay  demand_step  drift  dropout  duty_cycle  falsified  frozen  noise  normal  outage  phase_imbalance  replay  scale  voltage_sag
+rep_p_gt_0.5   0.0    0.0          0.0    0.0      0.0         0.0        0.0     0.0    0.0     0.0     0.0              0.0   0.931    0.0          0.0
+```
+
+## 3. Label controls (full v2 recipe, decision tuned on validation like the real model)
+
+```
+                      win_macroF1_argmax  event_macro_F1_tuned  FA_per_day  detection_R  detection_P
+true labels                        0.631                 0.714       0.104        0.706        0.933
+labels rolled 3 days               0.306                 0.179       9.174        0.851        0.231
+labels shuffled                    0.287                 0.326       4.764        1.000        0.391
+```
+
+Note: with labels destroyed the tuned decision can still buy some event F1 by alerting on anything abnormal (anomalies co-occur with incidents), but the class-specific part collapses.

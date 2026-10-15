@@ -1,0 +1,65 @@
+\section{Goal 2: confidence and explainability}
+\label{sec:goal2}
+\goalbadge{GOAL 2} Every flagged event must come with a verdict a human can understand and verify: a confidence score, a plain-language explanation and an auditable log of what was detected, concluded and why. The brief encourages interpretable approaches (SHAP, LIME, rule-backed models) and asks to avoid black boxes~\cite{brief}.
+
+\subsection{Architecture of Goal 2}
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\node[gbox,text width=3.3cm] (v) at (1.9,2.6) {\textbf{Verdict}\\probabilities of Goal~1};
+\node[gbox,text width=3.3cm] (c) at (6.1,2.6) {\textbf{Confidence service}\\temperature scaling, abstention, conformal sets where defensible};
+\node[hbox,text width=3.3cm] (e) at (10.3,2.6) {\textbf{Evidence record}\\checks, scores, versions, lineage};
+\node[gbox,text width=3.3cm] (x) at (14.5,2.6) {\textbf{Explanation worker}\\physics rules, \textbf{SHAP}, \textbf{LIME}; Integrated Gradients (phase 2)};
+\draw[arr] (v)--(c); \draw[arr] (c)--(e); \draw[arr] (e)--(x);
+\node[dbox,text width=3.3cm] (r) at (14.5,0.2) {\textbf{GraphRAG retrieval}\\Neo4j scope, Qdrant approved cases};
+\node[dbox,text width=3.3cm] (k) at (10.3,0.2) {\textbf{Evidence certificate}\\claims, sources, contradictions};
+\node[gbox,text width=3.3cm] (g) at (6.1,0.2) {\textbf{Grounded text}\\template; language model with claim checker};
+\node[gbox,text width=3.3cm] (o) at (1.9,0.2) {\textbf{Operator view and log}\\three levels of detail; hash-chained};
+\draw[arr] (x)--(r); \draw[arr] (r)--(k); \draw[arr] (k)--(g); \draw[arr] (g)--(o);
+\end{tikzpicture}
+\caption{Architecture of Goal~2. Dashed boxes are the Phase 2 design. The text can never add a number, a meter or a cause that is absent from the evidence.}
+\end{figure}
+
+\subsection{Confidence, abstention and action risk}
+Confidence is the calibrated probability of the predicted class: a model that announces 80\,\% should be right about 8 times out of 10 (calibration error 0.052 on the training houses). We report \emph{four separate quantities}, not one score.
+\begin{table}[!h]
+\small\centering
+\caption{The four components of confidence.}
+\begin{tabularx}{\textwidth}{@{}lYY@{}}
+\toprule
+\hdr \textbf{Component} & \textbf{Question} & \textbf{Method}\\
+\midrule
+Surprise & Is this unusual under normal operation? & Residuals compared with a clean reference\\
+Cause & Which cause is most plausible? & Calibrated probabilities (temperature scaling); a prediction set where conformal methods~\cite{gibbs} are defensible\\
+Localisation & Which meter and phase? & Share of the evidence attributed to each meter\\
+Inputs & Can the inputs be trusted? & Missing share, unavailable checks\\
+\bottomrule
+\end{tabularx}
+\end{table}
+Below 0.55 confidence, or if the top two classes are too close, the system answers \emph{unresolved} and hands over to a human. \textbf{Confidence and action risk stay separate:} a confidence that justifies flagging a reading does not justify recalibrating a meter, and a quiet or unavailable check is never proof of normality.
+
+\subsection{Explanations: rules, SHAP and LIME}
+The brief explicitly names SHAP, LIME and rule-backed models as ways to explain a verdict without a black box, so we use them as complementary levels. \textbf{Physics rules} explain the \emph{physical why}; SHAP and LIME explain the \emph{behaviour of the model}. We put the rules first, because a model attribution is not proof of a physical cause. An asynchronous \textbf{explanation worker} runs after the numerical decision, loads the frozen model and the original features, and stores an \textbf{explanation artifact} (model run, target output, method and version, baseline or background, fidelity and stability measures, limits, input hash); detection continues if explanation fails.
+\begin{table}[!h]
+\small\centering
+\caption{Explanation methods and how to read them.}
+\begin{tabularx}{\textwidth}{@{}lYYl@{}}
+\toprule
+\hdr \textbf{Method} & \textbf{What it provides} & \textbf{Caution} & \textbf{Phase}\\
+\midrule
+Physics rules & Which relation is violated, with observed and expected values; names the checks that cannot be evaluated & Valid only where the instrumentation supports the check & 1\\
+SHAP~\cite{treeshap} & Which variables weighed in the decision; exact for tree models such as LightGBM & Relative to a stated background; not a physical cause & 1\\
+LIME~\cite{lime} & A simple model fitted around one decision: a second, model-independent opinion & Perturbations must stay physically valid; check stability & 2\\
+Integrated Gradients~\cite{ig} & Attribution for the temporal model (TCN) along a path from a baseline & Zero voltage is a poor baseline; use a physically meaningful one & 2\\
+Graph explainer~\cite{gnnexpl} & Important features, nodes and edges of a graph-model decision & Only after compatibility checks & 2\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Grounded knowledge: Neo4j, Qdrant and GraphRAG (Phase 2)}
+Two stores play two different roles. \textbf{Neo4j} is the authoritative typed store of the approved grid, ownership, incidents, check lineage, decisions and approvals. \textbf{Qdrant} is an index over approved case and procedure representations only (a text vector from a multilingual encoder~\cite{e5}, a lexical vector and a numerical signature of the incident); numerical traces stay in the artifact store. Retrieval then follows five steps~\cite{neo4jrag,qdrant}: (1) resolve the incident's authorised part of the grid in Neo4j; (2) filter the Qdrant candidates by scope, equipment, feature schema, review status and validity; (3) retrieve the three representations separately and merge the ranks; (4) check compatibility in the graph; (5) return an \textbf{evidence certificate}, a small structured packet of claims, sources, contradictions and expiry. A similarity score is neither an electrical distance nor a probability, and a past case never overrides a fresh, contradicting measurement.
+
+\textbf{Grounded writing.} A language model, if used, receives only the certificate; it may explain it or propose an approved check but cannot invent a measured value, a confidence or an identifier. A checker verifies every number and asset against the evidence, and the deterministic template remains the fallback. A local instruction-tuned model~\cite{qwen} and the multilingual encoder are candidates, to be tested on French, Arabic and English technical text; neither supplies confidence or authority. Explanation quality will be judged by fidelity, stability, agreement with the injected ground truth, and usefulness to operators.
+
+\subsection{Log and Phase 1 prototype}
+For each detection the prototype produces an \emph{evidence record} (probabilities, checks passed, failed or not evaluated, SHAP variables, versions) and a template explanation, for example: \emph{``Real event, confidence 80\,\%. Check passed: $p\le s$; the other relations are true by construction and cannot fail. Alternative explanation: a coordinated reporting error that keeps the relations consistent.''} Each log entry contains the hash of the previous one~\cite{crosby}; the human decision is appended, with a mandatory reason for a rejection or an override. A test confirms that editing or deleting an entry breaks verification (deleting the last entries needs an external anchor).

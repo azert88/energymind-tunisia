@@ -1,0 +1,69 @@
+\section{Goal 4: shared learning}
+\label{sec:goal4}
+\goalbadge{GOAL 4} The design must document how several nodes could share anomaly patterns, calibration insights and relevant knowledge, and address privacy: what is shared, what stays local, and why. A single-node prototype is required; sharing between nodes may remain a documented design~\cite{brief}. In our case, nodes are houses.
+
+\subsection{Architecture of Goal 4}
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\node[tag,anchor=west] at (-0.3,3.3) {HOUSE A (local): raw measurements, log, thresholds and policy stay here};
+\node[gbox,text width=2.8cm] (r) at (1.9,2.4) {\textbf{Verified outcome}\\operator feedback, reviewed evidence};
+\node[gbox,text width=3.0cm] (cc) at (6.0,2.4) {\textbf{Candidate case card}\\reduced signature, signed};
+\node[gbox,text width=3.3cm] (va) at (10.4,2.4) {\textbf{Validation}\\origin, label, duplicates, sensitive fields};
+\node[dbox,text width=3.0cm] (hr) at (14.4,2.4) {\textbf{Human review}\\sharing scope, expiry};
+\draw[arr] (r)--(cc); \draw[arr] (cc)--(va); \draw[arr] (va)--(hr);
+\draw[dashed,thick] (-0.3,1.3) -- (15.9,1.3);
+\node[tag,anchor=west] at (-0.3,1.05) {SHARED: reduced, signed, reviewed};
+\node[dbox,text width=4.6cm] (li) at (12.4,-0.2) {\textbf{Shared library}\\Neo4j (lineage), Qdrant (index); approved cards only};
+\node[gbox,text width=3.6cm] (b) at (6.0,-0.2) {\textbf{House B}\\diagnostic hint, staged gate on its own data};
+\draw[arr] (hr.south) -- ++(0,-0.2) |- (li.east); \draw[arr] (li)--(b);
+\node[dbox,text width=14.6cm,minimum height=7mm] at (7.55,-1.7) {\textbf{Model promotion:} reproducible bundle, evaluation gate, human approval, shadow validation, rollback \,$\cdot$\, \textbf{Extension:} federated updates grouped by feature schema};
+\end{tikzpicture}
+\caption{Architecture of Goal~4. What leaves a house is a reduced, signed card, never a measurement; what arrives is a hint to be validated locally. Dashed boxes are the Phase 2 design.}
+\end{figure}
+
+\subsection{What is shared, what stays local, and why}
+\begin{table}[!h]
+\small\centering
+\caption{Sharing boundary.}
+\begin{tabularx}{\textwidth}{@{}YlY@{}}
+\toprule
+\hdr \textbf{Item} & \textbf{Shared?} & \textbf{Reason}\\
+\midrule
+Raw voltage, current and power series; per-plug data & no & They reveal the habits of the occupants\\
+Identity, address, precise timestamp & no (time of day only) & Re-identification risk\\
+Anomaly type, affected channels, severity and duration (in buckets) & yes & The useful knowledge, reduced\\
+Numerical signature of the anomaly (standardised, rounded) & yes & Lets another house test the hypothesis on its own data; may reveal the source\\
+Calibration statistics and sensor error models & yes & Lets a new house start well calibrated\\
+Log, operator identities, thresholds, policy & no & Authority stays local; a card can only suggest\\
+Model weights or gradients & no & Federated learning: Phase 2\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{From a verified case to shared knowledge}
+\begin{enumerate}[leftmargin=1.6em]
+\item \textbf{Verified outcome.} A label is never produced by the detector itself: it comes from operator feedback and reviewed evidence.
+\item \textbf{Candidate card.} The outcome is reduced to a minimal card: equipment class, signature, supported checks, result, scope and expiry.
+\item \textbf{Validation.} Origin, label evidence, duplicates and sensitive fields are checked.
+\item \textbf{Human review.} A reviewer approves the sharing scope.
+\item \textbf{Indexing.} Only approved cards enter the shared library: lineage in Neo4j, search in Qdrant, with scope, validity and review status. A revocation blocks retrieval before the index entry is deleted, and the audit references are kept.
+\item \textbf{Use by another house.} The card is a \emph{diagnostic hint}: it never lowers a threshold and never triggers an action, and it is used only after a \textbf{staged gate} on the receiving house's own calibration data.
+\end{enumerate}
+\textbf{Model promotion is separate:} a reproducible bundle (preprocessing, weights, feature schema, calibration), an evaluation gate, human approval, shadow validation before activation, no silent replacement, and a rollback plan. \textbf{Collective defence:} a bias pattern newly seen at one house is proposed to a compatible house as a diagnostic candidate, never as an automatic corrective rule. \textbf{Federated learning} (a federated NILM direction~\cite{fedtp}) is a later extension: houses are grouped by feature schema and equipment, negative transfer is tested, and low-quality or malicious updates are handled~\cite{fedavg}. Federation alone does not guarantee privacy; secure aggregation and differential privacy are separate decisions with a cost in accuracy.
+
+\begin{table}[!h]
+\small\centering
+\caption{Threat model for shared learning.}
+\begin{tabularx}{\textwidth}{@{}YY@{}}
+\toprule
+\hdr \textbf{Threat} & \textbf{Safeguard}\\
+\midrule
+Poisoned card or model update & Reviewed cards only; signed origin; evaluation on held-out data; staged activation and rollback\\
+Re-identification through signatures or embeddings & Data reduction; k-anonymity threshold (planned); pseudonyms alone are not enough\\
+Forged signature or stolen key & HMAC signature~\cite{hmac} with enrolled keys; asymmetric signatures and key rotation (planned)\\
+Negative transfer between different houses & Group by feature schema and equipment; measure the effect before enabling sharing\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\textbf{Phase 1 prototype.} A two-house simulation implements signed cards (about 1.35~KB, 30-day expiry), the ordered checks and the staged gate. Its safety behaviour is as designed: forged signatures rejected (50 of 50), cards from another equipment type refused (0 of 82 accepted), poisoned cards accepted by the checks but not enabled because the gate stayed closed. However, sharing shows no measured gain, and the signatures are not anonymous (the source house is found with 0.73 accuracy against 0.167 by chance): these are limits that Phase 2 addresses.

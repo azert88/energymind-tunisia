@@ -1,0 +1,82 @@
+\section{Data and anomaly-simulation plan}
+\label{sec:data}
+Real grid data labelled with faults is rare, so the brief expects simulation: start from realistic data and inject documented faults~\cite{brief}.
+
+\subsection{The data: what we reviewed and what we chose}
+We reviewed many open datasets. In the end we kept \textbf{WPuQ, AMPds2 and SimBench} to build our published dataset. To develop and test detection we also used the ECO recordings; ECO is not part of the published dataset.
+\begin{table}[!h]
+\small\centering
+\caption{Datasets we kept.}
+\begin{tabularx}{\textwidth}{@{}lYY@{}}
+\toprule
+\hdr \textbf{Source} & \textbf{Content} & \textbf{Use}\\
+\midrule
+WPuQ~\cite{wpuq} & German houses, real three-phase load curves & Load shapes and meter model of the published dataset; one fusion test\\
+AMPds2~\cite{ampds} & One Canadian house, two years, appliances metered one by one & Appliance profiles of the published dataset; second detection domain\\
+SimBench~\cite{simbench} & Simulated low-voltage grids (calculations with pandapower~\cite{pandapower}) & Grid of the published dataset; feeder experiment\\
+ECO~\cite{eco} & 6 Swiss houses, measurements every second & Development and tests of detection only\\
+\bottomrule
+\end{tabularx}
+\end{table}
+Other sources (real UK solar production, STEG statistics, the PVGIS solar resource~\cite{pvgis}) were reviewed and are planned for Phase 2. No dataset is Tunisian. Also, some datasets compute quantities from others (for example apparent power); the matching checks can then never fail. We mark them ``not evaluable'' and never count them as passed.
+
+\subsection{The published dataset}
+\label{sec:dataset}
+The dataset is available on Kaggle: \url{\HFURL}. It is a validated baseline for a neighbourhood of 13 smart-metered houses, with two views of every house: \emph{ground\_truth} (true values from a three-phase grid calculation) and \emph{measured} (what a meter would report, with the gain error and noise of a real WPuQ meter).
+\begin{quote}\small
+\textbf{Important:} no anomaly has been injected into the \emph{measured} view yet. It contains only the normal noise of a meter. The injection, described below, is the next step.
+\end{quote}
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\node[gbox,text width=3.1cm] (s1) at (1.9,2.7) {\textbf{SimBench grid}\\13 houses, 160~kVA};
+\node[gbox,text width=3.1cm] (s2) at (1.9,1.5) {\textbf{WPuQ loads}\\real curves};
+\node[gbox,text width=3.1cm] (s3) at (1.9,0.3) {\textbf{AMPds2 appliances}\\one profile per appliance};
+\node[box,text width=3.5cm] (ad) at (7.2,1.5) {\textbf{Adaptation to Tunisia}\\evening peak +1~h; heating $\to$ air conditioning; Tunis solar};
+\node[hbox,text width=3.3cm] (pf) at (7.2,-0.6) {\textbf{Grid calculation}\\every 15 minutes};
+\node[box,text width=3.1cm] (gt) at (12.9,0.4) {\textbf{ground\_truth}\\true values};
+\node[box,text width=3.1cm] (me) at (12.9,-1.4) {\textbf{measured}\\meter gain and noise, no anomaly};
+\foreach \s in {s1,s2,s3} {\draw[arr] (\s.east) -- (ad.west);}
+\draw[arr] (ad.south) -- (pf.north);
+\draw[arr] (pf.east) -- (gt.west); \draw[arr] (pf.east) -- (me.west);
+\end{tikzpicture}
+\caption{Construction of the published dataset (seeded, one command).}
+\end{figure}
+\begin{table}[!h]
+\small\centering
+\caption{The published dataset at a glance.}
+\begin{tabularx}{\textwidth}{@{}lY@{}}
+\toprule
+\hdr \textbf{Property} & \textbf{Value}\\
+\midrule
+Content & 13 houses, one 160~kVA transformer, one year (2018) every 15 minutes; 32 columns: voltage, current, power and power factor per phase, solar output, power per appliance\\
+Validation & 14 physical checks pass: converging calculations, voltages within $\pm$10\,\% (EN~50160~\cite{en50160}), transformer loading at most 66.6\,\%, energy balances close\\
+Licence and limits & Open Database License~\cite{odbl}; synthetic, a single topology, 2018 calendar\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Anomaly-simulation plan}
+\label{sec:injection}
+The injector (\code{energymind/inject.py}, seeded) adds incidents of three classes. A \textbf{measurement problem} changes only what the meter reports, so physical relations break. A \textbf{real event} changes the state of the grid consistently, so relations hold. A \textbf{benign case} has the same physics as a demand step and stays labelled normal. Three severities (0.3, 0.6, 1.0) scale each effect.
+\begin{table}[!h]
+\small\centering
+\caption{The 16 injected anomaly subtypes, in plain words.}
+\begin{tabularx}{\textwidth}{@{}l l Y l@{}}
+\toprule
+\hdr \textbf{Class} & \textbf{Subtype} & \textbf{Effect} & \textbf{Duration}\\
+\midrule
+Measurement & \code{bias}, \code{drift} & constant offset, or one that grows gradually (up to 8\,\%) & 30--180 min\\
+ & \code{scale}, \code{noise} & reading multiplied by a factor; noise added & 20--120 min\\
+ & \code{frozen}, \code{dropout} & value held; missing data & 10--90 min\\
+ & \code{delay}, \code{replay} & delayed values; values of an earlier day replayed & 30--120 min\\
+ & \code{falsified} & current and powers lowered together, voltage unchanged & 60--180 min\\
+Real event & \code{voltage_sag}, \code{outage} & voltage lowered; almost total loss of supply & 10--120 min\\
+ & \code{demand_step}, \code{duty_cycle}, \code{phase_imbalance} & load rises; square-wave load; unbalanced phases & 30--180 min\\
+Benign & \code{benign_new_load}, \code{benign_pv_ramp} & new appliance; smooth solar variation & 60--180 min\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\textbf{Rules.} The input is never modified; two incidents per day on average; incidents never overlap and stay 60 minutes from split edges; the ground truth never reaches a model or the policy at inference. \textbf{Limits:} events are bounded and revert to normal; \code{falsified}, \code{demand_step} and benign cases can be told apart only by context (time of day, history, a second meter).
+
+\textbf{Current status.} The injector has been run on the real recordings, and the detection of Goal~1 was tested on them. \textbf{Next step (Phase 2):} inject these anomalies into the \emph{measured} view of the published dataset, with their labels, and rerun detection there.

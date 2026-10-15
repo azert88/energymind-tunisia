@@ -1,0 +1,7 @@
+,R_inc_physical,R_inc_load_change,FA_per_day,amb_ratio,benign_event_n,benign_alarm_physical,benign_alarm_measurement_only,benign_unresolved,benign_silent,benign_win_FP
+iforest,1.0,1.0,0.0,,87.0,0.0,1.0,0.0,0.0,1.0
+lgbm,0.6134,0.2414,1.5628,,87.0,0.0,0.2184,0.0,0.7816,0.0177
+iforest+abstain,1.0,1.0,0.0,,87.0,0.0,1.0,0.0,0.0,1.0
+lgbm+abstain,0.4958,0.0517,0.0996,,87.0,0.0,0.0,0.7931,0.2069,0.0
+iforest+benign,1.0,1.0,0.0,0.5,87.0,0.0,1.0,0.0,0.0,1.0
+lgbm+benign,0.479,0.0517,0.0996,0.1,87.0,0.0,0.0,0.7931,0.2069,0.0

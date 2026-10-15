@@ -1,0 +1,184 @@
+% EnergyMind Tunisia - TSYP14 Phase 1 report (Overleaf project, compile with pdfLaTeX)
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.92]{helvet}
+\usepackage{courier}
+\usepackage[a4paper,top=2.4cm,bottom=2.3cm,left=2.2cm,right=2.2cm]{geometry}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{booktabs,tabularx,array,multirow}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage{tocloft}
+\setlength{\cftbeforesecskip}{4pt}\setlength{\cftbeforesubsecskip}{0pt}\renewcommand{\cfttoctitlefont}{\sffamily\Large\bfseries}\renewcommand{\cftaftertoctitle}{\vspace{-0.1em}}\renewcommand{\cftsecfont}{\sffamily\bfseries}\renewcommand{\cftsubsecfont}{\small}\renewcommand{\cftsubsecpagefont}{\small}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz,pgfplots}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,patterns,backgrounds}
+
+\hypersetup{pdftitle={EnergyMind Tunisia - Phase 1 Report},pdfauthor={}}
+\urlstyle{tt}
+\makeatletter\g@addto@macro\UrlBreaks{\do\-\do\_\do\=\do\&\do\?}\makeatother
+\Urlmuskip=0mu plus 2mu\relax
+
+% ---------- layout
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4.6pt plus 1pt}
+\renewcommand{\arraystretch}{1.15}
+\setlist{nosep,leftmargin=1.2em,itemsep=2pt}
+\raggedbottom
+\setcounter{tocdepth}{2}
+\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}\renewcommand{\floatpagefraction}{0.8}
+\setlength{\textfloatsep}{12pt plus 2pt minus 4pt}\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+
+\titleformat{\section}{\sffamily\Large\bfseries}{\thesection}{0.7em}{}[\vspace{-0.1em}\rule{\textwidth}{1.1pt}]
+\titlespacing*{\section}{0pt}{18pt}{9pt}
+\titleformat{\subsection}{\sffamily\large\bfseries}{\thesubsection}{0.6em}{}
+\titlespacing*{\subsection}{0pt}{11pt}{4pt}
+\titleformat{\subsubsection}{\sffamily\normalsize\bfseries}{}{0em}{}
+\titlespacing*{\subsubsection}{0pt}{7pt}{3pt}
+
+\captionsetup{font={small,sf},labelfont=bf,labelsep=period,skip=5pt}
+\captionsetup[table]{position=top,skip=4pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\sffamily\scriptsize EnergyMind Tunisia \,$\cdot$\, Phase 1 Report}
+\fancyhead[R]{\sffamily\scriptsize TSYP14 Technical Challenge}
+\fancyfoot[L]{\sffamily\scriptsize github.com/azert88/energymind-tunisia}
+\fancyfoot[R]{\sffamily\scriptsize\thepage}
+
+\let\oldsection\section
+\renewcommand{\section}{\needspace{9\baselineskip}\oldsection}
+\let\oldsubsection\subsection
+\renewcommand{\subsection}{\needspace{6\baselineskip}\oldsubsection}
+
+% ---------- macros
+\newcommand{\code}[1]{\texttt{\small\detokenize{#1}}}
+\newcommand{\hdr}{\rowcolor{black!12}}
+\newcommand{\goalbadge}[1]{{\sffamily\scriptsize\bfseries\fbox{\,#1\,}}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcommand{\HFURL}{https://www.kaggle.com/datasets/azertyqsdfghqsdfgh/pes-test}
+
+\tikzset{
+  box/.style={draw=black,rounded corners=2pt,align=center,font=\sffamily\scriptsize,inner sep=3pt,fill=white,thick,minimum height=8mm},
+  gbox/.style={box,fill=black!9},
+  hbox/.style={box,fill=black!20,line width=1.1pt},
+  dbox/.style={box,dashed},
+  arr/.style={-{Latex[length=1.8mm]},thick},
+  darr/.style={-{Latex[length=1.8mm]},thick,dashed},
+  barr/.style={{Latex[length=1.8mm]}-{Latex[length=1.8mm]},thick},
+  tag/.style={font=\sffamily\bfseries\fontsize{6.5}{7.5}\selectfont,text=black!70}
+}
+
+\begin{document}
+
+% =============================================================== COVER
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{-0.2cm}
+{\sffamily\scriptsize IEEE TSYP14 \,$\cdot$\, TECHNICAL CHALLENGE \,$\cdot$\, ENERGYMIND TUNISIA}\\[-4pt]
+\rule{\textwidth}{2.2pt}
+\vspace{4.6cm}
+
+{\sffamily\fontsize{46}{50}\selectfont\bfseries EnergyMind\\[4pt] Tunisia}\\[16pt]
+{\itshape\Large A trust layer between raw meter data\\ and automated action}\\[12pt]
+\rule{4.5cm}{0.9pt}\\[16pt]
+{\sffamily\Large\bfseries Phase 1 Report}\\[4pt]
+{\sffamily\large Project proposal: scope, objectives, data and anomaly-simulation plan, preliminary design for each of the four challenge goals}
+
+\vspace{1.4cm}
+{\itshape\small Detect with numerical evidence.\\ Explain with inspectable sources.\\ Act through explicit authority.\\ Learn only from reviewed outcomes.}
+
+\vfill
+{\sffamily\scriptsize\bfseries DATASET (KAGGLE)}\\[1pt]
+{\ttfamily\scriptsize \url{\HFURL}}\\[6pt]
+{\sffamily\scriptsize\bfseries CODE (GITHUB)}\\[1pt]
+{\ttfamily\footnotesize \url{https://github.com/azert88/energymind-tunisia}}\\[8pt]
+\rule{\textwidth}{0.8pt}\\[-2pt]
+{\sffamily\scriptsize Submitted 15 October 2026}\\[1pt]
+{\sffamily\scriptsize\itshape Challenge: Architects of the Energy Noosphere: A Human-AI Collective Intelligence Network for Energy Resilience}
+\end{titlepage}
+
+% =============================================================== SUMMARY
+\section*{Summary}
+\addcontentsline{toc}{section}{Summary}
+Tunisia's electricity system now fails at the peak: in July 2026 demand reached a record 4,924~MW and STEG resorted to rotating load shedding. Meanwhile rooftop solar and smart meters keep spreading, and every new device is a new source of numbers that a fault, a miscalibration or a fraud can corrupt without anyone noticing.
+
+\textbf{EnergyMind Tunisia} is a trust layer placed between meter data and automated action. For each house it \textbf{detects} whether a reading is a measurement problem or a real grid event (Goal~1), \textbf{explains} its decision with a numerical confidence and a tamper-evident log (Goal~2), decides \textbf{what the AI may do alone and what needs a human} (Goal~3), and \textbf{shares} what it learns between houses without sharing raw data (Goal~4).
+
+The Phase 1 prototype is tested on real recordings with injected synthetic faults. We audited our own benchmark, found that it leaked labels, fixed it, and report only the corrected numbers, including the ones that went down.
+
+\begin{table}[!h]
+\small\centering
+\caption*{\textbf{Headline results} (synthetic faults on real data; not field performance)}
+\begin{tabularx}{\textwidth}{@{}Yl@{}}
+\toprule
+\hdr \textbf{Result} & \textbf{Value}\\
+\midrule
+Detector v1 on the training houses: event macro-F1 / false alarms per day & 0.786 / 0.144 \quad(baseline: 0.307 / 7.27)\\
+Two unseen houses; AMPds2 dataset: event macro-F1 & 0.589 and 0.609; 0.724\\
+Confidence calibration error & 0.052\\
+Main limit & recall of three fault types drops; transfer from one dataset to another fails\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection*{What the Phase 1 brief asks, and where to find it}
+\begin{table}[!h]
+\small\centering
+\begin{tabularx}{\textwidth}{@{}Yl@{}}
+\toprule
+\hdr \textbf{Requirement of the brief} & \textbf{Where}\\
+\midrule
+Project proposal: scope; objectives & Sections~\ref{sec:scope} and~\ref{sec:objectives}\\
+Project proposal: data and anomaly-simulation plan & Section~\ref{sec:data}\\
+Preliminary design: global architecture, common to the four goals & Section~\ref{sec:arch}\\
+Preliminary design of Goal~1 (detection), with its evaluation & Section~\ref{sec:goal1}\\
+Preliminary design of Goal~2 (confidence and explainability) & Section~\ref{sec:goal2}\\
+Preliminary design of Goal~3 (human--AI escalation) & Section~\ref{sec:goal3}\\
+Preliminary design of Goal~4 (shared learning) & Section~\ref{sec:goal4}\\
+Repository with dataset and code & Appendix~\ref{app:repo}, links on the cover\\
+Bonus: business scope & Section~\ref{sec:business}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\clearpage
+\tableofcontents
+
+\clearpage
+\input{sections/01_introduction}
+\input{sections/02_scope_objectives}
+\clearpage
+\input{sections/03_data_anomaly_plan}
+\clearpage
+\input{sections/04_architecture}
+\clearpage
+\input{sections/05_goal1_detection}
+\clearpage
+\input{sections/06_goal2_confidence}
+\clearpage
+\input{sections/07_goal3_governance}
+\clearpage
+\input{sections/08_goal4_sharing}
+\clearpage
+\input{sections/09_plan_risks}
+\input{sections/10_business_conclusion}
+\appendix
+\input{sections/11_appendix}
+\input{sections/12_references}
+
+\end{document}

@@ -1,0 +1,40 @@
+\section{Implementation plan and risks}
+\label{sec:plan}
+\textbf{Phase 1 (until 15 October 2026), delivered:} data loaders; a seeded injector and a leakage audit; baseline models and detector v1 with calibration and abstention; rule-backed explanations with SHAP; a deny-by-default policy; a hash-chained log; an operator-interface prototype; the feeder, fusion and sharing experiments; a published dataset; tests and a public repository.
+
+\textbf{Phase 2 (until 12 December 2026), planned,} ending with the full report, the repository with trained models, the demonstration video and the presentation.
+\begin{table}[!h]
+\small\centering
+\caption{Phase 2 roadmap, in priority order.}
+\begin{tabularx}{\textwidth}{@{}rYY@{}}
+\toprule
+\hdr & \textbf{Item} & \textbf{Why}\\
+\midrule
+1 & Inject anomalies into the published dataset and rerun detection there & The published dataset is still anomaly-free\\
+2 & Real meter data and real labelled faults from a pilot (STEG or a partner) & Replaces the synthetic assumption, the largest uncertainty\\
+3 & Per-house adaptation; LIME explanations & Transfer fails; second opinion on explanations\\
+4 & Service layer: ledger (PostgreSQL), graph (Neo4j), case index (Qdrant), interfaces (FastAPI) & Stand-ins are in place\\
+5 & Investigation workflow (LangGraph) and policy engine (OPA), then the operator study with real users & Governance claims are untested\\
+6 & Sharing: harder benefit test, k-anonymity, asymmetric signatures; federated learning last & No benefit shown yet; signatures are not anonymous\\
+7 & Optional extensions (NILM, graph model), kept only if they beat simpler baselines & Avoid unnecessary complexity\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\textbf{Demonstration planned for Phase 2:} replay a real grid event, an isolated meter bias and a coordinated reporting inconsistency, showing for each the evidence, the explanation and the authorisation outcome; include a benign case, an ambiguous case and a denied unsafe request; share one validated lesson between two houses; finish with measured comparisons to baselines.
+
+\begin{table}[!h]
+\small\centering
+\caption{Main risks and mitigations.}
+\begin{tabularx}{\textwidth}{@{}YY@{}}
+\toprule
+\hdr \textbf{Risk} & \textbf{Mitigation}\\
+\midrule
+Synthetic injections do not represent real faults; shortcuts inflate results & Leakage audit, held-out houses and a second dataset; real faults from a pilot\\
+Transfer between houses and datasets fails & Reported openly; per-house adaptation planned\\
+Alarm fatigue; ambiguous cases & False alarms per day reported; unresolved cases routed to a human\\
+Automation over-trust; unsafe action & Deny-by-default policy; human-only mutation; safeguards\\
+Poisoned or identifying shared cards & Signed, reviewed, scoped cards; a gate that fails closed; privacy probe\\
+Small team, short timeline & Single-node core first; scope frozen before the evaluation\\
+\bottomrule
+\end{tabularx}
+\end{table}

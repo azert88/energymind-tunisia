@@ -1,0 +1,76 @@
+{
+ "ampds2_receive": {
+  "accepted": 0,
+  "rejected": {
+   "out of scope (equipment class)": 82,
+   "revoked": 1
+  }
+ },
+ "main_receive": {
+  "accepted": 82,
+  "rejected": {
+   "revoked": 1
+  }
+ },
+ "card_bytes_mean": 1348.4096385542168,
+ "card_bytes_max": 1376,
+ "privacy_lint_violations": 0,
+ "n_cards": 83,
+ "n_review_rejected": 4,
+ "decision_logs_verify": {
+  "sharing_ampds2_log.jsonl": true,
+  "sharing_donor_log.jsonl": true,
+  "sharing_poison_log.jsonl": true,
+  "sharing_recipient_log.jsonl": true
+ },
+ "agg": {
+  "eco_02/local_only": {
+   "seed": 1.0,
+   "n_cards": 91.0,
+   "accepted": 90.0,
+   "fa": 3.0,
+   "fa_per_day": 0.3816,
+   "recall": 0.8655,
+   "recall_correct": 0.8655,
+   "window_fpr": 0.0058,
+   "abstention": 0.0185,
+   "n_inc": 26.6667
+  },
+  "eco_02/shared": {
+   "seed": 1.0,
+   "n_cards": 91.0,
+   "accepted": 90.0,
+   "fa": 3.0,
+   "fa_per_day": 0.3816,
+   "recall": 0.8655,
+   "recall_correct": 0.8655,
+   "window_fpr": 0.0058,
+   "abstention": 0.0185,
+   "n_inc": 26.6667
+  },
+  "eco_04/local_only": {
+   "seed": 0.0,
+   "n_cards": 83.0,
+   "accepted": 82.0,
+   "fa": 12.0,
+   "fa_per_day": 1.6206,
+   "recall": 0.8529,
+   "recall_correct": 0.8529,
+   "window_fpr": 0.009,
+   "abstention": 0.038,
+   "n_inc": 34.0
+  },
+  "eco_04/shared": {
+   "seed": 0.0,
+   "n_cards": 83.0,
+   "accepted": 82.0,
+   "fa": 12.0,
+   "fa_per_day": 1.6206,
+   "recall": 0.8529,
+   "recall_correct": 0.8529,
+   "window_fpr": 0.009,
+   "abstention": 0.038,
+   "n_inc": 34.0
+  }
+ }
+}

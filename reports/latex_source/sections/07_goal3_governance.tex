@@ -1,0 +1,88 @@
+\section{Goal 3: human--AI escalation and governance}
+\label{sec:goal3}
+\goalbadge{GOAL 3} The system must define what the AI can do on its own and when a human must decide: thresholds for automatic corrective actions, situations requiring approval, an operator interface for review, override or approval, and a treatment of over- and under-trust~\cite{brief}.
+
+\subsection{Architecture of Goal 3}
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\node[gbox,text width=3.0cm] (v) at (1.7,2.6) {\textbf{Verdict}\\confidence, evidence (Goals 1--2)};
+\node[dbox,text width=3.0cm] (ic) at (5.6,2.6) {\textbf{Incident coordinator}\\versioned incidents, conflicts kept};
+\node[dbox,text width=3.0cm] (bi) at (9.5,2.6) {\textbf{Bounded investigation}\\LangGraph, at most three approved checks};
+\node[dbox,text width=3.0cm] (tg) at (13.4,2.6) {\textbf{Typed tool gateway}\\context, evidence, checks, retrieval};
+\draw[arr] (v)--(ic); \draw[arr] (ic)--(bi); \draw[arr] (bi)--(tg);
+\node[gbox,text width=3.0cm] (pr) at (13.4,0.5) {\textbf{Structured proposal}\\action, evidence ids, reason};
+\node[hbox,text width=3.0cm] (po) at (9.5,0.5) {\textbf{Policy gateway}\\policy file now, OPA later; deny by default};
+\node[gbox,text width=3.0cm] (hu) at (5.6,0.5) {\textbf{Human checkpoint}\\approve, reject, override with a reason};
+\node[dbox,text width=3.0cm] (ex) at (1.7,0.5) {\textbf{Executor}\\idempotent; rechecks preconditions};
+\draw[arr] (tg)--(pr); \draw[arr] (pr)--(po); \draw[arr] (po)--(hu); \draw[arr] (hu)--(ex);
+\node[box,dashed,text width=15.2cm,minimum height=7mm] at (7.55,-1.0) {Automatic data actions only: flag, quarantine, advisory estimate \,$\cdot$\, physical control stays in a sandbox \,$\cdot$\, every step in the hash-chained log};
+\end{tikzpicture}
+\caption{Architecture of Goal~3. The model proposes; an independent policy decides who may act; an approval is tied to the exact action and evidence version. Dashed boxes are the Phase 2 design.}
+\end{figure}
+
+\subsection{Durable investigation state and tool boundaries (Phase 2)}
+Instead of unrestricted agents, one durable workflow with specialist roles (investigation, network, retrieval, explanation, knowledge curation) moves each incident through fixed states~\cite{langgraph}:
+\begin{table}[!h]
+\small\centering
+\caption{States of the investigation workflow.}
+\begin{tabularx}{\textwidth}{@{}lY@{}}
+\toprule
+\hdr \textbf{State} & \textbf{What happens}\\
+\midrule
+Evidence received & Schema, hash, scope and freshness are validated\\
+Investigating & Reads scoped context and requests at most three approved checks; on deadline or missing evidence, the incident stays unresolved\\
+Retrieving & Looks up authorised, reviewed cases only\\
+Proposing & Writes a structured proposal: verdict, affected assets, evidence and contradiction ids, recommended check, proposed action, escalation reason; the numerical confidence is copied from the calibration service, never written by the agent\\
+Policy evaluated & The policy decides which authority applies\\
+Awaiting approval & Paused with the action hash and the evidence version\\
+Executed or closed & Idempotent execution; no silent retry of a physical action\\
+\bottomrule
+\end{tabularx}
+\end{table}
+The agent can only call narrow typed tools (get asset context, get evidence, run a supported check, simulate a bounded hypothesis, retrieve cases, propose an action); there are no arbitrary queries, scripts or device commands, and a model's self-confidence, a retrieval rank or an attention weight can never grant authority.
+
+\subsection{Security policy and action authority}
+The table below lists who may do what; the paragraph after it explains how this is enforced.
+\begin{table}[!h]
+\small\centering
+\caption{Action authority. The Phase 1 policy file implements the first four rows with the confidence thresholds shown; the rest is the Phase 2 design.}
+\begin{tabularx}{\textwidth}{@{}lYY@{}}
+\toprule
+\hdr \textbf{Action} & \textbf{Authority} & \textbf{Required guard}\\
+\midrule
+Flag a reading & The AI alone, any verdict & Raw value kept; reversible\\
+Replacement estimate & The AI alone, confidence $\ge$ 0.70 & Quality flag, expiry, separate channel\\
+Quarantine a channel & The AI alone, confidence $\ge$ 0.90 and two independent sources & Reversible; no shift flag\\
+Request an inspection & A human & Real events, unresolved cases\\
+Recalibrate a meter & Human only & Evidence, scoped approval, rollback\\
+Switch, isolate or shed a load & Human only; sandbox in the prototype & Exact authorisation, fresh preconditions\\
+Promote a model or a shared rule & Human only & Evaluation gate, signed version, rollback\\
+Any other action & Denied & Deny by default\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\textbf{Enforcement is independent of any prompt.} Each request carries the identity, the asset scope, the incident version, the action hash, the evidence freshness and an expiry. The approval is tied to that hash and version, so a changed action or a newer incident version needs a new approval. Preconditions are rechecked just before execution; replayed or expired requests are rejected; and idempotency keys prevent repeated execution. If the policy service is unavailable or a permission is undefined, nothing is executed but monitoring continues. Retrieved procedures and incident notes are \emph{untrusted data} and cannot grant permissions; models and policies are pinned by version and never silently replaced. \textbf{Over-trust:} a high confidence is not enough for automatic action if the data look unusual or the evidence comes from a single meter. \textbf{Under-trust:} several low-confidence detections on one channel are passed to a human.
+
+\subsection{One incident through the complete stack}
+\begin{table}[!h]
+\small\centering
+\caption{Illustrative trace of one incident (identifiers are examples, not measured results).}
+\begin{tabularx}{\textwidth}{@{}lYY@{}}
+\toprule
+\hdr \textbf{Step} & \textbf{Record} & \textbf{Meaning}\\
+\midrule
+Committed input & Window W44 with its hash & The data exist before the window is published\\
+Local evidence & Model run M3, evidence E92 & Checks and detector outputs keep their lineage\\
+Grid context & Grid snapshot G44, feeder evidence E93 & Independent context from the feeder\\
+Incident & I17, version 3 & Physical and reporting causes both open\\
+Explanation & X17 & Attribution plus supported residuals\\
+Proposal and policy & Action hash H17, decision D17 & The request is tied to scope and version\\
+Approval and execution & A17, execution J17 & The executor rechecks the exact preconditions\\
+Reviewed outcome & Case C17 & A verified cause is reviewed before any sharing\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\textbf{Example.} House H12 reports a low voltage while demand and upstream observations stay normal. A service fault and a sensor bias both remain possible: the system flags the suspicious readings and requests an inspection, but denies an automatic recalibration. If late evidence creates version~4, the approval given for version~3 cannot authorise a changed action, and the earlier decision stays reproducible. If retrieval or text writing fails, templates are used and stale context is marked incomplete.
+
+\textbf{Operator interface and Phase 1 prototype.} The Streamlit prototype lists unresolved items first and shows, for each incident, the verdict, the competing hypotheses, the physics checks (derived checks shown separately, neither passed nor failed), the proposed action with scope, expiry and rollback, and four controls: approve, reject, override, request more evidence. The policy file, its unit tests (routing, deny by default, safeguards, tied approvals), the hash-chained log and this interface exist; no study with real operators has been done yet.

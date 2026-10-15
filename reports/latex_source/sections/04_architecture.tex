@@ -1,0 +1,98 @@
+\section{Global architecture}
+\label{sec:arch}
+The system is built around \textbf{one node = one house}. Each node contains the trust layer, which receives the meter's measurements, analyses them, takes a decision and can share a lesson with other houses. Services above the nodes (a feeder service and a city coordinator) group houses by feeder and route incidents; the neighbourhood only defines scope. Figure~\ref{fig:arch-simple} is the simple view; Figure~\ref{fig:arch-detail} adds the services and the tools of the target design.
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\node[box,text width=1.6cm] (src) at (0.9,1.2) {house meter};
+\node[box,text width=1.6cm] (act) at (15.4,1.2) {automated action or human decision};
+\node[draw=black,thick,rounded corners=3pt,fill=black!6,minimum width=11.2cm,minimum height=3.3cm] (tl) at (8.15,1.2) {};
+\node[font=\sffamily\bfseries\footnotesize] at (8.15,2.55) {TRUST LAYER (one node = one house)};
+\node[gbox,text width=2.3cm] (m1) at (4.0,1.0) {\textbf{1~~Detect}\\physics checks, LightGBM};
+\node[gbox,text width=2.3cm] (m2) at (6.7,1.0) {\textbf{2~~Explain}\\confidence, SHAP, LIME, log};
+\node[hbox,text width=2.3cm] (m3) at (9.4,1.0) {\textbf{3~~Decide}\\policy, auto or human};
+\node[gbox,text width=2.3cm] (m4) at (12.1,1.0) {\textbf{4~~Share}\\signed case cards};
+\draw[arr] (m1)--(m2); \draw[arr] (m2)--(m3); \draw[arr] (m3)--(m4);
+\draw[arr] (src) -- (tl.west |- src); \draw[arr] (tl.east |- act) -- (act);
+\node[box,text width=3.0cm] (op) at (9.4,-1.7) {\textbf{Operator}\\approve, reject, override};
+\node[box,text width=3.0cm] (ot) at (12.6,-1.7) {\textbf{Other houses}\\signed case cards};
+\node[dbox,text width=4.6cm] (kn) at (4.9,-1.7) {\textbf{Knowledge} (Phase 2)\\Neo4j: grid and evidence\\Qdrant: similar past cases};
+\draw[barr] (op.north) -- (op.north |- tl.south);
+\draw[barr] (ot.north |- tl.south) -- (ot.north);
+\draw[darr] (kn.north) -- (kn.north |- tl.south);
+\end{tikzpicture}
+\caption{Simple view of the architecture. Solid boxes: Phase 1 prototype. Dashed boxes: Phase 2 design.}
+\label{fig:arch-simple}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\node[tag,anchor=west] at (-0.3,4.4) {1  DATA AND ANALYSIS};
+\node[gbox,text width=3.0cm] (src) at (1.7,3.45) {\textbf{House meters}\\dataset replay; MQTT gateways where needed};
+\node[dbox,text width=3.0cm] (ing) at (5.6,3.45) {\textbf{Ingestion}\\Python adapters, FastAPI, durable queue};
+\node[gbox,text width=3.0cm] (loc) at (9.5,3.45) {\textbf{Local analysis}\\physics checks, LightGBM, SHAP};
+\node[gbox,text width=3.0cm] (fed) at (13.4,3.45) {\textbf{Feeder service}\\pandapower; graph model (phase 2)};
+\draw[arr] (src)--(ing); \draw[arr] (ing)--(loc); \draw[arr] (loc)--(fed);
+\node[tag,anchor=west] at (-0.3,2.25) {2  RECORDS AND KNOWLEDGE};
+\node[gbox,text width=3.0cm] (art) at (1.7,1.35) {\textbf{Artifact store}\\Parquet files, content hashes};
+\node[dbox,text width=3.0cm] (led) at (5.6,1.35) {\textbf{Ledger}\\PostgreSQL: incidents, approvals};
+\node[dbox,text width=3.0cm] (gr) at (9.5,1.35) {\textbf{Evidence graph}\\Neo4j: approved grid, lineage};
+\node[dbox,text width=3.0cm] (cc) at (13.4,1.35) {\textbf{City coordinator}\\incident scope, conflicts};
+\draw[darr] (ing.south west) -- (art.north east); \draw[darr] (ing.south)--(led.north); \draw[darr] (loc.south)--(gr.north); \draw[arr] (fed.south)--(cc.north);
+\node[tag,anchor=west] at (-0.3,0.15) {3  DECISIONS AND AUTHORITY};
+\node[dbox,text width=3.0cm] (ret) at (13.4,-0.75) {\textbf{GraphRAG retrieval}\\Neo4j scope + Qdrant cases};
+\node[dbox,text width=3.0cm] (inv) at (9.5,-0.75) {\textbf{Bounded investigation}\\LangGraph, typed tools};
+\node[hbox,text width=3.0cm] (pol) at (5.6,-0.75) {\textbf{Policy gateway}\\policy file now, OPA later};
+\node[gbox,text width=3.0cm] (op) at (1.7,-0.75) {\textbf{Operator interface}\\Streamlit now, web UI later};
+\draw[arr] (cc.south)--(ret.north); \draw[darr] (ret)--(inv); \draw[arr] (inv)--(pol); \draw[arr] (pol)--(op);
+\node[box,dashed,text width=15.2cm,minimum height=7mm] at (7.55,-2.25) {\textbf{Goal 4:} reviewed case cards and model bundles shared between houses through the same policy \,$\cdot$\, \textbf{Decision log:} hash-chained, replayable};
+\end{tikzpicture}
+\caption{Detailed view: services and tools. Solid boxes exist in the Phase 1 prototype (the feeder is an experiment, not wired into the node pipeline); dashed boxes are the Phase 2 design.}
+\label{fig:arch-detail}
+\end{figure}
+
+\begin{table}[!h]
+\small\centering
+\caption{Components, tools and status. We start with the smallest set and add a tool only when a measured need justifies it.}
+\begin{tabularx}{\textwidth}{@{}lYYl@{}}
+\toprule
+\hdr \textbf{Component} & \textbf{Target tool, and why} & \textbf{Phase 1 stand-in} & \textbf{Phase}\\
+\midrule
+Data and numerics & Python, pandas, Parquet: simple, reproducible & Same & 1\\
+Grid physics & pandapower, SimBench: open source, standard for distribution grids & Same & 1\\
+Detection & LightGBM, scikit-learn (PyTorch for one baseline): fast and accurate on tabular data & Same & 1\\
+Explanations & SHAP (exact for trees) and LIME (model-independent second opinion): named by the brief & SHAP only & 1, 2\\
+Operator interface & Streamlit now; an authenticated web interface later & Streamlit prototype & 1, 2\\
+Service interfaces & FastAPI: typed, versioned messages & Scripts & 2\\
+Operational ledger & PostgreSQL: incidents, approvals, pending events & Hash-chained JSONL log & 2\\
+Grid and evidence graph & Neo4j: ``who is connected to whom'' is a graph~\cite{neo4jrag} & pandapower network & 2\\
+Past-case search & Qdrant: fast similarity search with filters~\cite{qdrant} & JSON cards, nearest neighbour & 2\\
+Investigation workflow & LangGraph: durable states, human checkpoints~\cite{langgraph} & None & 2\\
+Policy engine & OPA: rules kept outside the code~\cite{opa} & Policy file (YAML) & 2\\
+Packaging & Docker Compose on one workstation; a message broker only at city scale & Virtual environment & 2\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{Four rules hold everywhere.} (1) No language model on the detection path. (2) Detection continues even if retrieval or text writing fails. (3) Every explanation has a template fallback. (4) The authority to act comes from a policy that no model output can override.
+
+\textbf{From a measurement to committed evidence.} An adapter validates the schema, units, phase and timestamps of a measurement and keeps the raw bytes by content hash; normalisation never overwrites the source. A window builder writes a versioned manifest, and the object, the manifest and a pending event are committed together, so an event is published only once the window is ready. Late data creates a new evidence version, never an edit of a decision's inputs. A projection worker then writes typed projections into \textbf{Neo4j} (grid, evidence, lineage) through parameterised transactions; no sample is stored as a graph node, and a language model cannot invent assets or arbitrary queries. Every observation carries a lineage identifier, so five residuals computed from one meter do not count as five confirmations. A \textbf{replay trace} links one incident end to end (Section~\ref{sec:goal3}).
+
+\textbf{Interfaces and events.} Services exchange typed, versioned messages; mutations carry an idempotency key, long jobs return a job identifier, and an unsupported check is a typed result, never a hidden failure.
+\begin{table}[!h]
+\small\centering
+\caption{Main events of the target design.}
+\begin{tabularx}{\textwidth}{@{}lYY@{}}
+\toprule
+\hdr \textbf{Event} & \textbf{Consumers} & \textbf{Rule}\\
+\midrule
+\texttt{measurement.window.ready} & Local analysis & Artifact and manifest committed; no labels\\
+\texttt{local.evidence.ready} & Feeder service, graph projection & Check results with exact model and grid versions\\
+\texttt{incident.updated} & Investigation, interface & Monotonic incident version; contradictions kept\\
+\texttt{decision.recorded} & Interface, executor, audit & Independent policy and action authority\\
+\texttt{case.approved}, \texttt{case.revoked} & Graph and vector indexers & The review scope is authoritative\\
+\bottomrule
+\end{tabularx}
+\end{table}

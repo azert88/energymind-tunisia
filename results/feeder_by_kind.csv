@@ -1,0 +1,89 @@
+test,variant,kind,n,pred_normal,pred_meas,pred_phys,unresolved
+test_same_feeder,A_local,normal,960,0.9114583333333334,0.0,0.00625,0.08229166666666667
+test_same_feeder,A_local,bias,480,0.725,0.16458333333333333,0.008333333333333333,0.10208333333333333
+test_same_feeder,A_local,drift,480,0.7145833333333333,0.16458333333333333,0.010416666666666666,0.11041666666666666
+test_same_feeder,A_local,frozen,480,0.7625,0.1625,0.004166666666666667,0.07083333333333333
+test_same_feeder,A_local,replay,480,0.7708333333333334,0.1125,0.022916666666666665,0.09375
+test_same_feeder,A_local,sag,480,0.0,0.0,1.0,0.0
+test_same_feeder,A_local,demand_step,480,0.3458333333333333,0.008333333333333333,0.35,0.29583333333333334
+test_same_feeder,A_local,line_open,480,0.8958333333333334,0.0020833333333333333,0.0020833333333333333,0.1
+test_same_feeder,A_local,benign_load,480,0.8229166666666666,0.0,0.03125,0.14583333333333334
+test_same_feeder,A_local,benign_pv,480,0.90625,0.0,0.004166666666666667,0.08958333333333333
+test_same_feeder,A_local,common_shift,480,0.7979166666666667,0.0,0.03125,0.17083333333333334
+test_same_feeder,B_local+neighbours (no upstream),normal,960,0.9572916666666667,0.0,0.00625,0.036458333333333336
+test_same_feeder,B_local+neighbours (no upstream),bias,480,0.8166666666666667,0.16666666666666666,0.0,0.016666666666666666
+test_same_feeder,B_local+neighbours (no upstream),drift,480,0.8333333333333334,0.16666666666666666,0.0,0.0
+test_same_feeder,B_local+neighbours (no upstream),frozen,480,0.80625,0.1625,0.0,0.03125
+test_same_feeder,B_local+neighbours (no upstream),replay,480,0.8416666666666667,0.12708333333333333,0.0020833333333333333,0.029166666666666667
+test_same_feeder,B_local+neighbours (no upstream),sag,480,0.0,0.0,1.0,0.0
+test_same_feeder,B_local+neighbours (no upstream),demand_step,480,0.3729166666666667,0.0020833333333333333,0.42291666666666666,0.20208333333333334
+test_same_feeder,B_local+neighbours (no upstream),line_open,480,0.9270833333333334,0.0,0.01875,0.05416666666666667
+test_same_feeder,B_local+neighbours (no upstream),benign_load,480,0.9020833333333333,0.0,0.0125,0.08541666666666667
+test_same_feeder,B_local+neighbours (no upstream),benign_pv,480,0.93125,0.0,0.0125,0.05625
+test_same_feeder,B_local+neighbours (no upstream),common_shift,480,0.8625,0.0,0.01875,0.11875
+test_same_feeder,C_local+neighbours+upstream,normal,960,0.9802083333333333,0.0,0.0020833333333333333,0.017708333333333333
+test_same_feeder,C_local+neighbours+upstream,bias,480,0.8333333333333334,0.16666666666666666,0.0,0.0
+test_same_feeder,C_local+neighbours+upstream,drift,480,0.83125,0.16666666666666666,0.0,0.0020833333333333333
+test_same_feeder,C_local+neighbours+upstream,frozen,480,0.8125,0.1625,0.0,0.025
+test_same_feeder,C_local+neighbours+upstream,replay,480,0.8520833333333333,0.13333333333333333,0.0,0.014583333333333334
+test_same_feeder,C_local+neighbours+upstream,sag,480,0.0,0.0,1.0,0.0
+test_same_feeder,C_local+neighbours+upstream,demand_step,480,0.3541666666666667,0.0,0.39791666666666664,0.24791666666666667
+test_same_feeder,C_local+neighbours+upstream,line_open,480,0.9375,0.0,0.025,0.0375
+test_same_feeder,C_local+neighbours+upstream,benign_load,480,0.9625,0.0,0.0125,0.025
+test_same_feeder,C_local+neighbours+upstream,benign_pv,480,0.95,0.0,0.008333333333333333,0.041666666666666664
+test_same_feeder,C_local+neighbours+upstream,common_shift,480,0.8645833333333334,0.0,0.008333333333333333,0.12708333333333333
+test_same_feeder,D_C_trained_upstream_masked_at_test,normal,960,0.9770833333333333,0.0,0.0020833333333333333,0.020833333333333332
+test_same_feeder,D_C_trained_upstream_masked_at_test,bias,480,0.8333333333333334,0.16666666666666666,0.0,0.0
+test_same_feeder,D_C_trained_upstream_masked_at_test,drift,480,0.83125,0.16666666666666666,0.0,0.0020833333333333333
+test_same_feeder,D_C_trained_upstream_masked_at_test,frozen,480,0.8145833333333333,0.1625,0.0,0.022916666666666665
+test_same_feeder,D_C_trained_upstream_masked_at_test,replay,480,0.85625,0.13333333333333333,0.0,0.010416666666666666
+test_same_feeder,D_C_trained_upstream_masked_at_test,sag,480,0.0,0.0,1.0,0.0
+test_same_feeder,D_C_trained_upstream_masked_at_test,demand_step,480,0.6145833333333334,0.00625,0.11041666666666666,0.26875
+test_same_feeder,D_C_trained_upstream_masked_at_test,line_open,480,0.9458333333333333,0.0020833333333333333,0.00625,0.04583333333333333
+test_same_feeder,D_C_trained_upstream_masked_at_test,benign_load,480,0.9729166666666667,0.0,0.0,0.027083333333333334
+test_same_feeder,D_C_trained_upstream_masked_at_test,benign_pv,480,0.9333333333333333,0.0,0.0020833333333333333,0.06458333333333334
+test_same_feeder,D_C_trained_upstream_masked_at_test,common_shift,480,0.9416666666666667,0.0020833333333333333,0.0,0.05625
+test_other_feeder,A_local,normal,960,0.9197916666666667,0.0,0.008333333333333333,0.071875
+test_other_feeder,A_local,bias,480,0.7541666666666667,0.16666666666666666,0.00625,0.07291666666666667
+test_other_feeder,A_local,drift,480,0.7729166666666667,0.16458333333333333,0.0020833333333333333,0.06041666666666667
+test_other_feeder,A_local,frozen,480,0.7354166666666667,0.15833333333333333,0.010416666666666666,0.09583333333333334
+test_other_feeder,A_local,replay,480,0.7958333333333333,0.10208333333333333,0.010416666666666666,0.09166666666666666
+test_other_feeder,A_local,sag,480,0.0,0.0,1.0,0.0
+test_other_feeder,A_local,demand_step,480,0.325,0.0020833333333333333,0.35,0.3229166666666667
+test_other_feeder,A_local,line_open,480,0.8875,0.0,0.014583333333333334,0.09791666666666667
+test_other_feeder,A_local,benign_load,480,0.74375,0.0,0.05625,0.2
+test_other_feeder,A_local,benign_pv,480,0.9208333333333333,0.0,0.0,0.07916666666666666
+test_other_feeder,A_local,common_shift,480,0.85,0.0,0.03125,0.11875
+test_other_feeder,B_local+neighbours (no upstream),normal,960,0.946875,0.0,0.0010416666666666667,0.052083333333333336
+test_other_feeder,B_local+neighbours (no upstream),bias,480,0.83125,0.16666666666666666,0.0,0.0020833333333333333
+test_other_feeder,B_local+neighbours (no upstream),drift,480,0.8291666666666667,0.16666666666666666,0.0,0.004166666666666667
+test_other_feeder,B_local+neighbours (no upstream),frozen,480,0.7916666666666666,0.15833333333333333,0.0020833333333333333,0.04791666666666667
+test_other_feeder,B_local+neighbours (no upstream),replay,480,0.8520833333333333,0.12291666666666666,0.0,0.025
+test_other_feeder,B_local+neighbours (no upstream),sag,480,0.0,0.0,1.0,0.0
+test_other_feeder,B_local+neighbours (no upstream),demand_step,480,0.35208333333333336,0.0020833333333333333,0.46041666666666664,0.18541666666666667
+test_other_feeder,B_local+neighbours (no upstream),line_open,480,0.925,0.0,0.0125,0.0625
+test_other_feeder,B_local+neighbours (no upstream),benign_load,480,0.8666666666666667,0.0,0.052083333333333336,0.08125
+test_other_feeder,B_local+neighbours (no upstream),benign_pv,480,0.9395833333333333,0.0,0.0020833333333333333,0.058333333333333334
+test_other_feeder,B_local+neighbours (no upstream),common_shift,480,0.9125,0.0020833333333333333,0.04375,0.041666666666666664
+test_other_feeder,C_local+neighbours+upstream,normal,960,0.96875,0.0,0.0,0.03125
+test_other_feeder,C_local+neighbours+upstream,bias,480,0.8333333333333334,0.16666666666666666,0.0,0.0
+test_other_feeder,C_local+neighbours+upstream,drift,480,0.8333333333333334,0.16666666666666666,0.0,0.0
+test_other_feeder,C_local+neighbours+upstream,frozen,480,0.81875,0.15833333333333333,0.0,0.022916666666666665
+test_other_feeder,C_local+neighbours+upstream,replay,480,0.8520833333333333,0.125,0.0,0.022916666666666665
+test_other_feeder,C_local+neighbours+upstream,sag,480,0.0,0.0,1.0,0.0
+test_other_feeder,C_local+neighbours+upstream,demand_step,480,0.3104166666666667,0.0,0.50625,0.18333333333333332
+test_other_feeder,C_local+neighbours+upstream,line_open,480,0.9354166666666667,0.0,0.0125,0.052083333333333336
+test_other_feeder,C_local+neighbours+upstream,benign_load,480,0.9020833333333333,0.0,0.03125,0.06666666666666667
+test_other_feeder,C_local+neighbours+upstream,benign_pv,480,0.9583333333333334,0.0,0.0020833333333333333,0.03958333333333333
+test_other_feeder,C_local+neighbours+upstream,common_shift,480,0.9166666666666666,0.0020833333333333333,0.03333333333333333,0.04791666666666667
+test_other_feeder,D_C_trained_upstream_masked_at_test,normal,960,0.9822916666666667,0.0,0.0,0.017708333333333333
+test_other_feeder,D_C_trained_upstream_masked_at_test,bias,480,0.8333333333333334,0.16666666666666666,0.0,0.0
+test_other_feeder,D_C_trained_upstream_masked_at_test,drift,480,0.8333333333333334,0.16666666666666666,0.0,0.0
+test_other_feeder,D_C_trained_upstream_masked_at_test,frozen,480,0.8125,0.15833333333333333,0.0,0.029166666666666667
+test_other_feeder,D_C_trained_upstream_masked_at_test,replay,480,0.8520833333333333,0.125,0.0,0.022916666666666665
+test_other_feeder,D_C_trained_upstream_masked_at_test,sag,480,0.0,0.0,1.0,0.0
+test_other_feeder,D_C_trained_upstream_masked_at_test,demand_step,480,0.5583333333333333,0.0125,0.08958333333333333,0.33958333333333335
+test_other_feeder,D_C_trained_upstream_masked_at_test,line_open,480,0.9416666666666667,0.0,0.0,0.058333333333333334
+test_other_feeder,D_C_trained_upstream_masked_at_test,benign_load,480,0.9375,0.0020833333333333333,0.0,0.06041666666666667
+test_other_feeder,D_C_trained_upstream_masked_at_test,benign_pv,480,0.9458333333333333,0.0,0.0,0.05416666666666667
+test_other_feeder,D_C_trained_upstream_masked_at_test,common_shift,480,0.9270833333333334,0.0020833333333333333,0.0,0.07083333333333333

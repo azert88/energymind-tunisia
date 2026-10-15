@@ -1,0 +1,68 @@
+scenario,family,method,event_macro_F1,event_macro_F1_wo_infolimited,meas_P,meas_R,meas_F1,phys_P,phys_R,phys_F1,dete_P,dete_R,FA_per_day,win_macroF1,win_macroF1_noedge,normal_win_FPR,ECE,unresolved
+inhouse_test,IMPROVE (run_improve.py),IMPROVE (final),0.7857,0.851,0.8428,0.7718,0.8057,0.9739,0.6307,0.7656,0.9157,0.7386,0.1437,0.7267,0.7316,0.0036,0.0515,0.0
+inhouse_test,"IMPROVE ablation (single LightGBM, no T)","B3_v2_aug5, tuned decision",0.7707,,0.7549,0.7801,0.7673,0.9746,0.642,0.7741,0.8464,0.7434,0.2824,0.7345,0.7425,0.0069,,
+inhouse_test,"IMPROVE ablation (single LightGBM, no T)","B4_base_aug5, tuned decision",0.758,,0.7845,0.7303,0.7564,0.9297,0.642,0.7595,0.8611,0.717,0.2478,0.7093,0.7143,0.005,,
+inhouse_test,"IMPROVE ablation (single LightGBM, no T)","B1_v2_s0, tuned decision",0.7514,,0.8814,0.6846,0.7707,0.9474,0.5966,0.7321,0.961,0.6882,0.0595,0.6818,0.6858,0.0022,,
+inhouse_test,"IMPROVE ablation (single LightGBM, no T)","B0_base_s0, tuned decision",0.7236,,0.6973,0.7261,0.7114,0.9316,0.608,0.7358,0.8069,0.7098,0.3617,0.6896,0.6953,0.0072,,
+inhouse_test,"IMPROVE ablation (single LightGBM, no T)","B1_v2_s0, argmax",0.5937,,0.4818,0.7676,0.592,0.5468,0.6534,0.5954,0.5571,0.7962,1.2883,0.7124,0.7283,0.0201,,
+inhouse_test,"IMPROVE ablation (single LightGBM, no T)","B0_base_s0, argmax",0.5695,,0.3785,0.7967,0.5132,0.6054,0.6477,0.6259,0.4904,0.8058,1.7145,0.7065,0.7242,0.0255,,
+inhouse_test,existing (run_experiments.py),lgbm+abstain,0.5416,0.5587,0.3667,0.7676,0.4963,0.5219,0.6705,0.5869,0.4663,0.7986,1.9226,0.5698,0.5865,0.0332,0.0757,0.4669
+inhouse_test,existing (run_experiments.py),lgbm_no_frozen_missing+abstain,0.5255,0.5405,0.3577,0.7593,0.4863,0.4877,0.6705,0.5647,0.4533,0.7962,2.0316,0.5741,0.5911,0.0353,0.0716,0.4362
+inhouse_test,IMPROVE (run_improve.py),"IMPROVE model, argmax",0.4056,0.3947,0.2984,0.8672,0.444,0.2392,0.7898,0.3672,0.3079,0.9209,4.4546,0.6765,0.6914,0.0596,0.0515,0.0
+inhouse_test,"IMPROVE ablation (single LightGBM, no T)","B3_v2_aug5, argmax",0.3579,,0.2525,0.8714,0.3915,0.2052,0.7727,0.3243,0.2655,0.9305,5.4704,0.6583,0.6724,0.069,,
+inhouse_test,existing (run_experiments.py),lgbm_no_physics+abstain,0.3394,0.3299,0.1821,0.7759,0.2949,0.2997,0.5341,0.3839,0.2562,0.7914,5.2375,0.4463,0.4532,0.0715,0.0929,0.4892
+inhouse_test,"IMPROVE ablation (single LightGBM, no T)","B4_base_aug5, argmax",0.3212,,0.2026,0.888,0.33,0.1924,0.8295,0.3124,0.2317,0.9712,7.2642,0.6349,0.6492,0.0889,,
+inhouse_test,existing (run_experiments.py),lgbm,0.3074,0.295,0.2422,0.7967,0.3715,0.1436,0.7955,0.2433,0.2237,0.9305,7.2741,0.5663,0.5786,0.1301,0.0757,0.0
+inhouse_test,existing (run_experiments.py),lgbm_no_frozen_missing,0.2916,0.2775,0.2248,0.7635,0.3473,0.1386,0.7898,0.2358,0.2122,0.9185,7.5218,0.5629,0.5754,0.1315,0.0716,0.0
+inhouse_test,existing (run_experiments.py),iforest+abstain,0.2819,0.2734,0.1981,0.6805,0.3068,0.171,0.517,0.257,0.2709,0.8345,4.9749,0.4334,0.4422,0.1225,0.2229,0.2753
+inhouse_test,existing (run_experiments.py),ocsvm+abstain,0.2719,0.2555,0.2049,0.6888,0.3159,0.1444,0.5398,0.2278,0.2527,0.8633,5.743,0.4135,0.422,0.1267,0.208,0.3426
+inhouse_test,existing (run_experiments.py),stat,0.2654,0.2556,0.2376,0.6224,0.3439,0.1107,0.6023,0.187,0.2368,0.9017,6.3871,0.4364,0.4435,0.2467,0.4584,0.0
+inhouse_test,existing (run_experiments.py),stat+abstain,0.2642,0.2538,0.2327,0.6266,0.3394,0.1121,0.6023,0.189,0.2333,0.8945,6.3822,0.4365,0.4439,0.2368,0.4584,0.0224
+inhouse_test,existing (run_experiments.py),lgbm_no_physics,0.2336,0.2156,0.1377,0.8589,0.2373,0.1424,0.5966,0.2299,0.1907,0.9424,10.1332,0.4526,0.4571,0.2265,0.0929,0.0
+inhouse_test,existing (run_experiments.py),ocsvm,0.2313,0.2135,0.1912,0.6722,0.2977,0.094,0.6761,0.165,0.1886,0.952,9.826,0.4359,0.4424,0.2495,0.208,0.0
+inhouse_test,existing (run_experiments.py),iforest,0.2277,0.2163,0.1901,0.6598,0.2951,0.0914,0.6477,0.1602,0.2005,0.9424,8.6912,0.4322,0.4385,0.2402,0.2229,0.0
+inhouse_test,"existing (run_deep.py), window metrics only","TCN (3 seeds, prior-corrected)",,,,,,,,,,,0.076,0.5347,,,0.0096,
+heldout_eco_03,IMPROVE (run_improve.py),IMPROVE (final),0.589,0.6175,0.4228,0.8079,0.5551,0.9429,0.4651,0.6229,0.631,0.7941,0.971,0.6164,0.6199,0.0097,0.0914,0.0
+heldout_eco_03,existing (run_experiments.py),lgbm+abstain,0.4091,0.4303,0.1459,0.9435,0.2527,0.9474,0.4031,0.5656,0.2574,0.9542,5.8979,0.4733,0.4825,0.1129,0.1575,0.3496
+heldout_eco_03,existing (run_experiments.py),lgbm_no_frozen_missing+abstain,0.3884,0.4036,0.1364,0.9379,0.2382,0.9259,0.3798,0.5387,0.2423,0.9477,6.3714,0.475,0.4839,0.1283,0.1569,0.3168
+heldout_eco_03,IMPROVE (run_improve.py),"IMPROVE model, argmax",0.3771,0.3721,0.1419,0.9605,0.2472,0.7067,0.3953,0.507,0.2391,0.9739,6.3535,0.5483,0.5544,0.1807,0.0914,0.0
+heldout_eco_03,existing (run_experiments.py),lgbm,0.3165,0.3105,0.1481,0.9718,0.2571,0.5455,0.2868,0.376,0.2462,0.9935,6.2755,0.4893,0.4981,0.2807,0.1575,0.0
+heldout_eco_03,existing (run_experiments.py),lgbm_no_frozen_missing,0.2941,0.2846,0.1491,0.9605,0.2582,0.4925,0.2481,0.3299,0.2537,0.9804,6.1197,0.4895,0.4977,0.275,0.1569,0.0
+heldout_eco_03,existing (run_experiments.py),lgbm_no_physics,0.2617,0.2572,0.2235,0.9831,0.3642,0.2222,0.124,0.1592,0.3465,1.0,4.4534,0.3632,0.3676,0.5037,0.415,0.0
+heldout_eco_03,existing (run_experiments.py),lgbm_no_physics+abstain,0.2482,0.2503,0.2109,0.9774,0.347,0.2889,0.1008,0.1494,0.3355,0.9837,4.3335,0.3573,0.362,0.4522,0.415,0.13
+heldout_eco_03,existing (run_experiments.py),ocsvm,0.2239,0.209,0.1304,0.3842,0.1947,0.1461,0.9457,0.2531,0.2408,0.9967,7.5402,0.2225,0.2238,0.7171,0.384,0.0
+heldout_eco_03,existing (run_experiments.py),iforest+abstain,0.2231,0.2121,0.1473,0.5763,0.2347,0.1248,0.6899,0.2114,0.2016,0.8725,7.2645,0.2387,0.2405,0.4532,0.3974,0.2535
+heldout_eco_03,existing (run_experiments.py),ocsvm+abstain,0.2206,0.1997,0.148,0.5989,0.2374,0.1175,0.7674,0.2038,0.1935,0.9281,8.5712,0.1607,0.1628,0.5036,0.384,0.3753
+heldout_eco_03,existing (run_experiments.py),stat+abstain,0.2183,0.2046,0.1598,0.4294,0.2329,0.1151,0.8837,0.2037,0.2095,0.9641,8.1216,0.2715,0.2735,0.5889,0.4786,0.0055
+heldout_eco_03,existing (run_experiments.py),stat,0.2156,0.2018,0.1562,0.4181,0.2274,0.1152,0.8837,0.2038,0.2092,0.9641,8.1097,0.2721,0.2739,0.5899,0.4786,0.0
+heldout_eco_03,existing (run_experiments.py),iforest,0.2092,0.1934,0.1546,0.5254,0.2389,0.1001,0.8682,0.1794,0.1818,0.9771,10.4952,0.2744,0.2756,0.5671,0.3974,0.0
+heldout_eco_06,IMPROVE (run_improve.py),IMPROVE (final),0.6093,0.6532,0.5738,0.7047,0.6325,0.7273,0.4907,0.586,0.709,0.6921,0.5332,0.6201,0.6228,0.0135,0.04,0.0
+heldout_eco_06,existing (run_experiments.py),lgbm+abstain,0.4944,0.4983,0.3255,0.7772,0.4588,0.5676,0.4969,0.5299,0.478,0.7853,1.6616,0.4975,0.5076,0.0567,0.1114,0.4037
+heldout_eco_06,existing (run_experiments.py),lgbm_no_frozen_missing+abstain,0.4921,0.493,0.3229,0.7772,0.4563,0.5341,0.5217,0.5278,0.4802,0.8023,1.7651,0.4992,0.5094,0.0583,0.1054,0.3833
+heldout_eco_06,IMPROVE (run_improve.py),"IMPROVE model, argmax",0.45,0.4319,0.2976,0.8549,0.4415,0.3633,0.6211,0.4585,0.3953,0.9068,2.7797,0.5954,0.6056,0.0802,0.04,0.0
+heldout_eco_06,existing (run_experiments.py),lgbm_no_physics+abstain,0.3996,0.3887,0.226,0.715,0.3435,0.4083,0.5155,0.4557,0.3465,0.7571,2.9971,0.4113,0.4171,0.0826,0.1656,0.4693
+heldout_eco_06,existing (run_experiments.py),lgbm,0.3935,0.377,0.278,0.8238,0.4157,0.2585,0.6584,0.3712,0.3366,0.9068,3.5407,0.5756,0.5879,0.0989,0.1114,0.0
+heldout_eco_06,existing (run_experiments.py),lgbm_no_frozen_missing,0.3664,0.3484,0.2631,0.8238,0.3988,0.2204,0.6894,0.3341,0.307,0.9124,4.2653,0.5647,0.5763,0.1084,0.1054,0.0
+heldout_eco_06,existing (run_experiments.py),ocsvm+abstain,0.3166,0.3161,0.1801,0.6218,0.2792,0.2713,0.5093,0.354,0.2588,0.7006,3.7943,0.3401,0.3448,0.3299,0.3763,0.1991
+heldout_eco_06,existing (run_experiments.py),iforest+abstain,0.3148,0.3166,0.1801,0.6528,0.2823,0.2686,0.4907,0.3472,0.2582,0.7147,3.8512,0.3736,0.3791,0.3229,0.4355,0.1152
+heldout_eco_06,existing (run_experiments.py),lgbm_no_physics,0.303,0.2797,0.1892,0.7927,0.3055,0.2015,0.5901,0.3004,0.2683,0.9011,5.4352,0.4733,0.4782,0.1609,0.1656,0.0
+heldout_eco_06,existing (run_experiments.py),stat,0.298,0.2954,0.1875,0.544,0.2789,0.2195,0.5714,0.3171,0.2819,0.7853,3.8771,0.3465,0.3495,0.397,0.4726,0.0
+heldout_eco_06,existing (run_experiments.py),iforest,0.2971,0.2894,0.19,0.6477,0.2939,0.2108,0.5217,0.3002,0.2633,0.7881,4.2291,0.3717,0.3756,0.3621,0.4355,0.0
+heldout_eco_06,existing (run_experiments.py),stat+abstain,0.2959,0.2932,0.1851,0.544,0.2762,0.2181,0.5714,0.3157,0.2767,0.7825,3.9237,0.3463,0.3494,0.3937,0.4726,0.0083
+heldout_eco_06,existing (run_experiments.py),ocsvm,0.2761,0.2597,0.1822,0.6114,0.2808,0.1723,0.6398,0.2715,0.241,0.822,5.1195,0.3573,0.3604,0.3941,0.3763,0.0
+heldout_03+06 (pooled),"existing (run_deep.py), window metrics only","TCN (3 seeds, prior-corrected)",,,,,,,,,,,0.8268,0.4612,,,0.0821,
+ampds2_native,IMPROVE (run_improve.py),IMPROVE (final),0.7237,0.731,0.7852,0.6048,0.6833,0.9,0.6639,0.7641,0.8489,0.6399,0.2117,0.673,0.6753,0.0034,0.031,0.0
+ampds2_native,existing (run_experiments.py),lgbm+abstain,0.594,0.5712,0.3983,0.7784,0.527,0.6216,0.7059,0.6611,0.4951,0.7902,1.5939,0.6104,0.621,0.02,0.0362,0.3735
+ampds2_native,existing (run_experiments.py),lgbm_no_frozen_missing+abstain,0.5195,0.5161,0.3851,0.6407,0.4811,0.4767,0.6723,0.5579,0.4615,0.6993,1.569,0.5008,0.5109,0.0259,0.0724,0.5619
+ampds2_native,existing (run_experiments.py),lgbm_no_physics+abstain,0.4988,0.4703,0.3137,0.6048,0.4131,0.5028,0.6975,0.5844,0.4157,0.6923,1.9426,0.5227,0.5325,0.0215,0.0512,0.5136
+ampds2_native,IMPROVE (run_improve.py),"IMPROVE model, argmax",0.3832,0.3454,0.201,0.8743,0.3269,0.2986,0.8319,0.4395,0.2594,0.9161,5.2612,0.6793,0.6867,0.0546,0.031,0.0
+ampds2_native,existing (run_experiments.py),lgbm,0.2954,0.2644,0.1511,0.9102,0.2592,0.2081,0.8151,0.3315,0.2005,0.951,7.8451,0.6133,0.6229,0.0949,0.0362,0.0
+ampds2_native,existing (run_experiments.py),lgbm_no_frozen_missing,0.2849,0.2648,0.1178,0.8563,0.2071,0.2385,0.7563,0.3626,0.1844,0.9441,8.7044,0.5495,0.5576,0.1206,0.0724,0.0
+ampds2_native,existing (run_experiments.py),stat,0.2489,0.2428,0.2204,0.988,0.3604,0.75,0.0756,0.1374,0.3519,1.0,4.4269,0.1266,0.1291,0.9402,0.4249,0.0
+ampds2_native,existing (run_experiments.py),lgbm_no_physics,0.2462,0.2107,0.1358,0.7844,0.2315,0.1542,0.8487,0.2609,0.1869,0.9545,8.941,0.5532,0.5601,0.1169,0.0512,0.0
+ampds2_native,existing (run_experiments.py),iforest,0.2444,0.2229,0.1449,0.8383,0.2471,0.1538,0.563,0.2417,0.2445,1.0,7.8514,0.2499,0.252,0.6383,0.2174,0.0
+ampds2_native,existing (run_experiments.py),ocsvm,0.2213,0.2046,0.128,0.8443,0.2223,0.1356,0.5882,0.2204,0.2052,0.9965,9.8126,0.3142,0.317,0.488,0.0581,0.0
+ampds2_native,existing (run_experiments.py),ocsvm+abstain,0.1627,0.1465,0.0851,0.7126,0.1521,0.0986,0.7143,0.1732,0.1506,0.9685,14.0839,0.2624,0.2663,0.2158,0.0581,0.4878
+ampds2_native,"existing (run_deep.py), window metrics only","TCN (3 seeds, prior-corrected)",,,,,,,,,,,0.1837,0.5566,,,0.0169,
+wpuq_heldout_indicative,IMPROVE (run_improve.py),IMPROVE (final),0.7659,0.8236,0.8816,0.8272,0.8535,0.6667,0.6905,0.6784,0.8468,0.813,0.2528,0.7826,0.788,0.0059,0.0993,0.0
+wpuq_heldout_indicative,IMPROVE (run_improve.py),"IMPROVE model, argmax",0.4275,0.4178,0.4805,0.9012,0.6268,0.1311,0.881,0.2282,0.2614,0.9431,4.7363,0.6977,0.7103,0.0554,0.0993,0.0

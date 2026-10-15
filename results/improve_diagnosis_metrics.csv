@@ -1,0 +1,5 @@
+,win_macroF1,win_macroF1_noedge,FA_per_day,event_macro_F1,meas_P,meas_R,meas_F1,phys_P,phys_R,phys_F1,dete_P,dete_R,dete_F1
+"segment=vote, all subtypes",0.5663,0.5786,7.1601,0.3056,0.2402,0.7842,0.3677,0.1441,0.7841,0.2434,0.2214,0.9305,0.3577
+"segment=vote, without falsified+demand_step",0.5663,0.5786,7.1601,0.2927,0.2302,0.8786,0.3648,0.1277,0.8121,0.2207,0.195,0.9606,0.3242
+"segment=mean, all subtypes",0.5663,0.5786,7.1601,0.3126,0.25,0.7967,0.3806,0.1443,0.8011,0.2446,0.2214,0.9305,0.3577
+"segment=mean, without falsified+demand_step",0.5663,0.5786,7.1601,0.2993,0.2397,0.8932,0.3779,0.1274,0.8255,0.2207,0.195,0.9606,0.3242

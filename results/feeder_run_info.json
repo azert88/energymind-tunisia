@@ -1,0 +1,54 @@
+{
+ "net_code": "1-LV-semiurb4--0-no_sw",
+ "other_feeder": "1-LV-semiurb4--1-no_sw",
+ "tau": 0.8,
+ "n_per_kind": 160,
+ "splits": {
+  "train": {
+   "rows": 11520,
+   "scenarios": 1920,
+   "pf_failed": 0,
+   "class_counts": {
+    "0": 9278,
+    "1": 640,
+    "2": 1602
+   }
+  },
+  "calib": {
+   "rows": 5760,
+   "scenarios": 960,
+   "pf_failed": 0,
+   "class_counts": {
+    "0": 4664,
+    "1": 320,
+    "2": 776
+   }
+  },
+  "test_same_feeder": {
+   "rows": 5760,
+   "scenarios": 960,
+   "pf_failed": 0,
+   "class_counts": {
+    "0": 4681,
+    "1": 320,
+    "2": 759
+   }
+  },
+  "test_other_feeder": {
+   "rows": 5760,
+   "scenarios": 960,
+   "pf_failed": 0,
+   "class_counts": {
+    "0": 4666,
+    "1": 320,
+    "2": 774
+   }
+  }
+ },
+ "versions": {
+  "pandapower": "3.5.6",
+  "simbench": "1.6.3",
+  "sklearn": "1.9.1",
+  "numpy": "2.4.6"
+ }
+}

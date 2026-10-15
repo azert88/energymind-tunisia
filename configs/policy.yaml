@@ -1,0 +1,24 @@
+version: "policy-1.0"
+# Confidence thresholds (calibrated probability of the predicted label)
+thresholds:
+  abstain_below: 0.55        # below this -> unresolved (human review)
+  top2_margin_min: 0.15      # top-2 probs closer than this -> unresolved
+  auto_quarantine_min: 0.90  # measurement problem: auto quarantine_channel
+  advisory_min: 0.70         # measurement problem: advisory_estimate (no mutation)
+# Over-trust guard: high confidence but shifted input or single-source evidence -> human
+over_trust:
+  high_conf: 0.90
+  min_evidence_sources: 2
+# Under-trust guard: repeated low-confidence detections on one channel -> escalate
+under_trust:
+  repeat_count: 3
+  max_conf: 0.70
+# Authority per action. Anything not listed is denied.
+# mutates_asset=true actions are always human.
+actions:
+  flag_sample:        {authority: auto,  mutates_asset: false, min_conf: 0.0,  expiry_min: 60}
+  advisory_estimate:  {authority: auto,  mutates_asset: false, min_conf: 0.70, expiry_min: 60}
+  quarantine_channel: {authority: auto,  mutates_asset: false, min_conf: 0.90, expiry_min: 240}  # reversible
+  request_inspection: {authority: human, mutates_asset: false, min_conf: 0.0,  expiry_min: 1440}
+  recalibrate_meter:  {authority: human, mutates_asset: true,  min_conf: 0.0,  expiry_min: 480}
+  isolate_load:       {authority: human, mutates_asset: true,  min_conf: 0.0,  expiry_min: 120}

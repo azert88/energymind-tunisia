@@ -1,0 +1,7 @@
+test,comparison,mean,lo95,hi95
+test_same_feeder,event_correct(C) - event_correct(A),0.04139146762550453,0.015733863474886593,0.06488533748278148
+test_same_feeder,event_correct(B) - event_correct(A),0.04861492745484365,0.026730397319763458,0.0732183869100819
+test_same_feeder,unresolved_events(B no-upstream) - unresolved_events(C),-0.0064874884151992634,,
+test_other_feeder,event_correct(C) - event_correct(A),0.07328831392941174,0.048822716591463214,0.09922821528424974
+test_other_feeder,event_correct(B) - event_correct(A),0.051042903830727474,0.026021419453928458,0.07319807385596858
+test_other_feeder,unresolved_events(B no-upstream) - unresolved_events(C),0.01645338208409506,,

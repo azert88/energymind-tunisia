@@ -1,0 +1,38 @@
+\section{Scope}
+\label{sec:scope}
+A reading can look wrong for two opposite reasons. A \textbf{data-quality problem} (a biased or drifting sensor, a frozen register, a replayed or falsified stream) calls for fixing the meter; the grid is fine. A \textbf{real grid event} (a voltage sag, an outage, a demand step) calls for inspecting the grid or the customer; the data are good. A third group, \textbf{benign cases} (a new appliance, a solar ramp), needs nothing.
+
+Our slice of the energy system is \textbf{one smart-metered house, seen as a node}: voltage, current, power, power factor and an energy counter at one-minute resolution~\cite{brief}. \textbf{In this project, nodes are houses.} This is the data a utility already uses for billing, public datasets exist, and both faults and fraud matter. Three small experiments extend the node: a \textbf{feeder} (a house with its neighbours and an upstream meter), an \textbf{evidence fusion} test, and a \textbf{case-sharing} protocol between two houses.
+
+\begin{table}[!h]
+\small\centering
+\caption{Scope boundaries.}
+\begin{tabularx}{\textwidth}{@{}YY@{}}
+\toprule
+\hdr \textbf{In scope (Phase 1)} & \textbf{Out of scope}\\
+\midrule
+One house node covering the four goals; three small experiments & Real attack data; control of real equipment\\
+Real recordings with a documented fault injector; a published synthetic dataset & Multi-site production deployment; federated learning\\
+A deny-by-default policy, a tamper-evident log, an operator-interface prototype & Factories and microgrids: the design does not cover them\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Objectives}
+\label{sec:objectives}
+\begin{table}[!h]
+\small\centering
+\caption{Project objectives: the four goals as testable requirements.}
+\begin{tabularx}{\textwidth}{@{}lYYl@{}}
+\toprule
+\hdr  & \textbf{Requirement} & \textbf{Measured by} & \textbf{Section}\\
+\midrule
+O1 & \textbf{Goal~1.} Separate normal data, measurement problems and real events; do not alarm on benign cases & Event-level precision and recall, false alarms per day & \ref{sec:goal1}\\
+O2 & \textbf{Goal~2.} A calibrated confidence, a clear explanation (rules, SHAP, LIME), an auditable log & Calibration, evidence linked to each verdict & \ref{sec:goal2}\\
+O3 & \textbf{Goal~3.} Explicit auto/human thresholds, an operator interface, safeguards against over- and under-trust & Policy tests & \ref{sec:goal3}\\
+O4 & \textbf{Goal~4.} What is shared, what stays local, and why & Safety and privacy probes & \ref{sec:goal4}\\
+O5 & Reproducible repository and open data & Seeded scripts, tests & \ref{app:repo}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\textbf{Principles:} say ``I cannot tell'' when physics cannot decide; never count an unevaluated check as passed; keep the policy independent of the model; audit our benchmark before trusting a number; report what did not work.

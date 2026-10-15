@@ -1,0 +1,28 @@
+\section{Business scope, feasibility and conclusion}
+\label{sec:business}
+\subsection{Business scope: budget, implementation, production, training}
+The prototype runs on a laptop-class machine with open-source tools; the real costs lie elsewhere. No price is given below because none was verified; prices must come from quotes.
+\begin{table}[!h]
+\small\centering
+\caption{Business scope.}
+\begin{tabularx}{\textwidth}{@{}lYY@{}}
+\toprule
+\hdr \textbf{Item} & \textbf{Assumption} & \textbf{Cost driver}\\
+\midrule
+Implementation & Install next to the utility's meter-data system and reuse its feed & Integration engineer-weeks\\
+Production & Containerised services, policy under change control, log on append-only storage & Operations, storage\\
+Continuous training & Periodic retraining on new normal data, recalibration, drift monitoring, per-house adaptation & Data-engineer time, compute\\
+Operator integration & Queue into existing ticketing or supervision tools; operator training & Training, interface work\\
+Compliance & Data-protection review before any sharing between houses & Legal review\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\textbf{Operations:} we would start on a single workstation with Docker Compose, track ingestion lag, missing data, job latency, unsupported checks and policy denials, back up the ledger, grid graph and artifacts, and rebuild the Qdrant index from approved content. \textbf{Deployment path:} shadow mode first (flags only, no actions); then reversible automatic actions once measured false-alarm rates are acceptable; humans only for anything that changes an asset. The prototype is not a certified protective controller.
+
+\subsection{Feasibility, sustainability and impact}
+\textbf{Technical:} open-source tools, millisecond inference, no special hardware. \textbf{Economic:} the software is inexpensive; the costs are integration and, where absent, instrumentation; no saving is asserted, it must be measured in a pilot. \textbf{Regulatory:} low-voltage self-producers may sell surplus to STEG~\cite{decree}; low-voltage connections stay within $\pm$10\,\% of nominal~\cite{lvcode}; load curves reveal occupancy, so a legal review precedes any sharing; a model score is not proof of theft, so suspected falsification always goes to a human. \textbf{Sustainable Development Goals:} SDG~7 (trustworthy data to integrate rooftop solar and reduce the peak), SDG~9 (a transparent, auditable digital layer on grid infrastructure), SDG~11 (more reliable supply, fewer unnecessary interventions), SDG~13 (less reliance on gas at the peak).
+
+\subsection{Limits and conclusion}
+Every detection number measures how well we find our own fault generators on real household recordings; there are no real labelled faults, no field deployment and no operator study. The operating point trades recall for precision, unseen houses lose about 0.2 F1, transfer between datasets fails, sharing shows no measured benefit, and the published dataset does not contain injected anomalies yet.
+
+Phase 1 delivers a trust layer that separates measurement problems from real grid events, says how sure it is and why, routes decisions through a policy it cannot override, and defines a safe protocol for sharing between houses, together with an open dataset and a benchmark whose weaknesses we found and fixed ourselves. Phase 2 replaces the biggest assumption, synthetic faults, with real data from a pilot, and tests the governance with real operators.

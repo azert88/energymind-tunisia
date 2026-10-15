@@ -1,0 +1,15 @@
+subtype,n,detected,correct
+bias,20,0.75,0.65
+delay,29,0.6897,0.6552
+demand_step,30,0.1667,0.0667
+drift,15,0.5333,0.5333
+dropout,21,1.0,0.9524
+duty_cycle,34,0.1471,0.0294
+falsified,16,0.0625,0.0625
+frozen,26,0.8846,0.8846
+noise,21,0.7619,0.7619
+outage,33,1.0,1.0
+phase_imbalance,30,0.9333,0.3333
+replay,23,1.0,1.0
+scale,22,0.6364,0.5909
+voltage_sag,34,0.9706,0.9706

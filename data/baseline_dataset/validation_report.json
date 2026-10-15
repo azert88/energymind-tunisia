@@ -1,0 +1,90 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "no_nan_inf",
+      "passed": true,
+      "detail": "0 non-finite values"
+    },
+    {
+      "check": "time_axis_uniform",
+      "passed": true,
+      "detail": "35040 steps of 15 min"
+    },
+    {
+      "check": "power_flow_converged",
+      "passed": true,
+      "detail": "0 failed steps"
+    },
+    {
+      "check": "voltage_within_EN50160_pm10pct",
+      "passed": true,
+      "detail": "physical 1.013-1.040 pu, measured 1.010-1.046 pu (nominal 230 V)"
+    },
+    {
+      "check": "voltage_95pct_within_pm5pct",
+      "passed": true,
+      "detail": "100.0 % of samples within +/-5 %"
+    },
+    {
+      "check": "voltage_unbalance_below_2pct",
+      "passed": true,
+      "detail": "max 1.03 %"
+    },
+    {
+      "check": "transformer_not_overloaded",
+      "passed": true,
+      "detail": "max 66.6 %"
+    },
+    {
+      "check": "lines_not_overloaded",
+      "passed": true,
+      "detail": "max 35.5 %"
+    },
+    {
+      "check": "pv_non_negative_zero_at_night_below_kwp",
+      "passed": true,
+      "detail": "max 57.0 kW"
+    },
+    {
+      "check": "S>=|P|, 0<=PF<=1, I>=0",
+      "passed": true,
+      "detail": "all houses, all phases"
+    },
+    {
+      "check": "energy_balance_trafo",
+      "passed": true,
+      "detail": "max residual 0.0000 kW"
+    },
+    {
+      "check": "appliances_sum_to_house_load",
+      "passed": true,
+      "detail": "max gap 1.17e-03 W"
+    },
+    {
+      "check": "no_frozen_voltage_sensor",
+      "passed": true,
+      "detail": "longest identical run 3 samples"
+    },
+    {
+      "check": "daily_energy_plausible_2_to_80_kWh",
+      "passed": true,
+      "detail": "6.7-41.6 kWh/day"
+    }
+  ],
+  "daily_kwh": {
+    "house_01": 19.40305064923439,
+    "house_02": 11.335640844938403,
+    "house_03": 17.550326950308115,
+    "house_04": 7.906305137811791,
+    "house_05": 14.095203258355399,
+    "house_06": 10.576732439130293,
+    "house_07": 26.358928991847414,
+    "house_08": 41.63581470263011,
+    "house_09": 9.44446705306436,
+    "house_10": 38.45038352843002,
+    "house_11": 6.7438224221322,
+    "house_12": 14.141912137204592,
+    "house_13": 39.058369234478036
+  }
+}

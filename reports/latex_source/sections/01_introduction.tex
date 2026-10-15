@@ -1,0 +1,71 @@
+\section{Introduction: from a July afternoon to a question of trust}
+\label{sec:intro}
+
+\subsection{The summer-peak problem}
+Tunisia's grid now fails at the peak, not on annual energy. In July 2026 the monthly peak reached a record 4,924~MW, 42\,\% above July 2014, and STEG ran rotating load shedding for several weeks to avoid a nationwide blackout~\cite{maghreb}. The critical window is 13:00--17:00, driven by air conditioning~\cite{webdo_steg}. The gap is structural: generation is 90.8\,\% gas, about 10\,\% of demand is imported, and the deficit at the peak hour is estimated between 770 and 2,000~MW~\cite{maghreb,economiste}. For summer 2027, STEG plans more renewables, storage and about 300~MW less peak demand~\cite{tunisienum}.
+
+\begin{table}[!h]
+\footnotesize\centering
+\caption{Key figures. Measured values, announced figures and estimates are kept apart.}
+\begin{tabularx}{\textwidth}{@{}YYYY@{}}
+\toprule
+\hdr \textbf{Indicator} & \textbf{Value} & \textbf{Type} & \textbf{Source}\\
+\midrule
+Monthly peak, July 2026 & 4,924~MW (record) & Measured & \cite{maghreb}\\
+Peak demand quoted by the Government & 6,400~MW & Announced; definition not published & \cite{tunisienum}\\
+Peak-hour deficit & 770 to 2,000~MW & Estimates & \cite{economiste,maghreb}\\
+Gas in generation; imports & 90.8\,\%; $\approx$10\,\% of demand & Measured & \cite{maghreb}\\
+Residential rooftop PV & $>$420~MW, $>$150,000 systems & Reported (ANME) & \cite{webdo_pv}\\
+STEG plan before summer 2027 & +300~MW renewables; storage; $-$300~MW peak & Announced & \cite{tunisienum}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+The two peak figures differ by about 1,500~MW. We treat 4,924~MW as the measured served peak and 6,400~MW as an announced figure whose definition is not public; we never mix them. \textbf{Why this matters for us:} rooftop solar ($>$420~MW) is already about a third of the 1,400~MW plant planned with Algeria, but its output falls after 17:00 while air conditioning continues. Using it at the peak requires something operators lack today at neighbourhood level: \textbf{trustworthy, explained data}. That is the gap EnergyMind fills.
+
+\subsection{A street in a suburb of Tunis}
+\begin{quote}\itshape\small
+Illustrative scenario, not a measured case. At 18:15 on a July day, the supervision screen shows that the meter of house~7 has jumped by 1.2~kW and that its voltage has dipped. The operator has three minutes before the evening peak and three very different explanations to choose from.
+\end{quote}
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\node[box,line width=1.1pt,text width=4.6cm] (m) at (7.9,0) {\textbf{House 7 meter, 18:15}\\+1.2~kW and a voltage dip};
+\node[gbox,text width=4.6cm] (a) at (2.4,-1.6) {\textbf{Real grid event}\\voltage sag, outage, demand step};
+\node[gbox,text width=4.6cm] (b) at (7.9,-1.6) {\textbf{Measurement problem}\\bias, drift, frozen, replay, falsified};
+\node[gbox,text width=4.6cm] (c) at (13.4,-1.6) {\textbf{Benign case}\\new appliance, solar ramp};
+\node[box,text width=4.6cm] (a2) at (2.4,-3.2) {\textbf{Inspect grid or customer}\\the data are good};
+\node[box,text width=4.6cm] (b2) at (7.9,-3.2) {\textbf{Fix the data}\\the grid is fine};
+\node[box,text width=4.6cm] (c2) at (13.4,-3.2) {\textbf{Do nothing}\\looks like a fault, is not one};
+\draw[arr] (m.south) -- ++(0,-0.35) -| (a.north);
+\draw[arr] (m.south) -- (b.north);
+\draw[arr] (m.south) -- ++(0,-0.35) -| (c.north);
+\draw[arr] (a)--(a2); \draw[arr] (b)--(b2); \draw[arr] (c)--(c2);
+\end{tikzpicture}
+\caption{One deviation, three explanations. Each calls for a different response, so the cause must be established before any action.}
+\end{figure}
+Mixing them up is the costly error: ``repairing'' a real outage as if it were a sensor glitch hides it, and alarming on a new appliance trains operators to ignore alarms. Where physics cannot decide, the right answer is to say so and ask a human.
+
+\subsection{Our answer}
+The brief~\cite{brief} names the forces behind the problem: seasonal peaks, fast-growing renewables, more smart meters, more connected devices. As AI takes on more grid decisions, the question is whether it \textbf{can be trusted and who is accountable when it is wrong}. EnergyMind answers with a \textbf{trust layer} placed between raw data and automated action (Figure~\ref{fig:trust}). Each of its four functions corresponds to one goal of the challenge.
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\node[box,text width=1.9cm] (raw) at (1.0,1.0) {raw meter data};
+\node[box,text width=1.9cm] (act) at (15.3,1.0) {automated action};
+\node[draw=black,thick,rounded corners=3pt,fill=black!6,minimum width=10.4cm,minimum height=3.1cm] (tl) at (8.15,1.0) {};
+\node[font=\sffamily\bfseries\footnotesize] at (8.15,2.3) {trust layer};
+\node[gbox,text width=2.2cm] (g1) at (3.7,0.95) {\textbf{1~~Detect}\\data problem or real event?};
+\node[gbox,text width=2.2cm] (g2) at (6.3,0.95) {\textbf{2~~Explain}\\calibrated confidence, explanation, log};
+\node[gbox,text width=2.2cm] (g3) at (8.9,0.95) {\textbf{3~~Decide}\\auto versus human routing};
+\node[gbox,text width=2.2cm] (g4) at (11.5,0.95) {\textbf{4~~Share}\\scoped shared learning};
+\node[box,text width=3.4cm] (op) at (5.0,-1.6) {\textbf{operator}\\approve, reject, override};
+\node[box,text width=3.4cm] (ot) at (11.3,-1.6) {\textbf{other houses}\\signed case cards};
+\draw[arr] (raw) -- (tl.west |- raw); \draw[arr] (tl.east |- act) -- (act);
+\draw[barr] (op.north) -- (op.north |- tl.south);
+\draw[barr] (ot.north) -- (ot.north |- tl.south);
+\end{tikzpicture}
+\caption{The trust layer sits between raw data and automated action. It decides whether the data may be used, says why and how sure it is, and decides who may act on that. The four numbered functions are the four challenge goals.}
+\label{fig:trust}
+\end{figure}
+The report follows the Phase 1 brief: scope, objectives, data and anomaly-simulation plan, global architecture, then the design of each goal.

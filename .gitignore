@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+.venv-grid/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# raw third-party data and generated artefacts (large; see data/DATA_NOTES*.md)
+data/raw/
+data/processed/
+outputs/
+dataverse_files/
+wpuq_csv/
+output/
+*.parquet
+
+# not published (large/generated/scratch)
+results/sharing_exchange/
+results/sharing_*_log.jsonl
+results/sharing_poison_log.jsonl

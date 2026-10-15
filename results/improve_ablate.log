@@ -1,0 +1,17 @@
+{"time": "20:37:26", "exp": "TEST_ablation_B0_base_s0_argmax", "cfg": "argmax", "test_event_F1": 0.5695387805416596, "test_win_macroF1": 0.7065233822066953}
+{"time": "20:37:26", "exp": "TEST_ablation_B0_base_s0_tuned", "cfg": "{\"thr_alert\": 0.9, \"k\": 2, \"n\": 2}", "test_event_F1": 0.7236020304578442, "test_win_macroF1": 0.6896173919352401}
+{"time": "20:37:52", "exp": "TEST_ablation_B1_v2_s0_argmax", "cfg": "argmax", "test_event_F1": 0.5936842890790792, "test_win_macroF1": 0.7123998483087649}
+{"time": "20:37:52", "exp": "TEST_ablation_B1_v2_s0_tuned", "cfg": "{\"thr_alert\": 0.97, \"k\": 1, \"n\": 1}", "test_event_F1": 0.7514065117914777, "test_win_macroF1": 0.6818049421899469}
+{"time": "20:38:23", "exp": "TEST_ablation_B4_base_aug5_argmax", "cfg": "argmax", "test_event_F1": 0.3211939660491091, "test_win_macroF1": 0.6348541545122292}
+{"time": "20:38:23", "exp": "TEST_ablation_B4_base_aug5_tuned", "cfg": "{\"thr_alert\": 0.97, \"k\": 2, \"n\": 2}", "test_event_F1": 0.7579815424894603, "test_win_macroF1": 0.7093034524480664}
+{"time": "20:38:53", "exp": "TEST_ablation_B3_v2_aug5_argmax", "cfg": "argmax", "test_event_F1": 0.3579089397473917, "test_win_macroF1": 0.6583200697112229}
+{"time": "20:38:54", "exp": "TEST_ablation_B3_v2_aug5_tuned", "cfg": "{\"thr_alert\": 0.97, \"k\": 1, \"n\": 1}", "test_event_F1": 0.770708432497039, "test_win_macroF1": 0.7344772520902773}
+          model                             decision  win_macroF1  win_macroF1_noedge  normal_win_FPR  FA_per_day  event_macro_F1  meas_P  meas_R  meas_F1  phys_P  phys_R  phys_F1  dete_P  dete_R  dete_F1
+0    B0_base_s0                               argmax        0.707               0.724           0.026       1.714           0.570   0.379   0.797    0.513   0.605   0.648    0.626   0.490   0.806    0.610
+1    B0_base_s0   {"thr_alert": 0.9, "k": 2, "n": 2}        0.690               0.695           0.007       0.362           0.724   0.697   0.726    0.711   0.932   0.608    0.736   0.807   0.710    0.755
+2      B1_v2_s0                               argmax        0.712               0.728           0.020       1.288           0.594   0.482   0.768    0.592   0.547   0.653    0.595   0.557   0.796    0.655
+3      B1_v2_s0  {"thr_alert": 0.97, "k": 1, "n": 1}        0.682               0.686           0.002       0.059           0.751   0.881   0.685    0.771   0.947   0.597    0.732   0.961   0.688    0.802
+4  B4_base_aug5                               argmax        0.635               0.649           0.089       7.264           0.321   0.203   0.888    0.330   0.192   0.830    0.312   0.232   0.971    0.374
+5  B4_base_aug5  {"thr_alert": 0.97, "k": 2, "n": 2}        0.709               0.714           0.005       0.248           0.758   0.784   0.730    0.756   0.930   0.642    0.760   0.861   0.717    0.782
+6    B3_v2_aug5                               argmax        0.658               0.672           0.069       5.470           0.358   0.252   0.871    0.391   0.205   0.773    0.324   0.265   0.930    0.413
+7    B3_v2_aug5  {"thr_alert": 0.97, "k": 1, "n": 1}        0.734               0.743           0.007       0.282           0.771   0.755   0.780    0.767   0.975   0.642    0.774   0.846   0.743    0.792

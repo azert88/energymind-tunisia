@@ -1,0 +1,14 @@
+﻿numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+pyarrow
+pandapower
+simbench
+h5py
+shap
+streamlit
+pyyaml
+pytest
+matplotlib
