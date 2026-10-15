@@ -4,14 +4,14 @@
 >
 > | Deliverable | Where |
 > |---|---|
-> | Project proposal / Phase 1 report | [`reports/EnergyMind_Phase1_Report.pdf`](reports/EnergyMind_Phase1_Report.pdf) (LaTeX source: `reports/latex_source/`); longer design text: [`docs/PROPOSAL.md`](docs/PROPOSAL.md) |
-> | Dataset (clean baseline, 13 houses, 1 year @ 15 min) | Kaggle: https://www.kaggle.com/datasets/azertyqsdfghqsdfgh/pes-test (dataset card: [`docs/DATASET_CARD.md`](docs/DATASET_CARD.md)) |
+> | Project proposal / Phase 1 report | [`reports/EnergyMind_Phase1_Report.pdf`](../reports/EnergyMind_Phase1_Report.pdf) (LaTeX source: `reports/latex_source/`); longer design text: [`docs/PROPOSAL.md`](PROPOSAL.md) |
+> | Dataset (clean baseline, 13 houses, 1 year @ 15 min) | Kaggle: https://www.kaggle.com/datasets/azertyqsdfghqsdfgh/pes-test (dataset card: [`docs/DATASET_CARD.md`](DATASET_CARD.md)) |
 > | Code developed in Phase 1 | this repository (`energymind/`, `baseline_dataset/`, `scripts/`, `app/`, `tests/`) |
 > | Scope | one smart-metered house as a node (+ feeder, fusion and case-sharing experiments); dataset slice: smart-metered LV neighbourhood |
-> | Anomaly-simulation plan | [`docs/INJECTION.md`](docs/INJECTION.md), `energymind/inject.py` (16 subtypes, seeded) |
+> | Anomaly-simulation plan | [`docs/INJECTION.md`](INJECTION.md), `energymind/inject.py` (16 subtypes, seeded) |
 > | Goal 1 detection / Goal 2 confidence and explanation | `energymind/models_*.py`, `explain.py`, `results/` |
-> | Goal 3 governance and operator interface | [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md), `energymind/policy.py`, `configs/policy.yaml`, `app/operator.py` |
-> | Goal 4 shared learning and privacy | [`docs/SHARED_LEARNING.md`](docs/SHARED_LEARNING.md), `energymind/sharing.py` |
+> | Goal 3 governance and operator interface | [`docs/GOVERNANCE.md`](GOVERNANCE.md), `energymind/policy.py`, `configs/policy.yaml`, `app/operator.py` |
+> | Goal 4 shared learning and privacy | [`docs/SHARED_LEARNING.md`](SHARED_LEARNING.md), `energymind/sharing.py` |
 >
 > **Team:** `<ADD TEAM NAME AND MEMBERS>`
 >

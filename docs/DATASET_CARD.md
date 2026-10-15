@@ -41,13 +41,22 @@ output/
 `timestamp` (15-min steps, 2018-01-01 to 2018-12-31); `U_1..3` (V); `I_1..3` (A); `P_1..3`, `Q_1..3`, `S_1..3` (W, var, VA); `PF_1..3`; `P_TOT`, `Q_TOT`, `S_TOT`, `PF_TOT`; `P_PV_W` (PV generation); `app_<name>_W` (per-appliance power); `P_load_W` (true load, ground truth only).
 
 ## Validation
-All 14 checks pass: no NaN or Inf, uniform time axis, all power flows converged, voltage within EN 50160 +/-10 % (100 % of samples within +/-5 %), max voltage unbalance 1.03 %, transformer peak loading 66.6 %, line peak loading 35.5 %, PV zero at night, transformer energy balance exact, no frozen sensors, daily energy 6.7-41.6 kWh per house.
+All 14 checks pass: no NaN or Inf, uniform time axis, all power flows converged, voltage within EN 50160 +/-10 % (100 % of samples within +/-5 %), max voltage unbalance 1.03 %, transformer peak loading 66.6 %, line peak loading 35.5 %, PV zero at night, transformer energy balance exact, no frozen sensors, daily energy 6.7-41.6 kWh per house (each house's mean daily energy over the year, from the mean of `P_load_W`; the range is across the 13 houses, not the min-max of individual days).
 
 ## Anomaly injection (project code, not in this dataset)
 The seeded injector (`energymind/inject.py`, 16 subtypes, see `docs/INJECTION.md`) adds measurement problems (bias, drift, scale, noise, frozen, dropout, delay, replay, falsified), real events (voltage sag, outage, demand step, duty cycle, phase imbalance) and benign cases (new load, PV ramp), with labels.
 
+## Adaptation to Tunisian conditions
+| Tunisian condition | How the dataset reproduces it |
+|---|---|
+| Summer peak driven by air conditioning | Canadian heat-pump profiles shifted by 182 days |
+| Daily rhythm | Evening peak shifted by one hour |
+| Rooftop solar in Tunis | PV 30 deg, facing south, Tunis monthly clearness index and temperature |
+| Grid | 230 V, 50 Hz, EN 50160 +/-10 %, SimBench rural network |
+| Place and clock | Tunis latitude/longitude, time zone Africa/Tunis |
+
 ## Limitations
-Grid-level electrical values and PV are simulated. German and Canadian behaviour is adapted to Tunisia by documented rules. One network topology, one year (2018). The Phase 1 detection results were measured on external recordings (ECO, AMPds2, WPuQ), not yet on this dataset.
+Limit: consumption levels (6.7-41.6 kWh/day per house) are higher than the Tunisian household average (about 1.6 MWh/year, STEG survey); calibration is planned for Phase 2. Grid-level electrical values and PV are simulated. German and Canadian behaviour is adapted to Tunisia by documented rules. One network topology, one year (2018). The Phase 1 detection results were measured on external recordings (ECO, AMPds2, WPuQ), not yet on this dataset.
 
 ## Sources
 - SimBench (grid topology, ODbL), Meinecke et al., 2020.

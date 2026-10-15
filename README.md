@@ -63,10 +63,22 @@ This addresses over-trust (the AI cannot act beyond its table, whatever it says 
 
 **Our dataset** is the clean baseline published on [Kaggle](https://www.kaggle.com/datasets/azertyqsdfghqsdfgh/pes-test) (card: [`docs/DATASET_CARD.md`](docs/DATASET_CARD.md)):
 - 13 houses on one 160 kVA low-voltage feeder, one year (2018) at 15 minutes, Tunis.
-- Real consumption from **WPuQ** (German houses) and **AMPds2** (Canadian appliances) on a **SimBench** grid solved with pandapower, adapted to Tunisian conditions.
+- Real consumption from **WPuQ** (German houses) and **AMPds2** (Canadian appliances) on a **SimBench** grid solved with pandapower.
 - Two views of every house: `ground_truth` (true values) and `measured` (what a meter reports).
 - 14 physical validation checks, all passed.
 - It contains **no injected anomalies yet**. Injecting them and running detection on it is the Phase 2 step.
+
+How the dataset is adapted to Tunisian conditions:
+
+| Tunisian condition | How the dataset reproduces it |
+|---|---|
+| Summer peak driven by air conditioning | Canadian heat-pump profiles shifted by 182 days |
+| Daily rhythm | Evening peak shifted by one hour |
+| Rooftop solar in Tunis | PV 30 deg, facing south, Tunis monthly clearness index and temperature |
+| Grid | 230 V, 50 Hz, EN 50160 +/-10 %, SimBench rural network |
+| Place and clock | Tunis latitude/longitude, time zone Africa/Tunis |
+
+Limit: consumption levels (6.7-41.6 kWh/day per house) are higher than the Tunisian household average (about 1.6 MWh/year, STEG survey); calibration is planned for Phase 2.
 
 **Anomaly simulation.** Real labelled grid faults are rare, so a seeded injector (`energymind/inject.py`) adds 16 documented fault types: measurement problems (bias, drift, scale, noise, frozen, dropout, delay, replay, falsified), real events (voltage sag, outage, demand step, duty cycle, phase imbalance) and benign cases (new load, PV ramp). See [`docs/INJECTION.md`](docs/INJECTION.md).
 
@@ -74,7 +86,7 @@ This addresses over-trust (the AI cannot act beyond its table, whatever it says 
 
 ## 4. Results so far
 
-Event-level scores of the final detector on injected faults (`results/improve_final_summary.md`):
+Event-level scores of detector v1 on injected faults (`results/improve_final_summary.md`):
 
 | Test | Event macro-F1 | False alarms per day |
 |---|---|---|
@@ -119,7 +131,7 @@ The operator interface shows the review queue, the evidence behind each verdict,
 ## 7. Repository map
 
 ```
-reports/          Phase 1 report (PDF + LaTeX source)
+reports/          Phase 1 report (PDF)
 energymind/       trust layer: injection, features, models, explanation, policy, log, sharing
 baseline_dataset/ builds the published dataset
 app/              operator interface (Streamlit)
@@ -144,7 +156,7 @@ data/             data notes, baseline validation report and sample
 2. **Prove the improvement with measured results.** Compare against the current baselines on the brief's four evaluation criteria: precision and recall, false-positive rate, explanation quality and response latency. The anomaly-injection method stays documented ([`docs/INJECTION.md`](docs/INJECTION.md)).
 3. **Complete explainability.** Add LIME as a model-independent second opinion next to SHAP and physics rules, with a plain-language explanation and an auditable decision log for every flagged event.
 4. **Complete the single-node prototype and operator interface.** Explicit thresholds for automatic actions and for human approval, an interface for rapid review, override or approval, and safeguards against both over-trust and under-trust. Add the investigation workflow and policy engine, and the service layer (FastAPI, PostgreSQL ledger, Neo4j evidence graph, Qdrant case index).
-5. **Collective-defense design across nodes** (factories, neighbourhoods, microgrids). Document the sharing protocol: which anomaly patterns and calibration insights are shared, what stays local, and why (privacy). Cover k-anonymity and asymmetric signatures. Multi-node sharing stays a documented design, as the brief allows.
+5. **Collective-defense design across nodes** between houses (in this project, nodes are houses). Document the sharing protocol: which anomaly patterns and calibration insights are shared, what stays local, and why (privacy). Cover k-anonymity and asymmetric signatures. Multi-node sharing stays a documented design, as the brief allows.
 6. **Business scope** (bonus point). Budget, solution implementation, production, continuous training, and integration and deployment cost, with the deployment path: shadow mode first, then reversible automatic actions, humans only for anything that changes an asset. Costs will come from quotes, not guesses.
 
 **What we will show in the final demo**
