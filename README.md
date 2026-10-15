@@ -2,7 +2,7 @@
 
 **An AI trust layer that sits between raw smart-meter data and automated action on the electricity grid.**
 
-TSYP14 Technical Challenge, **Phase 1** (ideation and data exploration).
+TSYP14 Technical Challenge, **Phase 1**
 
 ---
 
@@ -143,7 +143,7 @@ docs/             design notes and dataset card
 data/             data notes, baseline validation report and sample
 ```
 
-## 8. Phase 2 plan (until 12 December 2026)
+## 8. Phase 2 plan 
 
 **Starting point.** The detectors tested so far do not perform well enough yet, especially on unseen houses and on some fault types. Phase 2 focuses on improving them and showing the gain with measured results.
 
