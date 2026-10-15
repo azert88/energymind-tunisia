@@ -4,7 +4,7 @@
 >
 > | Deliverable | Where |
 > |---|---|
-> | Project proposal / Phase 1 report | [`reports/EnergyMind_Phase1_Report_v4.pdf`](reports/EnergyMind_Phase1_Report_v4.pdf) (LaTeX source: `reports/latex_source/`); longer design text: [`docs/PROPOSAL.md`](docs/PROPOSAL.md) |
+> | Project proposal / Phase 1 report | [`reports/EnergyMind_Phase1_Report.pdf`](reports/EnergyMind_Phase1_Report.pdf) (LaTeX source: `reports/latex_source/`); longer design text: [`docs/PROPOSAL.md`](docs/PROPOSAL.md) |
 > | Dataset (clean baseline, 13 houses, 1 year @ 15 min) | Kaggle: https://www.kaggle.com/datasets/azertyqsdfghqsdfgh/pes-test (dataset card: [`docs/DATASET_CARD.md`](docs/DATASET_CARD.md)) |
 > | Code developed in Phase 1 | this repository (`energymind/`, `baseline_dataset/`, `scripts/`, `app/`, `tests/`) |
 > | Scope | one smart-metered house as a node (+ feeder, fusion and case-sharing experiments); dataset slice: smart-metered LV neighbourhood |

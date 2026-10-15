@@ -95,7 +95,7 @@ Full tables and limits: [`docs/TECHNICAL_README.md`](docs/TECHNICAL_README.md).
 
 | Required by the challenge | Where |
 |---|---|
-| Project proposal: scope, objectives, data and anomaly plan, design per goal | [`reports/EnergyMind_Phase1_Report_v4.pdf`](reports/EnergyMind_Phase1_Report_v4.pdf) |
+| Project proposal: scope, objectives, data and anomaly plan, design per goal | [`reports/EnergyMind_Phase1_Report.pdf`](reports/EnergyMind_Phase1_Report.pdf) |
 | Dataset | [Kaggle](https://www.kaggle.com/datasets/azertyqsdfghqsdfgh/pes-test) |
 | Code developed in Phase 1 | this repository |
 
