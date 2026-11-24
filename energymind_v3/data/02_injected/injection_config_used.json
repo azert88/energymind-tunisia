@@ -1,0 +1,34 @@
+{
+  "seed": 7,
+  "blocks": {
+    "test": [
+      3,
+      9,
+      16,
+      22
+    ],
+    "val": [
+      6,
+      12,
+      19,
+      24
+    ]
+  },
+  "n_events": {
+    "localized_grid_outage": 40,
+    "sustained_undervoltage": 26,
+    "transformer_overload": 26,
+    "battery_charge_failure": 32,
+    "battery_discharge_failure": 30,
+    "pv_partial_shading": 32,
+    "meter_frozen": 44,
+    "meter_dropout": 44,
+    "meter_drift": 30,
+    "meter_noise": 34,
+    "meter_bias_current": 34,
+    "voltage_sensor_fault": 34,
+    "falsified_under_report": 34,
+    "falsified_replay": 34
+  },
+  "import_threshold_w": 150.0
+}

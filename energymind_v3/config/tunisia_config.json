@@ -1,0 +1,36 @@
+{
+  "_README": "EnergyMind v3 - Tunisian assumptions. All values are engineering assumptions (not measurements), chosen to match typical Tunisian residential practice (STEG low-voltage network 230/400 V 50 Hz, Prosol Elec rooftop PV, LiFePO4 48 V backup kits, hybrid inverters in SBU = Solar-Battery-Utility priority).",
+  "seed": 2026,
+  "type_a_systems": {
+    "_note": "PV resized from SimBench generator sizes (19-78 kWp) to Tunisian rooftop sizes; PV shape (1,400 kWh/kWp/yr) kept. Zero export: surplus PV is curtailed when the battery is full (SBU off-grid priority, no injection contract).",
+    "house_02": {"pv_kwp": 5.0, "battery_kwh": 10.24, "inverter_w": 5000},
+    "house_04": {"pv_kwp": 3.0, "battery_kwh": 5.12, "inverter_w": 3600},
+    "house_09": {"pv_kwp": 4.0, "battery_kwh": 10.24, "inverter_w": 5000},
+    "house_11": {"pv_kwp": 3.0, "battery_kwh": 5.12, "inverter_w": 3000}
+  },
+  "battery_common": {
+    "chemistry": "LiFePO4 16S (51.2 V nominal)",
+    "cells_in_series": 16,
+    "cell_voltage_empty_v": 3.0,
+    "cell_voltage_full_v": 3.45,
+    "initial_soc_percent": 60.0,
+    "soc_min_percent": 10.0,
+    "soc_back_to_battery_percent": 25.0,
+    "soc_backup_reserve_percent": 5.0,
+    "c_rate_max": 0.5,
+    "charge_efficiency": 0.97,
+    "discharge_efficiency": 0.97,
+    "inverter_efficiency": 0.95
+  },
+  "dispatch_rule": "SBU: PV -> load first; PV surplus -> battery; battery -> load; grid only when SoC <= soc_min (back to battery at soc_back). Loads above the inverter rating are topped up by the grid. During an STEG outage only the essential circuits are fed (heavy thermal loads are shed).",
+  "essential_appliances": ["fridge", "lighting_and_misc", "tv", "network_equipment", "bedroom_1_plugs", "bedroom_2_plugs", "dining_room_plugs", "home_office"],
+  "meter_model": {
+    "_note": "class 0.5/1 three-phase smart meter; sigmas fitted on clean measured vs ground truth",
+    "sigma_u_v": 0.30,
+    "sigma_gain_pqs": 0.0017,
+    "sigma_gain_i": 0.0010,
+    "phase_offset_sd": 0.002
+  },
+  "other_customers": {"_note": "non-monitored customers on the same 160 kVA transformer, measured at their feeder head (other_feeders_P_kw)", "peak_kw": 95.0, "power_factor": 0.95},
+  "voltage_dependence": {"_note": "ZIP response used during voltage events: P ~ V (constant current), Q ~ V^2 (constant impedance)", "alpha_p": 1.0, "alpha_q": 2.0}
+}

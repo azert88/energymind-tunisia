@@ -1,0 +1,90 @@
+{
+  "summary": {
+    "_global": {
+      "checks": 1,
+      "passed": 1
+    },
+    "sustained_undervoltage": {
+      "checks": 78,
+      "passed": 77
+    },
+    "transformer_overload": {
+      "checks": 78,
+      "passed": 78
+    },
+    "localized_grid_outage": {
+      "checks": 272,
+      "passed": 272
+    },
+    "battery_discharge_failure": {
+      "checks": 60,
+      "passed": 60
+    },
+    "battery_charge_failure": {
+      "checks": 54,
+      "passed": 51
+    },
+    "pv_partial_shading": {
+      "checks": 32,
+      "passed": 32
+    },
+    "meter_frozen": {
+      "checks": 44,
+      "passed": 44
+    },
+    "meter_dropout": {
+      "checks": 44,
+      "passed": 44
+    },
+    "meter_drift": {
+      "checks": 58,
+      "passed": 58
+    },
+    "meter_noise": {
+      "checks": 34,
+      "passed": 34
+    },
+    "meter_bias_current": {
+      "checks": 68,
+      "passed": 68
+    },
+    "voltage_sensor_fault": {
+      "checks": 68,
+      "passed": 68
+    },
+    "falsified_under_report": {
+      "checks": 68,
+      "passed": 68
+    },
+    "falsified_replay": {
+      "checks": 34,
+      "passed": 34
+    }
+  },
+  "failures_sample": {
+    "sustained_undervoltage": [
+      {
+        "check": "feeder end deeper than transformer (U_trafo > U_min house)",
+        "pass": false,
+        "value": 0.864
+      }
+    ],
+    "battery_charge_failure": [
+      {
+        "check": "charged energy vs clean run while PV surplus (reduced mode)",
+        "pass": false,
+        "value": 0.624
+      },
+      {
+        "check": "charged energy vs clean run while PV surplus (reduced mode)",
+        "pass": false,
+        "value": 0.741
+      },
+      {
+        "check": "charged energy vs clean run while PV surplus (reduced mode)",
+        "pass": false,
+        "value": 0.764
+      }
+    ]
+  }
+}

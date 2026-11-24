@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Over GitHub's 100 MB file limit; rebuilt by scripts/04_features_and_split.py
+data/03_features/features_all.parquet
+
+# Personal test runs of detector/test_anomaly.py
+detector/tester_output/
+
+# Unzipped copies of the shared packages (the .zip files are kept); rebuilt by scripts/09_export_packages.py
+export/*/

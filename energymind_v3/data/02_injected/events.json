@@ -1,0 +1,8417 @@
+[
+  {
+    "event_id": 0,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 29932,
+    "end": 29955,
+    "params": {
+      "target_end_pu": 0.8665411414147116,
+      "ext_vm": 0.8785411414147116,
+      "seed": 625095466
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 1,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 13113,
+    "end": 13121,
+    "params": {
+      "target_end_pu": 0.8724132067237758,
+      "ext_vm": 0.8844132067237758,
+      "seed": 912623193
+    },
+    "cause_tunisia": "MV feeder overloaded at the evening peak (summer AC)",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 2,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 22644,
+    "end": 22658,
+    "params": {
+      "target_end_pu": 0.8480760971706233,
+      "ext_vm": 0.8600760971706233,
+      "seed": 821228418
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 3,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 13039,
+    "end": 13049,
+    "params": {
+      "target_end_pu": 0.8352921752592475,
+      "ext_vm": 0.8472921752592475,
+      "seed": 990459774
+    },
+    "cause_tunisia": "Ramadan iftar evening peak on the MV feeder",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 4,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 17448,
+    "end": 17462,
+    "params": {
+      "target_end_pu": 0.8797300170060636,
+      "ext_vm": 0.8917300170060636,
+      "seed": 504548258
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 5,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 25803,
+    "end": 25823,
+    "params": {
+      "target_end_pu": 0.8793376088609131,
+      "ext_vm": 0.8913376088609131,
+      "seed": 466230506
+    },
+    "cause_tunisia": "MV feeder overloaded at the evening peak (summer AC)",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 6,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 25736,
+    "end": 25757,
+    "params": {
+      "target_end_pu": 0.822636520477683,
+      "ext_vm": 0.834636520477683,
+      "seed": 160212033
+    },
+    "cause_tunisia": "upstream HV/MV substation tap limit reached",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 7,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 17334,
+    "end": 17338,
+    "params": {
+      "target_end_pu": 0.8479723615195173,
+      "ext_vm": 0.8599723615195173,
+      "seed": 808446260
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 8,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 17726,
+    "end": 17747,
+    "params": {
+      "target_end_pu": 0.8498124061236102,
+      "ext_vm": 0.8618124061236102,
+      "seed": 629226254
+    },
+    "cause_tunisia": "upstream HV/MV substation tap limit reached",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 9,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 379,
+    "end": 388,
+    "params": {
+      "target_end_pu": 0.8315441286391186,
+      "ext_vm": 0.8435441286391187,
+      "seed": 969018190
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 10,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 14953,
+    "end": 14975,
+    "params": {
+      "target_end_pu": 0.8202240545231245,
+      "ext_vm": 0.8322240545231245,
+      "seed": 200606723
+    },
+    "cause_tunisia": "upstream HV/MV substation tap limit reached",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 11,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 7093,
+    "end": 7114,
+    "params": {
+      "target_end_pu": 0.8360559582738271,
+      "ext_vm": 0.8480559582738271,
+      "seed": 964895660
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 12,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 25009,
+    "end": 25016,
+    "params": {
+      "target_end_pu": 0.8583830300165516,
+      "ext_vm": 0.8703830300165516,
+      "seed": 509790809
+    },
+    "cause_tunisia": "MV feeder overloaded at the evening peak (summer AC)",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 13,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 2966,
+    "end": 2985,
+    "params": {
+      "target_end_pu": 0.8524686292825893,
+      "ext_vm": 0.8644686292825893,
+      "seed": 726787132
+    },
+    "cause_tunisia": "upstream HV/MV substation tap limit reached",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 14,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 14867,
+    "end": 14883,
+    "params": {
+      "target_end_pu": 0.8558910440324328,
+      "ext_vm": 0.8678910440324328,
+      "seed": 871339376
+    },
+    "cause_tunisia": "MV feeder overloaded at the evening peak (summer AC)",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 15,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 15066,
+    "end": 15071,
+    "params": {
+      "target_end_pu": 0.8393821807754923,
+      "ext_vm": 0.8513821807754923,
+      "seed": 381582877
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 16,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 34358,
+    "end": 34370,
+    "params": {
+      "target_end_pu": 0.8553995015806366,
+      "ext_vm": 0.8673995015806366,
+      "seed": 379446171
+    },
+    "cause_tunisia": "upstream HV/MV substation tap limit reached",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 17,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 19732,
+    "end": 19748,
+    "params": {
+      "target_end_pu": 0.8605870146287673,
+      "ext_vm": 0.8725870146287673,
+      "seed": 956764820
+    },
+    "cause_tunisia": "MV feeder overloaded at the evening peak (summer AC)",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 18,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 13595,
+    "end": 13610,
+    "params": {
+      "target_end_pu": 0.8441498978862388,
+      "ext_vm": 0.8561498978862389,
+      "seed": 826159494
+    },
+    "cause_tunisia": "MV feeder overloaded at the evening peak (summer AC)",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 19,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 11402,
+    "end": 11414,
+    "params": {
+      "target_end_pu": 0.8603059097566771,
+      "ext_vm": 0.8723059097566771,
+      "seed": 967828050
+    },
+    "cause_tunisia": "MV feeder overloaded at the evening peak (summer AC)",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 20,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 27061,
+    "end": 27071,
+    "params": {
+      "target_end_pu": 0.8597328843003073,
+      "ext_vm": 0.8717328843003073,
+      "seed": 533033350
+    },
+    "cause_tunisia": "MV feeder overloaded at the evening peak (summer AC)",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 21,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 31856,
+    "end": 31877,
+    "params": {
+      "target_end_pu": 0.8742350072917556,
+      "ext_vm": 0.8862350072917556,
+      "seed": 845074320
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 22,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 6688,
+    "end": 6703,
+    "params": {
+      "target_end_pu": 0.8315478096980999,
+      "ext_vm": 0.8435478096981,
+      "seed": 750218701
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 23,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 9710,
+    "end": 9719,
+    "params": {
+      "target_end_pu": 0.8730434136517882,
+      "ext_vm": 0.8850434136517882,
+      "seed": 552326487
+    },
+    "cause_tunisia": "winter evening heating peak, long rural MV line",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 24,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 18607,
+    "end": 18624,
+    "params": {
+      "target_end_pu": 0.8425772701677952,
+      "ext_vm": 0.8545772701677952,
+      "seed": 983325332
+    },
+    "cause_tunisia": "upstream HV/MV substation tap limit reached",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 25,
+    "label": "sustained_undervoltage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 1238,
+    "end": 1246,
+    "params": {
+      "target_end_pu": 0.8725731284865562,
+      "ext_vm": 0.8845731284865562,
+      "seed": 239489212
+    },
+    "cause_tunisia": "upstream HV/MV substation tap limit reached",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 26,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 22044,
+    "end": 22055,
+    "params": {
+      "target_loading": 111.34273598362653,
+      "seed": 446736755
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 27,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 21580,
+    "end": 21584,
+    "params": {
+      "target_loading": 102.88015853713924,
+      "seed": 25196870
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 28,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 30595,
+    "end": 30601,
+    "params": {
+      "target_loading": 121.07506117111691,
+      "seed": 727884518
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 29,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 29627,
+    "end": 29632,
+    "params": {
+      "target_loading": 111.98210934288475,
+      "seed": 523740107
+    },
+    "cause_tunisia": "heat wave: unmetered AC demand of other customers",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 30,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 25974,
+    "end": 25988,
+    "params": {
+      "target_loading": 112.30699953368185,
+      "seed": 903375344
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 31,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 32827,
+    "end": 32840,
+    "params": {
+      "target_loading": 106.38080606422766,
+      "seed": 765247383
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 32,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 8131,
+    "end": 8150,
+    "params": {
+      "target_loading": 123.83634760433486,
+      "seed": 743109453
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 33,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 17053,
+    "end": 17067,
+    "params": {
+      "target_loading": 125.64243206185633,
+      "seed": 136764051
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 34,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 20246,
+    "end": 20250,
+    "params": {
+      "target_loading": 124.997686084843,
+      "seed": 952213124
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 35,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 13983,
+    "end": 13988,
+    "params": {
+      "target_loading": 107.75711329178752,
+      "seed": 725849420
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 36,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 15440,
+    "end": 15450,
+    "params": {
+      "target_loading": 129.4955977809136,
+      "seed": 866567936
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 37,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 14652,
+    "end": 14672,
+    "params": {
+      "target_loading": 129.60914523051815,
+      "seed": 340068067
+    },
+    "cause_tunisia": "heat wave: unmetered AC demand of other customers",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 38,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 34133,
+    "end": 34144,
+    "params": {
+      "target_loading": 116.95015740408186,
+      "seed": 950548502
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 39,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 23001,
+    "end": 23020,
+    "params": {
+      "target_loading": 118.83893305173186,
+      "seed": 896540523
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 40,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 25402,
+    "end": 25413,
+    "params": {
+      "target_loading": 113.93773834729976,
+      "seed": 714389178
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 41,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 17846,
+    "end": 17851,
+    "params": {
+      "target_loading": 117.0659297764579,
+      "seed": 68715352
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 42,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 14373,
+    "end": 14393,
+    "params": {
+      "target_loading": 125.37513527060116,
+      "seed": 679834074
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 43,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 20253,
+    "end": 20262,
+    "params": {
+      "target_loading": 130.1752605453858,
+      "seed": 717085904
+    },
+    "cause_tunisia": "heat wave: unmetered AC demand of other customers",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 44,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 16114,
+    "end": 16123,
+    "params": {
+      "target_loading": 107.88444081419198,
+      "seed": 168978675
+    },
+    "cause_tunisia": "heat wave: unmetered AC demand of other customers",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 45,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 28288,
+    "end": 28299,
+    "params": {
+      "target_loading": 126.3648956975933,
+      "seed": 212908194
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 46,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 19954,
+    "end": 19959,
+    "params": {
+      "target_loading": 115.89669835179912,
+      "seed": 173152190
+    },
+    "cause_tunisia": "illegal (unmetered) connections in summer",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 47,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 15034,
+    "end": 15045,
+    "params": {
+      "target_loading": 129.87917449735724,
+      "seed": 659275006
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 48,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 20336,
+    "end": 20347,
+    "params": {
+      "target_loading": 107.33279249878105,
+      "seed": 734991560
+    },
+    "cause_tunisia": "heat wave: unmetered AC demand of other customers",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 49,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 23226,
+    "end": 23241,
+    "params": {
+      "target_loading": 125.64143186046138,
+      "seed": 411516823
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 50,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 6850,
+    "end": 6866,
+    "params": {
+      "target_loading": 128.48729098440032,
+      "seed": 694087271
+    },
+    "cause_tunisia": "Ramadan / Eid evening peak with unmetered loads",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 51,
+    "label": "transformer_overload",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_03",
+      "house_04",
+      "house_05",
+      "house_06",
+      "house_07",
+      "house_08",
+      "house_09",
+      "house_10",
+      "house_11",
+      "house_12",
+      "house_13"
+    ],
+    "start": 18988,
+    "end": 19004,
+    "params": {
+      "target_loading": 128.55342761792124,
+      "seed": 877691366
+    },
+    "cause_tunisia": "heat wave: unmetered AC demand of other customers",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 52,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_07"
+    ],
+    "start": 4222,
+    "end": 4227,
+    "params": {
+      "line": 0,
+      "cold_pickup": 1.2121424433022456
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 53,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04",
+      "house_05"
+    ],
+    "start": 22263,
+    "end": 22273,
+    "params": {
+      "line": 3,
+      "cold_pickup": 1.2975969669587128
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 54,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_07"
+    ],
+    "start": 22558,
+    "end": 22570,
+    "params": {
+      "line": 0,
+      "cold_pickup": 1.2276425492632987
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 55,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_07"
+    ],
+    "start": 22188,
+    "end": 22198,
+    "params": {
+      "line": 0,
+      "cold_pickup": 1.3145065204029314
+    },
+    "cause_tunisia": "storm / wind damage on the LV cable",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 56,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04",
+      "house_05",
+      "house_12"
+    ],
+    "start": 12558,
+    "end": 12575,
+    "params": {
+      "line": 10,
+      "cold_pickup": 1.15992160461475
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 57,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_10",
+      "house_13"
+    ],
+    "start": 30679,
+    "end": 30690,
+    "params": {
+      "line": 7,
+      "cold_pickup": 1.1626774114915153
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 58,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 16767,
+    "end": 16769,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.3066529548320303
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 59,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_13"
+    ],
+    "start": 16757,
+    "end": 16768,
+    "params": {
+      "line": 1,
+      "cold_pickup": 1.3492817282115324
+    },
+    "cause_tunisia": "storm / wind damage on the LV cable",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 60,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 26661,
+    "end": 26667,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.1993206424579366
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 61,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 25972,
+    "end": 25974,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.1740614194070107
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 62,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_10",
+      "house_13"
+    ],
+    "start": 25931,
+    "end": 25940,
+    "params": {
+      "line": 7,
+      "cold_pickup": 1.350878174782582
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 63,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04",
+      "house_05",
+      "house_12"
+    ],
+    "start": 26363,
+    "end": 26367,
+    "params": {
+      "line": 10,
+      "cold_pickup": 1.3732369395476973
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 64,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 836,
+    "end": 839,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.2036690681859408
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 65,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_06",
+      "house_13"
+    ],
+    "start": 32006,
+    "end": 32008,
+    "params": {
+      "line": 8,
+      "cold_pickup": 1.2131936375960766
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 66,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_07",
+      "house_11"
+    ],
+    "start": 21378,
+    "end": 21380,
+    "params": {
+      "line": 4,
+      "cold_pickup": 1.2451461908751356
+    },
+    "cause_tunisia": "storm / wind damage on the LV cable",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 67,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_13"
+    ],
+    "start": 21454,
+    "end": 21460,
+    "params": {
+      "line": 1,
+      "cold_pickup": 1.2442134453521956
+    },
+    "cause_tunisia": "storm / wind damage on the LV cable",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 68,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04",
+      "house_05",
+      "house_12"
+    ],
+    "start": 19825,
+    "end": 19827,
+    "params": {
+      "line": 10,
+      "cold_pickup": 1.2118523979041926
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 69,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_09",
+      "house_10",
+      "house_13"
+    ],
+    "start": 18718,
+    "end": 18722,
+    "params": {
+      "line": 2,
+      "cold_pickup": 1.3381830340917513
+    },
+    "cause_tunisia": "storm / wind damage on the LV cable",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 70,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_13"
+    ],
+    "start": 15151,
+    "end": 15154,
+    "params": {
+      "line": 1,
+      "cold_pickup": 1.3407952378503702
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 71,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_13"
+    ],
+    "start": 6037,
+    "end": 6043,
+    "params": {
+      "line": 1,
+      "cold_pickup": 1.1703155777789975
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 72,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_13"
+    ],
+    "start": 14677,
+    "end": 14686,
+    "params": {
+      "line": 1,
+      "cold_pickup": 1.3581985775005168
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 73,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04",
+      "house_05"
+    ],
+    "start": 9880,
+    "end": 9884,
+    "params": {
+      "line": 3,
+      "cold_pickup": 1.3709806161805367
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 74,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_07"
+    ],
+    "start": 23475,
+    "end": 23481,
+    "params": {
+      "line": 5,
+      "cold_pickup": 1.331831194184636
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 75,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_13"
+    ],
+    "start": 26969,
+    "end": 26973,
+    "params": {
+      "line": 1,
+      "cold_pickup": 1.242683198706563
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 76,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_06",
+      "house_13"
+    ],
+    "start": 19546,
+    "end": 19553,
+    "params": {
+      "line": 8,
+      "cold_pickup": 1.1977095508724191
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 77,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_08"
+    ],
+    "start": 19765,
+    "end": 19770,
+    "params": {
+      "line": 9,
+      "cold_pickup": 1.3741466826897948
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 78,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_08"
+    ],
+    "start": 9758,
+    "end": 9764,
+    "params": {
+      "line": 9,
+      "cold_pickup": 1.3111304057558686
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 79,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04",
+      "house_05",
+      "house_12"
+    ],
+    "start": 34941,
+    "end": 34943,
+    "params": {
+      "line": 10,
+      "cold_pickup": 1.3607562667103965
+    },
+    "cause_tunisia": "storm / wind damage on the LV cable",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 80,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_13"
+    ],
+    "start": 17909,
+    "end": 17919,
+    "params": {
+      "line": 12,
+      "cold_pickup": 1.1961114106116446
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 81,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_06",
+      "house_13"
+    ],
+    "start": 24342,
+    "end": 24347,
+    "params": {
+      "line": 8,
+      "cold_pickup": 1.2611997561066945
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 82,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_08"
+    ],
+    "start": 18225,
+    "end": 18231,
+    "params": {
+      "line": 9,
+      "cold_pickup": 1.361080029102873
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 83,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_07"
+    ],
+    "start": 17811,
+    "end": 17820,
+    "params": {
+      "line": 0,
+      "cold_pickup": 1.3304100546299154
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 84,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_10",
+      "house_13"
+    ],
+    "start": 27132,
+    "end": 27138,
+    "params": {
+      "line": 7,
+      "cold_pickup": 1.246858074327661
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 85,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 24377,
+    "end": 24382,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.186997037190516
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 86,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_13"
+    ],
+    "start": 26959,
+    "end": 26962,
+    "params": {
+      "line": 12,
+      "cold_pickup": 1.1808453535693935
+    },
+    "cause_tunisia": "LV fuse blown at the evening peak",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 87,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 34671,
+    "end": 34673,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.194201889784224
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 88,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_13"
+    ],
+    "start": 18586,
+    "end": 18590,
+    "params": {
+      "line": 1,
+      "cold_pickup": 1.1976393120395283
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 89,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_08"
+    ],
+    "start": 11288,
+    "end": 11296,
+    "params": {
+      "line": 9,
+      "cold_pickup": 1.166900881318515
+    },
+    "cause_tunisia": "third-party works damaged the cable",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 90,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_08"
+    ],
+    "start": 1021,
+    "end": 1024,
+    "params": {
+      "line": 9,
+      "cold_pickup": 1.2280576685437572
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 91,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_07",
+      "house_11"
+    ],
+    "start": 18696,
+    "end": 18711,
+    "params": {
+      "line": 4,
+      "cold_pickup": 1.398840414857249
+    },
+    "cause_tunisia": "storm / wind damage on the LV cable",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 92,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_07",
+      "house_11"
+    ],
+    "start": 30400,
+    "end": 30407,
+    "params": {
+      "line": 6,
+      "cold_pickup": 1.2116438825184095
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 93,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 30400,
+    "end": 30407,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 92
+    },
+    "cause_tunisia": "BMS discharge protection stuck (cell over-temperature)",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 94,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 22095,
+    "end": 22097,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.1807834140165974
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 95,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 22095,
+    "end": 22097,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 94
+    },
+    "cause_tunisia": "BMS discharge protection stuck (cell over-temperature)",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 96,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_09",
+      "house_10",
+      "house_13"
+    ],
+    "start": 12480,
+    "end": 12483,
+    "params": {
+      "line": 2,
+      "cold_pickup": 1.317466139954328
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 97,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 12480,
+    "end": 12483,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 96
+    },
+    "cause_tunisia": "BMS discharge protection stuck (cell over-temperature)",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 98,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_07",
+      "house_11"
+    ],
+    "start": 22139,
+    "end": 22146,
+    "params": {
+      "line": 6,
+      "cold_pickup": 1.3071333976872879
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 99,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 22139,
+    "end": 22146,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 98
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 100,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_07",
+      "house_11"
+    ],
+    "start": 16295,
+    "end": 16304,
+    "params": {
+      "line": 6,
+      "cold_pickup": 1.1840771812045074
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 101,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 16295,
+    "end": 16304,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 100
+    },
+    "cause_tunisia": "inverter IGBT / DC-link fault",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 102,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04",
+      "house_05",
+      "house_12"
+    ],
+    "start": 16474,
+    "end": 16476,
+    "params": {
+      "line": 10,
+      "cold_pickup": 1.3924768933955427
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 103,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 16474,
+    "end": 16476,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 102
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 104,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_09",
+      "house_10",
+      "house_13"
+    ],
+    "start": 17364,
+    "end": 17369,
+    "params": {
+      "line": 2,
+      "cold_pickup": 1.37873897568471
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 105,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 17364,
+    "end": 17369,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 104
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 106,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_07",
+      "house_11"
+    ],
+    "start": 8736,
+    "end": 8760,
+    "params": {
+      "line": 4,
+      "cold_pickup": 1.2091376441015054
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 107,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 8736,
+    "end": 8760,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 106
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 108,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_07",
+      "house_11"
+    ],
+    "start": 24390,
+    "end": 24395,
+    "params": {
+      "line": 6,
+      "cold_pickup": 1.3269301940124456
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 109,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 24390,
+    "end": 24395,
+    "params": {
+      "inverter_mult": 0.02203691726841722,
+      "variant": "during_outage",
+      "linked_outage": 108
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 110,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 7557,
+    "end": 7561,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.3798639628799922
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 111,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 7557,
+    "end": 7561,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 110
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 112,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_09",
+      "house_10",
+      "house_13"
+    ],
+    "start": 31749,
+    "end": 31751,
+    "params": {
+      "line": 2,
+      "cold_pickup": 1.188782567984461
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 113,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 31749,
+    "end": 31751,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 112
+    },
+    "cause_tunisia": "BMS discharge protection stuck (cell over-temperature)",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 114,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_07",
+      "house_11"
+    ],
+    "start": 20299,
+    "end": 20301,
+    "params": {
+      "line": 4,
+      "cold_pickup": 1.3509166494500133
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 115,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 20299,
+    "end": 20301,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 114
+    },
+    "cause_tunisia": "inverter IGBT / DC-link fault",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 116,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_07",
+      "house_11"
+    ],
+    "start": 21194,
+    "end": 21206,
+    "params": {
+      "line": 6,
+      "cold_pickup": 1.387640703726758
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 117,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 21194,
+    "end": 21206,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 116
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 118,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04",
+      "house_05"
+    ],
+    "start": 15706,
+    "end": 15714,
+    "params": {
+      "line": 3,
+      "cold_pickup": 1.3174142636739348
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 119,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 15706,
+    "end": 15714,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 118
+    },
+    "cause_tunisia": "inverter IGBT / DC-link fault",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 120,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_03",
+      "house_06",
+      "house_09",
+      "house_10",
+      "house_13"
+    ],
+    "start": 24549,
+    "end": 24554,
+    "params": {
+      "line": 2,
+      "cold_pickup": 1.1663287377875424
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 121,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 24549,
+    "end": 24554,
+    "params": {
+      "inverter_mult": 0.005385811923762583,
+      "variant": "during_outage",
+      "linked_outage": 120
+    },
+    "cause_tunisia": "inverter IGBT / DC-link fault",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 122,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_07",
+      "house_11"
+    ],
+    "start": 18097,
+    "end": 18101,
+    "params": {
+      "line": 6,
+      "cold_pickup": 1.3301111627169295
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 123,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 18097,
+    "end": 18101,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 122
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 124,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_01",
+      "house_02",
+      "house_07",
+      "house_11"
+    ],
+    "start": 20127,
+    "end": 20129,
+    "params": {
+      "line": 6,
+      "cold_pickup": 1.2895271732123967
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 125,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 20127,
+    "end": 20129,
+    "params": {
+      "inverter_mult": 0.005990139452215796,
+      "variant": "during_outage",
+      "linked_outage": 124
+    },
+    "cause_tunisia": "BMS-inverter CAN communication lost",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 126,
+    "label": "localized_grid_outage",
+    "houses": [
+      "house_04"
+    ],
+    "start": 20525,
+    "end": 20531,
+    "params": {
+      "line": 11,
+      "cold_pickup": 1.205549221306816
+    },
+    "cause_tunisia": "summer cable-joint failure under heat",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 127,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 20525,
+    "end": 20531,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "during_outage",
+      "linked_outage": 126
+    },
+    "cause_tunisia": "inverter IGBT / DC-link fault",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 128,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 12223,
+    "end": 12416,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 129,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 21822,
+    "end": 22025,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 130,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 22406,
+    "end": 22588,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 131,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 21822,
+    "end": 21872,
+    "params": {
+      "charge_mult": 0.17591394961817125,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 132,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 29606,
+    "end": 29700,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 133,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 17121,
+    "end": 17169,
+    "params": {
+      "charge_mult": 0.05859742506270958,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 134,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 25663,
+    "end": 25766,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 135,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 25665,
+    "end": 25836,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 136,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 16545,
+    "end": 16610,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 137,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 17121,
+    "end": 17257,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 138,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 31900,
+    "end": 32038,
+    "params": {
+      "charge_mult": 0.14428468642613318,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 139,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 22883,
+    "end": 22973,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 140,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 25279,
+    "end": 25470,
+    "params": {
+      "charge_mult": 0.16841800326709594,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 141,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 15777,
+    "end": 15933,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 142,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 23172,
+    "end": 23241,
+    "params": {
+      "charge_mult": 0.06417703382381364,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 143,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 18180,
+    "end": 18321,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 144,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 11267,
+    "end": 11424,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 145,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 11657,
+    "end": 11738,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 146,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 14141,
+    "end": 14269,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 147,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 17888,
+    "end": 17992,
+    "params": {
+      "charge_mult": 0.2273917341712121,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 148,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 6088,
+    "end": 6155,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 149,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 31037,
+    "end": 31138,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 150,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 24224,
+    "end": 24370,
+    "params": {
+      "charge_mult": 0.1359595312535984,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 151,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 6276,
+    "end": 6473,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 152,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 6081,
+    "end": 6230,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 153,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 898,
+    "end": 1103,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 154,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 18370,
+    "end": 18432,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 155,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 7722,
+    "end": 7894,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 156,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 17796,
+    "end": 17902,
+    "params": {
+      "charge_mult": 0.09022873854679679,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "MPPT charge-controller fault",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 157,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 1675,
+    "end": 1745,
+    "params": {
+      "charge_mult": 0.0,
+      "mode": "zero"
+    },
+    "cause_tunisia": "BMS cell-imbalance protection",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 158,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 10119,
+    "end": 10261,
+    "params": {
+      "charge_mult": 0.2715492874410207,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 159,
+    "label": "battery_charge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 1096,
+    "end": 1178,
+    "params": {
+      "charge_mult": 0.2787736866669861,
+      "mode": "reduced"
+    },
+    "cause_tunisia": "BMS over-temperature charge block (battery room > 45 C)",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 160,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 22153,
+    "end": 22200,
+    "params": {
+      "inverter_mult": 0.021960138337402815,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "inverter fault -> permanent bypass to STEG",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 161,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 22148,
+    "end": 22167,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS-inverter communication lost",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 162,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 4196,
+    "end": 4226,
+    "params": {
+      "inverter_mult": 0.02234802690486334,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "inverter fault -> permanent bypass to STEG",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 163,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 12565,
+    "end": 12603,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS-inverter communication lost",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 164,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 9098,
+    "end": 9114,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS-inverter communication lost",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 165,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 16303,
+    "end": 16335,
+    "params": {
+      "inverter_mult": 0.02201155450266423,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS-inverter communication lost",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 166,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 16975,
+    "end": 17017,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS discharge protection stuck",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 167,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 8823,
+    "end": 8868,
+    "params": {
+      "inverter_mult": 0.02215821624994561,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS discharge protection stuck",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 168,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_04"
+    ],
+    "start": 7857,
+    "end": 7876,
+    "params": {
+      "inverter_mult": 0.011713449377306676,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS-inverter communication lost",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 169,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_09"
+    ],
+    "start": 27912,
+    "end": 27939,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS discharge protection stuck",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 170,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_11"
+    ],
+    "start": 854,
+    "end": 884,
+    "params": {
+      "inverter_mult": 0.0,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS discharge protection stuck",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 171,
+    "label": "battery_discharge_failure",
+    "houses": [
+      "house_02"
+    ],
+    "start": 10342,
+    "end": 10372,
+    "params": {
+      "inverter_mult": 0.016367758010558404,
+      "variant": "normal_operation"
+    },
+    "cause_tunisia": "BMS discharge protection stuck",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 172,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 12578,
+    "end": 13346,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.6221285982430838,
+      "h_from": 15.0,
+      "h_to": 17.756523227398574
+    },
+    "cause_tunisia": "neighbour added a floor (shadow)",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 173,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 4129,
+    "end": 4609,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.5413274439501156,
+      "h_from": 15.0,
+      "h_to": 18.950266410824156
+    },
+    "cause_tunisia": "shadow of a roof water tank / satellite dish",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 174,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_09"
+    ],
+    "start": 4131,
+    "end": 4707,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.3953693947947151
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 175,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_02"
+    ],
+    "start": 12578,
+    "end": 13154,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.6719956071707474,
+      "h_from": 15.0,
+      "h_to": 18.92016291024376
+    },
+    "cause_tunisia": "shadow of a roof water tank / satellite dish",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 176,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 29952,
+    "end": 30432,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.5007764201017318
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 177,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_09"
+    ],
+    "start": 8257,
+    "end": 8641,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.4557842561988094
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 178,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_09"
+    ],
+    "start": 25537,
+    "end": 25825,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.6667723652303472,
+      "h_from": 13.0,
+      "h_to": 16.61322170851967
+    },
+    "cause_tunisia": "laundry / object placed on the panels",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 179,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_02"
+    ],
+    "start": 8736,
+    "end": 9120,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.5865724947814205,
+      "h_from": 8.0,
+      "h_to": 11.04261346458252
+    },
+    "cause_tunisia": "laundry / object placed on the panels",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 180,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 9024,
+    "end": 9408,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.3320477950354212
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 181,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 8065,
+    "end": 8737,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.3336097478135532
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 182,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_11"
+    ],
+    "start": 15651,
+    "end": 16035,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.4073072737848126
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 183,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_02"
+    ],
+    "start": 18913,
+    "end": 19297,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.3997867196435171
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 184,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 14112,
+    "end": 14592,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.4283076523439877,
+      "h_from": 14.0,
+      "h_to": 16.273671715916638
+    },
+    "cause_tunisia": "laundry / object placed on the panels",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 185,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 9889,
+    "end": 10657,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.5027390194014895
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 186,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_11"
+    ],
+    "start": 20448,
+    "end": 21120,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.5479665555182175
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 187,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_02"
+    ],
+    "start": 22850,
+    "end": 23522,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.45990685315497426
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 188,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 17568,
+    "end": 18240,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.4242577047035642
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 189,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 24387,
+    "end": 24675,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.5709069833643128,
+      "h_from": 15.0,
+      "h_to": 17.01179833916675
+    },
+    "cause_tunisia": "shadow of a roof water tank / satellite dish",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 190,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_11"
+    ],
+    "start": 9506,
+    "end": 9986,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.668444517485413,
+      "h_from": 15.0,
+      "h_to": 17.165518314100186
+    },
+    "cause_tunisia": "shadow of a roof water tank / satellite dish",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 191,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_11"
+    ],
+    "start": 5953,
+    "end": 6241,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.37424228091378453
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 192,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 20736,
+    "end": 21312,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.5777064333173846,
+      "h_from": 13.0,
+      "h_to": 16.967331663816374
+    },
+    "cause_tunisia": "shadow of a roof water tank / satellite dish",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 193,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 23041,
+    "end": 23521,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.6146572323117169,
+      "h_from": 13.0,
+      "h_to": 15.39396181604306
+    },
+    "cause_tunisia": "shadow of a roof water tank / satellite dish",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 194,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_09"
+    ],
+    "start": 9985,
+    "end": 10369,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.6794327637324691,
+      "h_from": 13.0,
+      "h_to": 15.025436783170232
+    },
+    "cause_tunisia": "neighbour added a floor (shadow)",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 195,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_11"
+    ],
+    "start": 14883,
+    "end": 15267,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.49004647421558456
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 196,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_02"
+    ],
+    "start": 9411,
+    "end": 9987,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.41557668890417604
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 197,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 10851,
+    "end": 11619,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.6853996082051304,
+      "h_from": 8.0,
+      "h_to": 10.676187706421267
+    },
+    "cause_tunisia": "neighbour added a floor (shadow)",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 198,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_09"
+    ],
+    "start": 17760,
+    "end": 18240,
+    "params": {
+      "kind": "object_shadow",
+      "loss": 0.5412656316361982,
+      "h_from": 7.5,
+      "h_to": 11.129132096510471
+    },
+    "cause_tunisia": "laundry / object placed on the panels",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 199,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_11"
+    ],
+    "start": 24770,
+    "end": 25250,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.5118490647606062
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 200,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_02"
+    ],
+    "start": 14115,
+    "end": 14691,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.4965788756080859
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 201,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_04"
+    ],
+    "start": 28227,
+    "end": 28515,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.33196654172815543
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 202,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_09"
+    ],
+    "start": 5568,
+    "end": 6336,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.3617048190188198
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 203,
+    "label": "pv_partial_shading",
+    "houses": [
+      "house_02"
+    ],
+    "start": 13634,
+    "end": 14114,
+    "params": {
+      "kind": "soiling",
+      "loss": 0.5473706937043572
+    },
+    "cause_tunisia": "sand / dust deposit after a chehili (sirocco) wind episode",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 204,
+    "label": "meter_frozen",
+    "houses": [
+      "house_13"
+    ],
+    "start": 30394,
+    "end": 30411,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 205,
+    "label": "meter_frozen",
+    "houses": [
+      "house_03"
+    ],
+    "start": 21953,
+    "end": 21969,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 206,
+    "label": "meter_frozen",
+    "houses": [
+      "house_07"
+    ],
+    "start": 4544,
+    "end": 4557,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 207,
+    "label": "meter_frozen",
+    "houses": [
+      "house_01"
+    ],
+    "start": 22582,
+    "end": 22640,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 208,
+    "label": "meter_frozen",
+    "houses": [
+      "house_01"
+    ],
+    "start": 30268,
+    "end": 30287,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 209,
+    "label": "meter_frozen",
+    "houses": [
+      "house_12"
+    ],
+    "start": 4035,
+    "end": 4050,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 210,
+    "label": "meter_frozen",
+    "houses": [
+      "house_04"
+    ],
+    "start": 22791,
+    "end": 22795,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 211,
+    "label": "meter_frozen",
+    "houses": [
+      "house_08"
+    ],
+    "start": 33098,
+    "end": 33108,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 212,
+    "label": "meter_frozen",
+    "houses": [
+      "house_09"
+    ],
+    "start": 32771,
+    "end": 32804,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 213,
+    "label": "meter_frozen",
+    "houses": [
+      "house_13"
+    ],
+    "start": 8663,
+    "end": 8704,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 214,
+    "label": "meter_frozen",
+    "houses": [
+      "house_05"
+    ],
+    "start": 16781,
+    "end": 16795,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 215,
+    "label": "meter_frozen",
+    "houses": [
+      "house_11"
+    ],
+    "start": 17335,
+    "end": 17340,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 216,
+    "label": "meter_frozen",
+    "houses": [
+      "house_11"
+    ],
+    "start": 33067,
+    "end": 33079,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 217,
+    "label": "meter_frozen",
+    "houses": [
+      "house_04"
+    ],
+    "start": 8829,
+    "end": 8837,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 218,
+    "label": "meter_frozen",
+    "houses": [
+      "house_01"
+    ],
+    "start": 245,
+    "end": 280,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 219,
+    "label": "meter_frozen",
+    "houses": [
+      "house_10"
+    ],
+    "start": 21118,
+    "end": 21126,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 220,
+    "label": "meter_frozen",
+    "houses": [
+      "house_10"
+    ],
+    "start": 2513,
+    "end": 2525,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 221,
+    "label": "meter_frozen",
+    "houses": [
+      "house_07"
+    ],
+    "start": 18062,
+    "end": 18076,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 222,
+    "label": "meter_frozen",
+    "houses": [
+      "house_02"
+    ],
+    "start": 20111,
+    "end": 20119,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 223,
+    "label": "meter_frozen",
+    "houses": [
+      "house_10"
+    ],
+    "start": 3371,
+    "end": 3416,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 224,
+    "label": "meter_frozen",
+    "houses": [
+      "house_13"
+    ],
+    "start": 32032,
+    "end": 32076,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 225,
+    "label": "meter_frozen",
+    "houses": [
+      "house_10"
+    ],
+    "start": 18837,
+    "end": 18849,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 226,
+    "label": "meter_frozen",
+    "houses": [
+      "house_10"
+    ],
+    "start": 23794,
+    "end": 23835,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 227,
+    "label": "meter_frozen",
+    "houses": [
+      "house_12"
+    ],
+    "start": 23111,
+    "end": 23159,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 228,
+    "label": "meter_frozen",
+    "houses": [
+      "house_10"
+    ],
+    "start": 24843,
+    "end": 24857,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 229,
+    "label": "meter_frozen",
+    "houses": [
+      "house_02"
+    ],
+    "start": 18396,
+    "end": 18429,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 230,
+    "label": "meter_frozen",
+    "houses": [
+      "house_08"
+    ],
+    "start": 21402,
+    "end": 21453,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 231,
+    "label": "meter_frozen",
+    "houses": [
+      "house_09"
+    ],
+    "start": 16033,
+    "end": 16067,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 232,
+    "label": "meter_frozen",
+    "houses": [
+      "house_08"
+    ],
+    "start": 17863,
+    "end": 17867,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 233,
+    "label": "meter_frozen",
+    "houses": [
+      "house_12"
+    ],
+    "start": 5406,
+    "end": 5413,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 234,
+    "label": "meter_frozen",
+    "houses": [
+      "house_06"
+    ],
+    "start": 27890,
+    "end": 27901,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 235,
+    "label": "meter_frozen",
+    "houses": [
+      "house_06"
+    ],
+    "start": 31022,
+    "end": 31033,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 236,
+    "label": "meter_frozen",
+    "houses": [
+      "house_12"
+    ],
+    "start": 15610,
+    "end": 15619,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 237,
+    "label": "meter_frozen",
+    "houses": [
+      "house_10"
+    ],
+    "start": 3792,
+    "end": 3800,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 238,
+    "label": "meter_frozen",
+    "houses": [
+      "house_01"
+    ],
+    "start": 25423,
+    "end": 25433,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 239,
+    "label": "meter_frozen",
+    "houses": [
+      "house_02"
+    ],
+    "start": 11613,
+    "end": 11709,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 240,
+    "label": "meter_frozen",
+    "houses": [
+      "house_11"
+    ],
+    "start": 18141,
+    "end": 18156,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 241,
+    "label": "meter_frozen",
+    "houses": [
+      "house_04"
+    ],
+    "start": 1673,
+    "end": 1706,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 242,
+    "label": "meter_frozen",
+    "houses": [
+      "house_13"
+    ],
+    "start": 21005,
+    "end": 21015,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 243,
+    "label": "meter_frozen",
+    "houses": [
+      "house_04"
+    ],
+    "start": 2294,
+    "end": 2319,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 244,
+    "label": "meter_frozen",
+    "houses": [
+      "house_04"
+    ],
+    "start": 20121,
+    "end": 20158,
+    "params": {},
+    "cause_tunisia": "concentrator keeps re-sending the last frame",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 245,
+    "label": "meter_frozen",
+    "houses": [
+      "house_03"
+    ],
+    "start": 23507,
+    "end": 23512,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 246,
+    "label": "meter_frozen",
+    "houses": [
+      "house_02"
+    ],
+    "start": 13995,
+    "end": 14052,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 247,
+    "label": "meter_frozen",
+    "houses": [
+      "house_04"
+    ],
+    "start": 20223,
+    "end": 20249,
+    "params": {},
+    "cause_tunisia": "meter firmware hang (summer heat)",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 248,
+    "label": "meter_dropout",
+    "houses": [
+      "house_03"
+    ],
+    "start": 4303,
+    "end": 4314,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 249,
+    "label": "meter_dropout",
+    "houses": [
+      "house_01"
+    ],
+    "start": 22723,
+    "end": 22737,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 250,
+    "label": "meter_dropout",
+    "houses": [
+      "house_06"
+    ],
+    "start": 13367,
+    "end": 13427,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 251,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 22356,
+    "end": 22361,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 252,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 22600,
+    "end": 22611,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 253,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 13189,
+    "end": 13225,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 254,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 5078,
+    "end": 5092,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 255,
+    "label": "meter_dropout",
+    "houses": [
+      "house_02"
+    ],
+    "start": 26644,
+    "end": 26701,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 256,
+    "label": "meter_dropout",
+    "houses": [
+      "house_11"
+    ],
+    "start": 8671,
+    "end": 8674,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 257,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 33118,
+    "end": 33130,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 258,
+    "label": "meter_dropout",
+    "houses": [
+      "house_04"
+    ],
+    "start": 25706,
+    "end": 25735,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 259,
+    "label": "meter_dropout",
+    "houses": [
+      "house_02"
+    ],
+    "start": 16374,
+    "end": 16416,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 260,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 16880,
+    "end": 16926,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 261,
+    "label": "meter_dropout",
+    "houses": [
+      "house_11"
+    ],
+    "start": 26199,
+    "end": 26215,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 262,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 28571,
+    "end": 28589,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 263,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 7806,
+    "end": 7819,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 264,
+    "label": "meter_dropout",
+    "houses": [
+      "house_02"
+    ],
+    "start": 20307,
+    "end": 20310,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 265,
+    "label": "meter_dropout",
+    "houses": [
+      "house_04"
+    ],
+    "start": 25073,
+    "end": 25076,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 266,
+    "label": "meter_dropout",
+    "houses": [
+      "house_13"
+    ],
+    "start": 11220,
+    "end": 11238,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 267,
+    "label": "meter_dropout",
+    "houses": [
+      "house_10"
+    ],
+    "start": 8057,
+    "end": 8063,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 268,
+    "label": "meter_dropout",
+    "houses": [
+      "house_04"
+    ],
+    "start": 23911,
+    "end": 23920,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 269,
+    "label": "meter_dropout",
+    "houses": [
+      "house_06"
+    ],
+    "start": 6247,
+    "end": 6251,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 270,
+    "label": "meter_dropout",
+    "houses": [
+      "house_04"
+    ],
+    "start": 15056,
+    "end": 15072,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 271,
+    "label": "meter_dropout",
+    "houses": [
+      "house_05"
+    ],
+    "start": 25193,
+    "end": 25213,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 272,
+    "label": "meter_dropout",
+    "houses": [
+      "house_11"
+    ],
+    "start": 6270,
+    "end": 6292,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 273,
+    "label": "meter_dropout",
+    "houses": [
+      "house_03"
+    ],
+    "start": 33923,
+    "end": 33941,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 274,
+    "label": "meter_dropout",
+    "houses": [
+      "house_11"
+    ],
+    "start": 3817,
+    "end": 3826,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 275,
+    "label": "meter_dropout",
+    "houses": [
+      "house_12"
+    ],
+    "start": 25241,
+    "end": 25242,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 276,
+    "label": "meter_dropout",
+    "houses": [
+      "house_06"
+    ],
+    "start": 7951,
+    "end": 7982,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 277,
+    "label": "meter_dropout",
+    "houses": [
+      "house_09"
+    ],
+    "start": 10356,
+    "end": 10370,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 278,
+    "label": "meter_dropout",
+    "houses": [
+      "house_03"
+    ],
+    "start": 15778,
+    "end": 15784,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 279,
+    "label": "meter_dropout",
+    "houses": [
+      "house_11"
+    ],
+    "start": 29324,
+    "end": 29348,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 280,
+    "label": "meter_dropout",
+    "houses": [
+      "house_06"
+    ],
+    "start": 34714,
+    "end": 34766,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 281,
+    "label": "meter_dropout",
+    "houses": [
+      "house_06"
+    ],
+    "start": 1888,
+    "end": 1900,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 282,
+    "label": "meter_dropout",
+    "houses": [
+      "house_01"
+    ],
+    "start": 1753,
+    "end": 1754,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 283,
+    "label": "meter_dropout",
+    "houses": [
+      "house_11"
+    ],
+    "start": 17584,
+    "end": 17588,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 284,
+    "label": "meter_dropout",
+    "houses": [
+      "house_10"
+    ],
+    "start": 10768,
+    "end": 10851,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 285,
+    "label": "meter_dropout",
+    "houses": [
+      "house_06"
+    ],
+    "start": 9550,
+    "end": 9590,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 286,
+    "label": "meter_dropout",
+    "houses": [
+      "house_03"
+    ],
+    "start": 10285,
+    "end": 10315,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 287,
+    "label": "meter_dropout",
+    "houses": [
+      "house_06"
+    ],
+    "start": 2828,
+    "end": 2831,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 288,
+    "label": "meter_dropout",
+    "houses": [
+      "house_01"
+    ],
+    "start": 21249,
+    "end": 21255,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 289,
+    "label": "meter_dropout",
+    "houses": [
+      "house_10"
+    ],
+    "start": 2167,
+    "end": 2171,
+    "params": {},
+    "cause_tunisia": "PLC communication loss",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 290,
+    "label": "meter_dropout",
+    "houses": [
+      "house_11"
+    ],
+    "start": 13539,
+    "end": 13666,
+    "params": {},
+    "cause_tunisia": "GPRS / 3G coverage loss (rural area)",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 291,
+    "label": "meter_dropout",
+    "houses": [
+      "house_02"
+    ],
+    "start": 2986,
+    "end": 3010,
+    "params": {},
+    "cause_tunisia": "head-end server outage",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 292,
+    "label": "meter_drift",
+    "houses": [
+      "house_12"
+    ],
+    "start": 4225,
+    "end": 4993,
+    "params": {
+      "final_gain_error": 0.1543278824106042
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 293,
+    "label": "meter_drift",
+    "houses": [
+      "house_13"
+    ],
+    "start": 4034,
+    "end": 4898,
+    "params": {
+      "final_gain_error": -0.23733989341919165
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 294,
+    "label": "meter_drift",
+    "houses": [
+      "house_09"
+    ],
+    "start": 29571,
+    "end": 30147,
+    "params": {
+      "final_gain_error": 0.1978278225870147
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 295,
+    "label": "meter_drift",
+    "houses": [
+      "house_07"
+    ],
+    "start": 29667,
+    "end": 30051,
+    "params": {
+      "final_gain_error": -0.09520240877319108
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 296,
+    "label": "meter_drift",
+    "houses": [
+      "house_06"
+    ],
+    "start": 8640,
+    "end": 9312,
+    "params": {
+      "final_gain_error": -0.13458515201641807
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 297,
+    "label": "meter_drift",
+    "houses": [
+      "house_03"
+    ],
+    "start": 32736,
+    "end": 33408,
+    "params": {
+      "final_gain_error": 0.2337409170559378
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 298,
+    "label": "meter_drift",
+    "houses": [
+      "house_04"
+    ],
+    "start": 32256,
+    "end": 32832,
+    "params": {
+      "final_gain_error": 0.1408464605636175
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 299,
+    "label": "meter_drift",
+    "houses": [
+      "house_01"
+    ],
+    "start": 26114,
+    "end": 26690,
+    "params": {
+      "final_gain_error": -0.23949682499472946
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 300,
+    "label": "meter_drift",
+    "houses": [
+      "house_12"
+    ],
+    "start": 6048,
+    "end": 6432,
+    "params": {
+      "final_gain_error": -0.14197129515734347
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 301,
+    "label": "meter_drift",
+    "houses": [
+      "house_05"
+    ],
+    "start": 22848,
+    "end": 23904,
+    "params": {
+      "final_gain_error": 0.08727021981280221
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 302,
+    "label": "meter_drift",
+    "houses": [
+      "house_03"
+    ],
+    "start": 27169,
+    "end": 27745,
+    "params": {
+      "final_gain_error": -0.21088068632378065
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 303,
+    "label": "meter_drift",
+    "houses": [
+      "house_13"
+    ],
+    "start": 28800,
+    "end": 29472,
+    "params": {
+      "final_gain_error": -0.15498290041021484
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 304,
+    "label": "meter_drift",
+    "houses": [
+      "house_12"
+    ],
+    "start": 28417,
+    "end": 28897,
+    "params": {
+      "final_gain_error": 0.29794020502385643
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 305,
+    "label": "meter_drift",
+    "houses": [
+      "house_09"
+    ],
+    "start": 33888,
+    "end": 34944,
+    "params": {
+      "final_gain_error": -0.2871722619091685
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 306,
+    "label": "meter_drift",
+    "houses": [
+      "house_04"
+    ],
+    "start": 33601,
+    "end": 34657,
+    "params": {
+      "final_gain_error": 0.13991019699013768
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 307,
+    "label": "meter_drift",
+    "houses": [
+      "house_08"
+    ],
+    "start": 13443,
+    "end": 14019,
+    "params": {
+      "final_gain_error": -0.25180346044549284
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 308,
+    "label": "meter_drift",
+    "houses": [
+      "house_10"
+    ],
+    "start": 289,
+    "end": 961,
+    "params": {
+      "final_gain_error": 0.14461850538791687
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 309,
+    "label": "meter_drift",
+    "houses": [
+      "house_13"
+    ],
+    "start": 1346,
+    "end": 1922,
+    "params": {
+      "final_gain_error": 0.27819446895618305
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 310,
+    "label": "meter_drift",
+    "houses": [
+      "house_11"
+    ],
+    "start": 33600,
+    "end": 34272,
+    "params": {
+      "final_gain_error": 0.14572391807003973
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 311,
+    "label": "meter_drift",
+    "houses": [
+      "house_01"
+    ],
+    "start": 7011,
+    "end": 7875,
+    "params": {
+      "final_gain_error": 0.2675175668645144
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 312,
+    "label": "meter_drift",
+    "houses": [
+      "house_06"
+    ],
+    "start": 7392,
+    "end": 7776,
+    "params": {
+      "final_gain_error": 0.2872749151408168
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 313,
+    "label": "meter_drift",
+    "houses": [
+      "house_07"
+    ],
+    "start": 19104,
+    "end": 19776,
+    "params": {
+      "final_gain_error": 0.19466819651644776
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 314,
+    "label": "meter_drift",
+    "houses": [
+      "house_06"
+    ],
+    "start": 20353,
+    "end": 21217,
+    "params": {
+      "final_gain_error": 0.10040061586941743
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 315,
+    "label": "meter_drift",
+    "houses": [
+      "house_05"
+    ],
+    "start": 20451,
+    "end": 21219,
+    "params": {
+      "final_gain_error": -0.2553790708753735
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 316,
+    "label": "meter_drift",
+    "houses": [
+      "house_08"
+    ],
+    "start": 31104,
+    "end": 31488,
+    "params": {
+      "final_gain_error": -0.28375683642136224
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 317,
+    "label": "meter_drift",
+    "houses": [
+      "house_05"
+    ],
+    "start": 27553,
+    "end": 28033,
+    "params": {
+      "final_gain_error": 0.21759489397882187
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 318,
+    "label": "meter_drift",
+    "houses": [
+      "house_13"
+    ],
+    "start": 20353,
+    "end": 20737,
+    "params": {
+      "final_gain_error": 0.11001791954927193
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 319,
+    "label": "meter_drift",
+    "houses": [
+      "house_06"
+    ],
+    "start": 33698,
+    "end": 34562,
+    "params": {
+      "final_gain_error": 0.2839710442666318
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 320,
+    "label": "meter_drift",
+    "houses": [
+      "house_13"
+    ],
+    "start": 290,
+    "end": 1250,
+    "params": {
+      "final_gain_error": 0.15539636362018788
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 321,
+    "label": "meter_drift",
+    "houses": [
+      "house_10"
+    ],
+    "start": 20160,
+    "end": 20736,
+    "params": {
+      "final_gain_error": 0.2662821996594127
+    },
+    "cause_tunisia": "CT / shunt ageing accelerated by heat",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 322,
+    "label": "meter_noise",
+    "houses": [
+      "house_10"
+    ],
+    "start": 4264,
+    "end": 4638,
+    "params": {
+      "sigma": 0.1255000880285596,
+      "seed": 927280438
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 323,
+    "label": "meter_noise",
+    "houses": [
+      "house_06"
+    ],
+    "start": 4982,
+    "end": 5294,
+    "params": {
+      "sigma": 0.22849047706108727,
+      "seed": 734693043
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 324,
+    "label": "meter_noise",
+    "houses": [
+      "house_06"
+    ],
+    "start": 12140,
+    "end": 12321,
+    "params": {
+      "sigma": 0.24447018465805043,
+      "seed": 760243054
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 325,
+    "label": "meter_noise",
+    "houses": [
+      "house_10"
+    ],
+    "start": 4764,
+    "end": 4903,
+    "params": {
+      "sigma": 0.12573791881494606,
+      "seed": 994133774
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 326,
+    "label": "meter_noise",
+    "houses": [
+      "house_07"
+    ],
+    "start": 12773,
+    "end": 13248,
+    "params": {
+      "sigma": 0.2023837790571427,
+      "seed": 69878865
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 327,
+    "label": "meter_noise",
+    "houses": [
+      "house_04"
+    ],
+    "start": 8169,
+    "end": 8373,
+    "params": {
+      "sigma": 0.13026657464964883,
+      "seed": 396086822
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 328,
+    "label": "meter_noise",
+    "houses": [
+      "house_10"
+    ],
+    "start": 16688,
+    "end": 17138,
+    "params": {
+      "sigma": 0.2328696525690363,
+      "seed": 683172265
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 329,
+    "label": "meter_noise",
+    "houses": [
+      "house_13"
+    ],
+    "start": 32395,
+    "end": 32629,
+    "params": {
+      "sigma": 0.23868594471297339,
+      "seed": 156395487
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 330,
+    "label": "meter_noise",
+    "houses": [
+      "house_03"
+    ],
+    "start": 16880,
+    "end": 17164,
+    "params": {
+      "sigma": 0.15906421114410624,
+      "seed": 654070636
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 331,
+    "label": "meter_noise",
+    "houses": [
+      "house_07"
+    ],
+    "start": 8166,
+    "end": 8480,
+    "params": {
+      "sigma": 0.2103103573366376,
+      "seed": 986460790
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 332,
+    "label": "meter_noise",
+    "houses": [
+      "house_13"
+    ],
+    "start": 7101,
+    "end": 7502,
+    "params": {
+      "sigma": 0.18134209919184946,
+      "seed": 153304182
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 333,
+    "label": "meter_noise",
+    "houses": [
+      "house_13"
+    ],
+    "start": 6221,
+    "end": 6650,
+    "params": {
+      "sigma": 0.1810973834237493,
+      "seed": 613557778
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 334,
+    "label": "meter_noise",
+    "houses": [
+      "house_06"
+    ],
+    "start": 14002,
+    "end": 14457,
+    "params": {
+      "sigma": 0.12459010217395983,
+      "seed": 898956675
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 335,
+    "label": "meter_noise",
+    "houses": [
+      "house_12"
+    ],
+    "start": 13534,
+    "end": 13993,
+    "params": {
+      "sigma": 0.12864685452226027,
+      "seed": 778921039
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 336,
+    "label": "meter_noise",
+    "houses": [
+      "house_07"
+    ],
+    "start": 11605,
+    "end": 12014,
+    "params": {
+      "sigma": 0.22867203976661132,
+      "seed": 919422293
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 337,
+    "label": "meter_noise",
+    "houses": [
+      "house_05"
+    ],
+    "start": 19134,
+    "end": 19272,
+    "params": {
+      "sigma": 0.11762119066338368,
+      "seed": 338636417
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 338,
+    "label": "meter_noise",
+    "houses": [
+      "house_02"
+    ],
+    "start": 27017,
+    "end": 27274,
+    "params": {
+      "sigma": 0.10971569474783484,
+      "seed": 260070584
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 339,
+    "label": "meter_noise",
+    "houses": [
+      "house_06"
+    ],
+    "start": 3352,
+    "end": 3509,
+    "params": {
+      "sigma": 0.14956263731642938,
+      "seed": 835056337
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 340,
+    "label": "meter_noise",
+    "houses": [
+      "house_12"
+    ],
+    "start": 27130,
+    "end": 27448,
+    "params": {
+      "sigma": 0.10055464066428058,
+      "seed": 892524009
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 341,
+    "label": "meter_noise",
+    "houses": [
+      "house_11"
+    ],
+    "start": 23191,
+    "end": 23531,
+    "params": {
+      "sigma": 0.10719596591285202,
+      "seed": 278952228
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 342,
+    "label": "meter_noise",
+    "houses": [
+      "house_06"
+    ],
+    "start": 28289,
+    "end": 28635,
+    "params": {
+      "sigma": 0.17663263021218353,
+      "seed": 797452687
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 343,
+    "label": "meter_noise",
+    "houses": [
+      "house_09"
+    ],
+    "start": 13880,
+    "end": 14249,
+    "params": {
+      "sigma": 0.23633837817597786,
+      "seed": 924959959
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 344,
+    "label": "meter_noise",
+    "houses": [
+      "house_04"
+    ],
+    "start": 18205,
+    "end": 18619,
+    "params": {
+      "sigma": 0.10943018632472527,
+      "seed": 598444153
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 345,
+    "label": "meter_noise",
+    "houses": [
+      "house_06"
+    ],
+    "start": 24808,
+    "end": 25264,
+    "params": {
+      "sigma": 0.19800899402566785,
+      "seed": 160844416
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 346,
+    "label": "meter_noise",
+    "houses": [
+      "house_01"
+    ],
+    "start": 15669,
+    "end": 16045,
+    "params": {
+      "sigma": 0.12576046462190776,
+      "seed": 498124981
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 347,
+    "label": "meter_noise",
+    "houses": [
+      "house_03"
+    ],
+    "start": 17847,
+    "end": 18260,
+    "params": {
+      "sigma": 0.11310566721385112,
+      "seed": 337792743
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 348,
+    "label": "meter_noise",
+    "houses": [
+      "house_08"
+    ],
+    "start": 27654,
+    "end": 27980,
+    "params": {
+      "sigma": 0.19327625950235228,
+      "seed": 717150211
+    },
+    "cause_tunisia": "ADC degradation",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 349,
+    "label": "meter_noise",
+    "houses": [
+      "house_04"
+    ],
+    "start": 21005,
+    "end": 21239,
+    "params": {
+      "sigma": 0.23669926840800726,
+      "seed": 63851631
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 350,
+    "label": "meter_noise",
+    "houses": [
+      "house_10"
+    ],
+    "start": 14209,
+    "end": 14363,
+    "params": {
+      "sigma": 0.14045383519602206,
+      "seed": 226015106
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 351,
+    "label": "meter_noise",
+    "houses": [
+      "house_09"
+    ],
+    "start": 758,
+    "end": 904,
+    "params": {
+      "sigma": 0.14691166877661055,
+      "seed": 427678129
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 352,
+    "label": "meter_noise",
+    "houses": [
+      "house_04"
+    ],
+    "start": 27780,
+    "end": 28032,
+    "params": {
+      "sigma": 0.18445502388456833,
+      "seed": 710729229
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 353,
+    "label": "meter_noise",
+    "houses": [
+      "house_02"
+    ],
+    "start": 28567,
+    "end": 28874,
+    "params": {
+      "sigma": 0.2408240854233447,
+      "seed": 256241884
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 354,
+    "label": "meter_noise",
+    "houses": [
+      "house_03"
+    ],
+    "start": 34103,
+    "end": 34296,
+    "params": {
+      "sigma": 0.22613346527685246,
+      "seed": 659185255
+    },
+    "cause_tunisia": "EMI from a nearby inverter or pump",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 355,
+    "label": "meter_noise",
+    "houses": [
+      "house_12"
+    ],
+    "start": 31384,
+    "end": 31817,
+    "params": {
+      "sigma": 0.12136873952045754,
+      "seed": 594260014
+    },
+    "cause_tunisia": "loose neutral / bad terminal contact",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 356,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_06"
+    ],
+    "start": 29856,
+    "end": 30528,
+    "params": {
+      "gain": 1.1193848047457586
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 357,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_05"
+    ],
+    "start": 29569,
+    "end": 30529,
+    "params": {
+      "gain": 1.075793627665261
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 358,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_01"
+    ],
+    "start": 4321,
+    "end": 5281,
+    "params": {
+      "gain": 1.1848309466046205
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 359,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_06"
+    ],
+    "start": 21696,
+    "end": 22656,
+    "params": {
+      "gain": 0.9397050305717007
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 360,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_04"
+    ],
+    "start": 4416,
+    "end": 4800,
+    "params": {
+      "gain": 0.9054711430516003
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 361,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_02"
+    ],
+    "start": 32355,
+    "end": 32931,
+    "params": {
+      "gain": 1.1449412677713364
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 362,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_01"
+    ],
+    "start": 16419,
+    "end": 17379,
+    "params": {
+      "gain": 0.800423046451245
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 363,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_07"
+    ],
+    "start": 32256,
+    "end": 33120,
+    "params": {
+      "gain": 1.0914359919370724
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 364,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_03"
+    ],
+    "start": 8160,
+    "end": 9120,
+    "params": {
+      "gain": 0.818725347918851
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 365,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_12"
+    ],
+    "start": 16992,
+    "end": 17376,
+    "params": {
+      "gain": 0.804263388291089
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 366,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_12"
+    ],
+    "start": 7105,
+    "end": 7777,
+    "params": {
+      "gain": 1.0901002792802275
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 367,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_07"
+    ],
+    "start": 33601,
+    "end": 33985,
+    "params": {
+      "gain": 1.1877478832201547
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 368,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_02"
+    ],
+    "start": 33795,
+    "end": 34755,
+    "params": {
+      "gain": 0.8349529140923619
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 369,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_05"
+    ],
+    "start": 17760,
+    "end": 18240,
+    "params": {
+      "gain": 1.1170063086543305
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 370,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_03"
+    ],
+    "start": 289,
+    "end": 961,
+    "params": {
+      "gain": 0.8085362966065912
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 371,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_07"
+    ],
+    "start": 577,
+    "end": 865,
+    "params": {
+      "gain": 0.8837639365121575
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 372,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_05"
+    ],
+    "start": 10752,
+    "end": 11520,
+    "params": {
+      "gain": 1.1287517900553081
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 373,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_02"
+    ],
+    "start": 2016,
+    "end": 2496,
+    "params": {
+      "gain": 0.8810778181724289
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 374,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_05"
+    ],
+    "start": 14209,
+    "end": 14497,
+    "params": {
+      "gain": 0.8743672347338336
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 375,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_03"
+    ],
+    "start": 6818,
+    "end": 7682,
+    "params": {
+      "gain": 0.8540697198166436
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 376,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_02"
+    ],
+    "start": 7395,
+    "end": 7779,
+    "params": {
+      "gain": 1.0692110626596487
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 377,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_07"
+    ],
+    "start": 2977,
+    "end": 3937,
+    "params": {
+      "gain": 0.8852865561771678
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 378,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_06"
+    ],
+    "start": 2114,
+    "end": 2594,
+    "params": {
+      "gain": 0.8493655846638968
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 379,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_06"
+    ],
+    "start": 15264,
+    "end": 16128,
+    "params": {
+      "gain": 0.8531497673651822
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 380,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_13"
+    ],
+    "start": 23042,
+    "end": 23714,
+    "params": {
+      "gain": 1.173398194287307
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 381,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_01"
+    ],
+    "start": 9505,
+    "end": 10369,
+    "params": {
+      "gain": 0.8275537506176311
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 382,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_02"
+    ],
+    "start": 31203,
+    "end": 31875,
+    "params": {
+      "gain": 1.1406976283733654
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 383,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_01"
+    ],
+    "start": 33987,
+    "end": 34275,
+    "params": {
+      "gain": 1.1084613992188146
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 384,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_03"
+    ],
+    "start": 20354,
+    "end": 20834,
+    "params": {
+      "gain": 1.1078913114385134
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 385,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_03"
+    ],
+    "start": 9506,
+    "end": 10082,
+    "params": {
+      "gain": 1.1138665464621607
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 386,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_06"
+    ],
+    "start": 17762,
+    "end": 18434,
+    "params": {
+      "gain": 0.8823860226652795
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 387,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_07"
+    ],
+    "start": 13633,
+    "end": 14401,
+    "params": {
+      "gain": 0.8482583780819563
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 388,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_13"
+    ],
+    "start": 33889,
+    "end": 34561,
+    "params": {
+      "gain": 1.0823186651400998
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 389,
+    "label": "meter_bias_current",
+    "houses": [
+      "house_11"
+    ],
+    "start": 1443,
+    "end": 2115,
+    "params": {
+      "gain": 1.1425502026090635
+    },
+    "cause_tunisia": "wrong CT ratio / mis-calibration after maintenance",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 390,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_04"
+    ],
+    "start": 30086,
+    "end": 30304,
+    "params": {
+      "phases": [
+        "3"
+      ],
+      "factor": 1.0756071666835045,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 391,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_07"
+    ],
+    "start": 12143,
+    "end": 12888,
+    "params": {
+      "phases": [
+        "1"
+      ],
+      "factor": 0.9066615670372489,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 392,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_03"
+    ],
+    "start": 4408,
+    "end": 5198,
+    "params": {
+      "phases": [
+        "1"
+      ],
+      "factor": 1.0536141339986609,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 393,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_08"
+    ],
+    "start": 30042,
+    "end": 30655,
+    "params": {
+      "phases": [
+        "1"
+      ],
+      "factor": 0.9329033517444013,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 394,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_03"
+    ],
+    "start": 12700,
+    "end": 12872,
+    "params": {
+      "phases": [
+        "1",
+        "2",
+        "3"
+      ],
+      "factor": 0.9416072324000261,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 395,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_02"
+    ],
+    "start": 16867,
+    "end": 17417,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 1.0405356902692364,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 396,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_11"
+    ],
+    "start": 16326,
+    "end": 17172,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 1.0773796780505431,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 397,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_12"
+    ],
+    "start": 8149,
+    "end": 8666,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 1.0442975878539136,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 398,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_06"
+    ],
+    "start": 8313,
+    "end": 9024,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 0.9263634889063131,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 399,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_07"
+    ],
+    "start": 16722,
+    "end": 17304,
+    "params": {
+      "phases": [
+        "1",
+        "2",
+        "3"
+      ],
+      "factor": 1.042430595710169,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 400,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_07"
+    ],
+    "start": 15916,
+    "end": 16102,
+    "params": {
+      "phases": [
+        "1"
+      ],
+      "factor": 1.0589406543946025,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 401,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_08"
+    ],
+    "start": 3155,
+    "end": 3543,
+    "params": {
+      "phases": [
+        "3"
+      ],
+      "factor": 0.9037456659465833,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 402,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_03"
+    ],
+    "start": 30914,
+    "end": 31475,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 0.9318738593207454,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 403,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_01"
+    ],
+    "start": 11378,
+    "end": 11895,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 0.9597647706557502,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 404,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_10"
+    ],
+    "start": 13549,
+    "end": 14243,
+    "params": {
+      "phases": [
+        "1",
+        "2",
+        "3"
+      ],
+      "factor": 0.9485635178570732,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 405,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_12"
+    ],
+    "start": 3115,
+    "end": 3528,
+    "params": {
+      "phases": [
+        "3"
+      ],
+      "factor": 0.9420522180021235,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 406,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_06"
+    ],
+    "start": 6840,
+    "end": 6993,
+    "params": {
+      "phases": [
+        "2",
+        "3"
+      ],
+      "factor": 0.9316309186876437,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 407,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_09"
+    ],
+    "start": 15389,
+    "end": 15853,
+    "params": {
+      "phases": [
+        "1"
+      ],
+      "factor": 0.9293997735683938,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 408,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_11"
+    ],
+    "start": 10856,
+    "end": 11291,
+    "params": {
+      "phases": [
+        "2",
+        "3"
+      ],
+      "factor": 1.0673100493748513,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 409,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_09"
+    ],
+    "start": 3241,
+    "end": 3673,
+    "params": {
+      "phases": [
+        "1",
+        "2",
+        "3"
+      ],
+      "factor": 1.0482934961378685,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 410,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_06"
+    ],
+    "start": 28532,
+    "end": 29195,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 1.04451016570353,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 411,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_04"
+    ],
+    "start": 24683,
+    "end": 24997,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 0.9143028492176766,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 412,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_07"
+    ],
+    "start": 1920,
+    "end": 2470,
+    "params": {
+      "phases": [
+        "1"
+      ],
+      "factor": 1.0740651903566383,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 413,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_01"
+    ],
+    "start": 19053,
+    "end": 19810,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 0.9345679894173891,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 414,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_02"
+    ],
+    "start": 2055,
+    "end": 2559,
+    "params": {
+      "phases": [
+        "1"
+      ],
+      "factor": 1.0401171129478572,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 415,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_12"
+    ],
+    "start": 27145,
+    "end": 27929,
+    "params": {
+      "phases": [
+        "1",
+        "2",
+        "3"
+      ],
+      "factor": 0.9108820317455949,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 416,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_07"
+    ],
+    "start": 31515,
+    "end": 31632,
+    "params": {
+      "phases": [
+        "1",
+        "2",
+        "3"
+      ],
+      "factor": 1.0727669680475236,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 417,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_05"
+    ],
+    "start": 3292,
+    "end": 3660,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 1.0430535378047392,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 418,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_06"
+    ],
+    "start": 11300,
+    "end": 11437,
+    "params": {
+      "phases": [
+        "2",
+        "3"
+      ],
+      "factor": 0.9193799097399441,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 419,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_06"
+    ],
+    "start": 9795,
+    "end": 10418,
+    "params": {
+      "phases": [
+        "1",
+        "2",
+        "3"
+      ],
+      "factor": 0.9071611336236828,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 420,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_11"
+    ],
+    "start": 27255,
+    "end": 27929,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 1.0553443591007519,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 421,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_10"
+    ],
+    "start": 9641,
+    "end": 10317,
+    "params": {
+      "phases": [
+        "2",
+        "3"
+      ],
+      "factor": 0.9358863159095446,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 422,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_04"
+    ],
+    "start": 3180,
+    "end": 3781,
+    "params": {
+      "phases": [
+        "2"
+      ],
+      "factor": 0.9328667800338257,
+      "direction": "low"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 423,
+    "label": "voltage_sensor_fault",
+    "houses": [
+      "house_01"
+    ],
+    "start": 5691,
+    "end": 6290,
+    "params": {
+      "phases": [
+        "1",
+        "2",
+        "3"
+      ],
+      "factor": 1.0777181795111532,
+      "direction": "high"
+    },
+    "cause_tunisia": "voltage divider resistor drift / loose voltage tap",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 424,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_01"
+    ],
+    "start": 12369,
+    "end": 13137,
+    "params": {
+      "factor": 0.5936970689111731,
+      "gain": 0.5936970689111731
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 425,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_13"
+    ],
+    "start": 29664,
+    "end": 30144,
+    "params": {
+      "factor": 0.4308032349219938,
+      "gain": 0.4308032349219938
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 426,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_08"
+    ],
+    "start": 21507,
+    "end": 22179,
+    "params": {
+      "factor": 0.5598660816781804,
+      "gain": 0.5598660816781804
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 427,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_02"
+    ],
+    "start": 4706,
+    "end": 4994,
+    "params": {
+      "factor": 0.501768089457708,
+      "gain": 0.501768089457708
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 428,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_12"
+    ],
+    "start": 13058,
+    "end": 13346,
+    "params": {
+      "factor": 0.5520401936220778,
+      "gain": 0.5520401936220778
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "test",
+    "block": 9
+  },
+  {
+    "event_id": 429,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_13"
+    ],
+    "start": 32640,
+    "end": 33600,
+    "params": {
+      "factor": 0.5417229077387473,
+      "gain": 0.5417229077387473
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 430,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_10"
+    ],
+    "start": 26472,
+    "end": 26760,
+    "params": {
+      "factor": 0.6006980104282019,
+      "gain": 0.6006980104282019
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 431,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_05"
+    ],
+    "start": 8234,
+    "end": 9098,
+    "params": {
+      "factor": 0.4373705978713127,
+      "gain": 0.4373705978713127
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 432,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_13"
+    ],
+    "start": 26211,
+    "end": 26595,
+    "params": {
+      "factor": 0.612508016833502,
+      "gain": 0.612508016833502
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 433,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_02"
+    ],
+    "start": 33290,
+    "end": 33578,
+    "params": {
+      "factor": 0.5632955993137998,
+      "gain": 0.5632955993137998
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 434,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_04"
+    ],
+    "start": 1809,
+    "end": 2193,
+    "params": {
+      "factor": 0.5920153261794031,
+      "gain": 0.5920153261794031
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 435,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_07"
+    ],
+    "start": 20426,
+    "end": 21194,
+    "params": {
+      "factor": 0.65478988356049,
+      "gain": 0.65478988356049
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 436,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_02"
+    ],
+    "start": 842,
+    "end": 1226,
+    "params": {
+      "factor": 0.5691221422513094,
+      "gain": 0.5691221422513094
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 437,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_10"
+    ],
+    "start": 6801,
+    "end": 7761,
+    "params": {
+      "factor": 0.5604706404392508,
+      "gain": 0.5604706404392508
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 438,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_10"
+    ],
+    "start": 23305,
+    "end": 23689,
+    "params": {
+      "factor": 0.601602834943531,
+      "gain": 0.601602834943531
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 439,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_10"
+    ],
+    "start": 15264,
+    "end": 16128,
+    "params": {
+      "factor": 0.519815199699141,
+      "gain": 0.519815199699141
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 440,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_05"
+    ],
+    "start": 31091,
+    "end": 31763,
+    "params": {
+      "factor": 0.448109020531036,
+      "gain": 0.448109020531036
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 441,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_13"
+    ],
+    "start": 10067,
+    "end": 10643,
+    "params": {
+      "factor": 0.4530795537963997,
+      "gain": 0.4530795537963997
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 442,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_07"
+    ],
+    "start": 15456,
+    "end": 16032,
+    "params": {
+      "factor": 0.4826009667073931,
+      "gain": 0.4826009667073931
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 443,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_04"
+    ],
+    "start": 168,
+    "end": 648,
+    "params": {
+      "factor": 0.6511626391674843,
+      "gain": 0.6511626391674843
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 444,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_05"
+    ],
+    "start": 3344,
+    "end": 4016,
+    "params": {
+      "factor": 0.6630362411428188,
+      "gain": 0.6630362411428188
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 445,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_01"
+    ],
+    "start": 29184,
+    "end": 29472,
+    "params": {
+      "factor": 0.44813235432014686,
+      "gain": 0.44813235432014686
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 21
+  },
+  {
+    "event_id": 446,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_08"
+    ],
+    "start": 7569,
+    "end": 8049,
+    "params": {
+      "factor": 0.6441806150505605,
+      "gain": 0.6441806150505605
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 447,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_06"
+    ],
+    "start": 266,
+    "end": 1226,
+    "params": {
+      "factor": 0.6386974274158714,
+      "gain": 0.6386974274158714
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 448,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_13"
+    ],
+    "start": 11498,
+    "end": 11978,
+    "params": {
+      "factor": 0.4867409845882162,
+      "gain": 0.4867409845882162
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 449,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_13"
+    ],
+    "start": 3050,
+    "end": 3626,
+    "params": {
+      "factor": 0.6459986705457691,
+      "gain": 0.6459986705457691
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 450,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_13"
+    ],
+    "start": 13610,
+    "end": 14474,
+    "params": {
+      "factor": 0.5705457206989375,
+      "gain": 0.5705457206989375
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 451,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_01"
+    ],
+    "start": 5378,
+    "end": 6146,
+    "params": {
+      "factor": 0.4839731833865832,
+      "gain": 0.4839731833865832
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 452,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_03"
+    ],
+    "start": 11017,
+    "end": 11689,
+    "params": {
+      "factor": 0.5961349086982531,
+      "gain": 0.5961349086982531
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 453,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_06"
+    ],
+    "start": 19753,
+    "end": 20041,
+    "params": {
+      "factor": 0.6936310688914515,
+      "gain": 0.6936310688914515
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 454,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_10"
+    ],
+    "start": 34355,
+    "end": 34931,
+    "params": {
+      "factor": 0.4642945745940752,
+      "gain": 0.4642945745940752
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 455,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_05"
+    ],
+    "start": 24272,
+    "end": 24656,
+    "params": {
+      "factor": 0.5822827256321084,
+      "gain": 0.5822827256321084
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 456,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_13"
+    ],
+    "start": 24577,
+    "end": 25441,
+    "params": {
+      "factor": 0.4837039813544429,
+      "gain": 0.4837039813544429
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 457,
+    "label": "falsified_under_report",
+    "houses": [
+      "house_12"
+    ],
+    "start": 17937,
+    "end": 18513,
+    "params": {
+      "factor": 0.6824099387888,
+      "gain": 0.6824099387888
+    },
+    "cause_tunisia": "meter tampering (CT bypass / magnet) to cut the STEG bill",
+    "split": "train",
+    "block": 13
+  },
+  {
+    "event_id": 458,
+    "label": "falsified_replay",
+    "houses": [
+      "house_12"
+    ],
+    "start": 21694,
+    "end": 21790,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 459,
+    "label": "falsified_replay",
+    "houses": [
+      "house_08"
+    ],
+    "start": 4763,
+    "end": 4859,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "test",
+    "block": 3
+  },
+  {
+    "event_id": 460,
+    "label": "falsified_replay",
+    "houses": [
+      "house_01"
+    ],
+    "start": 29596,
+    "end": 29980,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 461,
+    "label": "falsified_replay",
+    "houses": [
+      "house_07"
+    ],
+    "start": 30074,
+    "end": 30266,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "test",
+    "block": 22
+  },
+  {
+    "event_id": 462,
+    "label": "falsified_replay",
+    "houses": [
+      "house_01"
+    ],
+    "start": 21721,
+    "end": 22009,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "test",
+    "block": 16
+  },
+  {
+    "event_id": 463,
+    "label": "falsified_replay",
+    "houses": [
+      "house_10"
+    ],
+    "start": 33344,
+    "end": 33536,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "val",
+    "block": 24
+  },
+  {
+    "event_id": 464,
+    "label": "falsified_replay",
+    "houses": [
+      "house_04"
+    ],
+    "start": 16140,
+    "end": 16428,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 465,
+    "label": "falsified_replay",
+    "houses": [
+      "house_09"
+    ],
+    "start": 16494,
+    "end": 16782,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "val",
+    "block": 12
+  },
+  {
+    "event_id": 466,
+    "label": "falsified_replay",
+    "houses": [
+      "house_07"
+    ],
+    "start": 26546,
+    "end": 26738,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "val",
+    "block": 19
+  },
+  {
+    "event_id": 467,
+    "label": "falsified_replay",
+    "houses": [
+      "house_09"
+    ],
+    "start": 8496,
+    "end": 8592,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "val",
+    "block": 6
+  },
+  {
+    "event_id": 468,
+    "label": "falsified_replay",
+    "houses": [
+      "house_05"
+    ],
+    "start": 34722,
+    "end": 34914,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 25
+  },
+  {
+    "event_id": 469,
+    "label": "falsified_replay",
+    "houses": [
+      "house_03"
+    ],
+    "start": 14836,
+    "end": 14932,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 470,
+    "label": "falsified_replay",
+    "houses": [
+      "house_06"
+    ],
+    "start": 5614,
+    "end": 5806,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 4
+  },
+  {
+    "event_id": 471,
+    "label": "falsified_replay",
+    "houses": [
+      "house_13"
+    ],
+    "start": 7725,
+    "end": 8013,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 5
+  },
+  {
+    "event_id": 472,
+    "label": "falsified_replay",
+    "houses": [
+      "house_01"
+    ],
+    "start": 27562,
+    "end": 27946,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 20
+  },
+  {
+    "event_id": 473,
+    "label": "falsified_replay",
+    "houses": [
+      "house_06"
+    ],
+    "start": 2928,
+    "end": 3312,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 474,
+    "label": "falsified_replay",
+    "houses": [
+      "house_01"
+    ],
+    "start": 23772,
+    "end": 24060,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 17
+  },
+  {
+    "event_id": 475,
+    "label": "falsified_replay",
+    "houses": [
+      "house_03"
+    ],
+    "start": 19359,
+    "end": 19743,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 476,
+    "label": "falsified_replay",
+    "houses": [
+      "house_02"
+    ],
+    "start": 19851,
+    "end": 20043,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 14
+  },
+  {
+    "event_id": 477,
+    "label": "falsified_replay",
+    "houses": [
+      "house_13"
+    ],
+    "start": 2106,
+    "end": 2298,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 478,
+    "label": "falsified_replay",
+    "houses": [
+      "house_08"
+    ],
+    "start": 9818,
+    "end": 10202,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 7
+  },
+  {
+    "event_id": 479,
+    "label": "falsified_replay",
+    "houses": [
+      "house_08"
+    ],
+    "start": 20192,
+    "end": 20384,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 15
+  },
+  {
+    "event_id": 480,
+    "label": "falsified_replay",
+    "houses": [
+      "house_09"
+    ],
+    "start": 11293,
+    "end": 11677,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 8
+  },
+  {
+    "event_id": 481,
+    "label": "falsified_replay",
+    "houses": [
+      "house_11"
+    ],
+    "start": 444,
+    "end": 828,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 0
+  },
+  {
+    "event_id": 482,
+    "label": "falsified_replay",
+    "houses": [
+      "house_01"
+    ],
+    "start": 24909,
+    "end": 25293,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 483,
+    "label": "falsified_replay",
+    "houses": [
+      "house_03"
+    ],
+    "start": 24983,
+    "end": 25175,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 484,
+    "label": "falsified_replay",
+    "houses": [
+      "house_10"
+    ],
+    "start": 24235,
+    "end": 24331,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 18
+  },
+  {
+    "event_id": 485,
+    "label": "falsified_replay",
+    "houses": [
+      "house_12"
+    ],
+    "start": 14068,
+    "end": 14260,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 10
+  },
+  {
+    "event_id": 486,
+    "label": "falsified_replay",
+    "houses": [
+      "house_06"
+    ],
+    "start": 3611,
+    "end": 3899,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 2
+  },
+  {
+    "event_id": 487,
+    "label": "falsified_replay",
+    "houses": [
+      "house_02"
+    ],
+    "start": 1455,
+    "end": 1839,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 1
+  },
+  {
+    "event_id": 488,
+    "label": "falsified_replay",
+    "houses": [
+      "house_12"
+    ],
+    "start": 31019,
+    "end": 31307,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 489,
+    "label": "falsified_replay",
+    "houses": [
+      "house_11"
+    ],
+    "start": 15225,
+    "end": 15513,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 11
+  },
+  {
+    "event_id": 490,
+    "label": "falsified_replay",
+    "houses": [
+      "house_11"
+    ],
+    "start": 32073,
+    "end": 32169,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 23
+  },
+  {
+    "event_id": 491,
+    "label": "falsified_replay",
+    "houses": [
+      "house_07"
+    ],
+    "start": 1465,
+    "end": 1561,
+    "params": {
+      "lag_steps": 96
+    },
+    "cause_tunisia": "data-path manipulation: yesterday's load curve re-sent",
+    "split": "train",
+    "block": 1
+  }
+]

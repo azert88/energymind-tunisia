@@ -1,0 +1,238 @@
+{
+  "overall": {
+    "micro_f1": 0.906146791932536,
+    "macro_f1": 0.9318963946401907,
+    "samples_f1_anomalous": 0.9106708963282938,
+    "hamming_loss": 0.002991521127681842,
+    "subset_accuracy": 0.9699089972527473,
+    "subset_accuracy_2labels": 0.632258064516129,
+    "detect_precision": 0.9935588853481592,
+    "detect_recall": 0.9890658747300216,
+    "detect_f1": 0.991307289024184,
+    "category_exact_acc": 0.9776592872570194,
+    "event_vs_sensor_acc": 0.9780642548596112,
+    "macro_pr_auc": 0.9725372325729303,
+    "event_recall_macro": 0.9126984126984128,
+    "event_recall_micro": 0.9166666666666666,
+    "median_delay_h": 0.0,
+    "false_alarm_runs_per_100_house_days": 7.6923076923076925,
+    "fit_seconds": 99.55211305618286,
+    "predict_ms_per_row": 0.012344556209041086
+  },
+  "per_label": {
+    "localized_grid_outage": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 215,
+      "pr_auc": 1.0
+    },
+    "sustained_undervoltage": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 715,
+      "pr_auc": 1.0
+    },
+    "transformer_overload": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 338,
+      "pr_auc": 1.0
+    },
+    "battery_charge_failure": {
+      "precision": 0.9480968858131488,
+      "recall": 0.8896103896103896,
+      "f1": 0.9179229480737019,
+      "support": 308,
+      "pr_auc": 0.968094179337113
+    },
+    "battery_discharge_failure": {
+      "precision": 0.9758064516129032,
+      "recall": 0.8287671232876712,
+      "f1": 0.8962962962962963,
+      "support": 146,
+      "pr_auc": 0.9742480215265636
+    },
+    "pv_partial_shading": {
+      "precision": 0.7931034482758621,
+      "recall": 0.6255230125523012,
+      "f1": 0.6994152046783626,
+      "support": 478,
+      "pr_auc": 0.7370766706440526
+    },
+    "meter_frozen": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 142,
+      "pr_auc": 1.0
+    },
+    "meter_dropout": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 151,
+      "pr_auc": 1.0
+    },
+    "meter_drift": {
+      "precision": 0.5262522631261316,
+      "recall": 1.0,
+      "f1": 0.6896006326611309,
+      "support": 1744,
+      "pr_auc": 0.9586794321147457
+    },
+    "meter_noise": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1481,
+      "pr_auc": 1.0
+    },
+    "meter_bias_current": {
+      "precision": 0.9615787635347538,
+      "recall": 0.7509547190398255,
+      "f1": 0.8433144432531782,
+      "support": 3666,
+      "pr_auc": 0.9774229523985507
+    },
+    "voltage_sensor_fault": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2538,
+      "pr_auc": 1.0
+    },
+    "falsified_under_report": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2303,
+      "pr_auc": 1.0
+    },
+    "falsified_replay": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1056,
+      "pr_auc": 1.0
+    }
+  },
+  "event_per_label": [
+    {
+      "label": "battery_charge_failure",
+      "events": 6,
+      "event_recall": 0.8333333333333334,
+      "median_delay_h": 0.0,
+      "coverage": 0.6780303030303031
+    },
+    {
+      "label": "battery_discharge_failure",
+      "events": 13,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 0.8717948717948718
+    },
+    {
+      "label": "falsified_replay",
+      "events": 7,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "falsified_under_report",
+      "events": 10,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "localized_grid_outage",
+      "events": 14,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "meter_bias_current",
+      "events": 10,
+      "event_recall": 0.5,
+      "median_delay_h": 0.0,
+      "coverage": 0.32009187370600417
+    },
+    {
+      "label": "meter_drift",
+      "events": 5,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "meter_dropout",
+      "events": 7,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "meter_frozen",
+      "events": 7,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "meter_noise",
+      "events": 8,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "pv_partial_shading",
+      "events": 9,
+      "event_recall": 0.4444444444444444,
+      "median_delay_h": 0.0,
+      "coverage": 0.25671259297066873
+    },
+    {
+      "label": "sustained_undervoltage",
+      "events": 17,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "transformer_overload",
+      "events": 11,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "label": "voltage_sensor_fault",
+      "events": 8,
+      "event_recall": 1.0,
+      "median_delay_h": 0.0,
+      "coverage": 1.0
+    }
+  ],
+  "thresholds": [
+    0.04,
+    0.06,
+    0.15000000000000002,
+    0.45000000000000007,
+    0.20000000000000004,
+    0.45000000000000007,
+    0.25000000000000006,
+    0.02,
+    0.25000000000000006,
+    0.15000000000000002,
+    0.40000000000000013,
+    0.20000000000000004,
+    0.30000000000000004,
+    0.30000000000000004
+  ]
+}
